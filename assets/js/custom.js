@@ -52,17 +52,25 @@ $(function () {
   });
 });
 
-const targetNode = document.getElementById('megaMenu');
-const observer = new MutationObserver((mutationsList) => {
-  for (const mutation of mutationsList) {
-    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-      if (targetNode.classList.contains('show')) {
-        $('header').addClass('show-mega-menu');
-      } else {
-        $('header').removeClass('show-mega-menu');
+function initMegaMenuObserver() {
+  if (window.innerWidth > 1199) {
+    const targetNode = document.getElementById('megaMenu');
+    const observer = new MutationObserver((mutationsList) => {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          if (targetNode.classList.contains('show')) {
+            $('header').addClass('show-mega-menu');
+          } else {
+            $('header').removeClass('show-mega-menu');
+          }
+        }
       }
-    }
+    });
+
+    const config = { attributes: true }; 
+    observer.observe(targetNode, config);
   }
-});
-const config = { attributes: true }; 
-observer.observe(targetNode, config);
+}
+window.addEventListener('resize', initMegaMenuObserver);
+initMegaMenuObserver();
+
