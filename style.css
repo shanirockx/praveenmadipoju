@@ -35,7 +35,8 @@ body {
 .wellness .wellness-text p:last-child,
 .footer .copyright .copyright-text p:last-child,
 .faqs .accordion .accordion-item .accordion-body p:last-child,
-.story-hero.hero .hero-wrapper .hero-content p:last-child {
+.story-hero.hero .hero-wrapper .hero-content p:last-child,
+.mission .mission-wrapper p:last-child {
   margin: 0;
 }
 .header {
@@ -712,6 +713,76 @@ body {
 }
 .support-story.coaching .page-title span {
   padding-left: 250px;
+}
+.mission {
+  padding: 90px 0 150px;
+}
+.mission .container {
+  margin: auto;
+  max-width: 1725px;
+}
+.mission .mission-wrapper {
+  max-width: 1160px;
+  margin: 110px auto 0;
+}
+.mission .mission-wrapper .page-title {
+  margin-bottom: 50px;
+}
+.mission .mission-wrapper p {
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 35px;
+}
+.mission-gallery .gallery-item {
+  height: 800px;
+}
+.mission-gallery {
+  gap: 2%;
+  display: flex;
+}
+.mission-gallery .gallery-item.left {
+  width: 36%;
+  flex-shrink: 0;
+}
+.mission-gallery .gallery-item.right {
+  width: 62%;
+}
+.mission-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join-team {
+  color: #f7f6f2;
+  background: #dbb962;
+  padding: 100px 0 200px;
+}
+.join-team .container {
+  max-width: 1550px;
+}
+.join-team .join-team-wrapper {
+  max-width: 700px;
+  margin-top: 210px;
+}
+.join-team .join-team-wrapper h3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.join-team .join-team-wrapper .join-team-content {
+  padding-left: 70px;
+}
+.join-team .join-team-wrapper .join-team-content p {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.join-team .join-team-wrapper .join-team-content .btn {
+  min-width: 250px;
+  margin-top: 40px;
+  line-height: 60px;
+  border: 2px solid #f7f6f2;
+  color: #f7f6f2 !important;
+  background: transparent !important;
 }
 @media (min-width: 1400px) {
   .container {
