@@ -51,3 +51,18 @@ $(function () {
     $(this).addClass("active");
   });
 });
+
+const targetNode = document.getElementById('megaMenu');
+const observer = new MutationObserver((mutationsList) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+      if (targetNode.classList.contains('show')) {
+        $('header').addClass('show-mega-menu');
+      } else {
+        $('header').removeClass('show-mega-menu');
+      }
+    }
+  }
+});
+const config = { attributes: true }; 
+observer.observe(targetNode, config);
