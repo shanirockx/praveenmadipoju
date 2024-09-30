@@ -1602,12 +1602,26 @@ body {
   font-size: 26px;
   line-height: 35px;
 }
+.schedule .schedule-listing {
+  padding: 0;
+  font-size: 45px;
+  list-style: none;
+  margin: 150px 0 0;
+  line-height: 80px;
+}
+.schedule .btn {
+  margin-top: 50px;
+  min-width: 330px;
+  line-height: 70px;
+  color: #deb5a0 !important;
+  background: var(--white) !important;
+}
 .seasoned-athlete .page-title,
 .coaching.real-change .page-title {
   font-size: 65px;
   margin-bottom: 150px;
 }
-.seasoned-athlete .page-title span:last-child {
+.seasoned-athlete .page-title span:nth-of-type(2) {
   padding-left: 800px;
 }
 .seasoned-athlete .seasoned-athlete-img {
@@ -1621,6 +1635,25 @@ body {
   max-width: 650px;
   line-height: 48px;
   padding-left: 100px;
+}
+.seasoned-athlete.prefered-program .program-content-wrapper {
+  max-width: 640px;
+}
+.seasoned-athlete.prefered-program h3 {
+  font-size: 55px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.seasoned-athlete.prefered-program p {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.seasoned-athlete.prefered-program .btn {
+  min-width: 400px;
+  margin-top: 30px;
+  line-height: 70px;
+  background: #cc914a;
 }
 .program-listing {
   padding: 150px 0;
@@ -1735,6 +1768,40 @@ body {
   margin-top: 110px;
   border: 1px solid var(--white);
   color: var(--white) !important;
+  background: transparent !important;
+}
+.resources {
+  background: #f8f7ef;
+  padding: 120px 0 190px;
+}
+.resources .container {
+  max-width: 1300px;
+}
+.resources h5 {
+  font-size: 26px;
+  color: #ba7d5d;
+  line-height: 65px;
+}
+.resource-program {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resource-program + .resource-program {
+  margin-top: 100px;
+}
+.resource-program h3 {
+  font-size: 85px;
+  color: #ca674c;
+  max-width: 675px;
+  line-height: 90px;
+  font-family: "Neue Plak SemiBold";
+}
+.resource-program .btn {
+  width: 325px;
+  line-height: 70px;
+  color: #ba7d5d !important;
+  border: 2px solid #ba7d5d;
   background: transparent !important;
 }
 @media (min-width: 1400px) {
