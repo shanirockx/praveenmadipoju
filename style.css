@@ -268,15 +268,15 @@ body {
   line-height: 70px;
   background: #dbb962;
 }
-.coaching-tabs #tabcontainer {
+.theme-tabs #tabcontainer {
   margin: 40px 0;
 }
-.coaching-tabs #tabcontainer img {
+.theme-tabs #tabcontainer img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
-.coaching-tabs .coaching-navtabs {
+.theme-tabs .theme-navtabs {
   padding: 0;
   margin: 0 0 25px;
   list-style: none;
@@ -285,7 +285,8 @@ body {
   justify-content: center;
   box-shadow: inset 0 0 0 2px #e3c7a5;
 }
-.coaching-tabs .coaching-navtabs li a {
+.theme-tabs .theme-navtabs li a,
+.theme-tabs .theme-navtabs .nav-link {
   cursor: pointer;
   padding: 0 10px;
   color: #e3c7a4;
@@ -296,20 +297,47 @@ body {
   border: 2px solid transparent;
   font-family: "Neue Plak SemiBold";
 }
-.coaching-tabs .coaching-navtabs li.active a {
+.theme-tabs .theme-navtabs li.active a,
+.theme-tabs .theme-navtabs .nav-link.active {
   color: var(--primary);
   border: 2px solid var(--primary);
 }
-.coaching-tabs .tabs h4 {
+.theme-tabs .tabs h4 {
   font-size: 20px;
   margin-bottom: 30px;
   font-family: "Neue Plak SemiBold";
 }
-.coaching-tabs .tabs .btn {
+.theme-tabs .tabs .btn {
   font-size: 18px;
   min-width: 130px;
   line-height: 50px;
   background: #dbb962;
+}
+.theme-tabs .tab-content .tab-title {
+  margin: 0;
+  gap: 15px;
+  display: flex;
+  font-size: 130px;
+  color: #ca674c;
+  line-height: 130px;
+  justify-content: center;
+  font-family: "Neue Plak SemiBold";
+}
+.theme-tabs .tab-content .tab-title span {
+  font-size: 40px;
+  color: #ba7d5d;
+  line-height: 85px;
+}
+.theme-tabs .tab-content .tab-duration {
+  margin: 30px 0;
+  font-size: 24px;
+  color: #ba7d5d;
+  line-height: 65px;
+}
+.theme-tabs .tab-content .btn {
+  width: 450px;
+  line-height: 70px;
+  background: #ca674c;
 }
 .wellness {
   padding: 140px 0 180px;
@@ -489,7 +517,7 @@ body {
   background: var(--primary);
 }
 .cta-programs {
-  padding: 144px 0;
+  padding: 140px 0;
   text-align: center;
 }
 .cta-programs .cta-programs-text {
@@ -1299,6 +1327,7 @@ body {
 }
 .what-we-offer .headline {
   font-size: 55px;
+  max-width: 600px;
   line-height: 65px;
 }
 .what-we-offer .offer-listing:first-child {
@@ -1444,7 +1473,7 @@ body {
 .program-kinds.white * {
   color: #f28269 !important;
 }
-.program-kinds.white .btn {
+.program-kinds.white .program-kinds-content .btn {
   color: var(--white) !important;
   background: #f28269 !important;
 }
@@ -1525,12 +1554,198 @@ body {
   height: 590px;
   object-fit: cover;
 }
+.hero.program-hero.bia-mama-hero .program-img {
+  width: 556px;
+  height: 734px;
+  border-radius: 320px;
+}
+.cta-programs .cta-programs-text .page-title {
+  font-size: 65px;
+  line-height: 90px;
+}
+.cta-programs.warrior-cta .btn {
+  min-width: 440px;
+}
+.book-consultation {
+  background: #f8f7ef;
+  padding: 150px 0 200px;
+}
+.book-consultation .page-title {
+  font-size: 85px;
+  color: #ca674c;
+  line-height: 90px;
+}
+.book-consultation .book-text {
+  font-size: 26px;
+  color: #ca674c;
+  margin: 30px 0 0;
+  line-height: 65px;
+}
+.schedule {
+  color: #fff;
+  background: #c5664c;
+  padding: 110px 0 120px;
+}
+.schedule .page-title {
+  font-size: 85px;
+  line-height: 90px;
+}
+.schedule .timings-outer {
+  max-width: 550px;
+}
+.schedule .timings-outer .timings h3 {
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+.schedule .timings-outer .schedule-text {
+  font-size: 26px;
+  line-height: 35px;
+}
+.seasoned-athlete .page-title,
+.coaching.real-change .page-title {
+  font-size: 65px;
+  margin-bottom: 150px;
+}
+.seasoned-athlete .page-title span:last-child {
+  padding-left: 800px;
+}
+.seasoned-athlete .seasoned-athlete-img {
+  width: 730px;
+  height: 558px;
+  object-fit: cover;
+}
+.seasoned-athlete .seasoned-athlete-text {
+  margin: 0;
+  font-size: 36px;
+  max-width: 650px;
+  line-height: 48px;
+  padding-left: 100px;
+}
+.program-listing {
+  padding: 150px 0;
+}
+.program-listing .container {
+  max-width: 1570px;
+}
+.program-listing .program-listing-text {
+  max-width: 400px;
+  margin-bottom: 60px;
+}
+.program-listing .program-listing-text h3 {
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  font-family: "Neue Plak SemiBold";
+}
+.program-listing .program-listing-text p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+.hero.hero-program .hero-wrapper {
+  margin-top: 85px;
+}
+.hero.hero-program .hero-wrapper .hero-content {
+  padding-right: 80px;
+}
+.hero.hero-program .hero-program-img {
+  width: 808px;
+  height: 757px;
+  object-fit: cover;
+}
+.coaching.real-change .container {
+  max-width: 1650px;
+}
+.coaching.real-change .our-clients {
+  padding: 0;
+  background: transparent;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  h5 {
+  margin: 0;
+  line-height: 45px;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  h2 {
+  font-size: 55px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  p {
+  margin: 0;
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.coaching.real-change .our-clients .members-swiper {
+  max-height: 700px;
+}
+.coaching.real-change .our-clients .members-swiper-wrapper {
+  margin: auto;
+  max-width: 1370px;
+}
+.coaching.real-change .our-clients .members-swiper .swiper-slide .client-text {
+  padding: 0;
+  max-width: 580px;
+}
+.coaching.real-change .our-clients .members-swiper .swiper-pagination {
+  right: 0;
+  left: auto;
+}
+.coaching.real-change .our-clients .real-change-img {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+.desire-results {
+  padding: 110px 60px;
+  background: #f7e488;
+}
+.desire-results .desire-results-inner {
+  color: var(--white);
+  padding: 90px 110px;
+  background: #dbb962;
+}
+.desire-results .desire-results-inner .desire-results-img {
+  width: 100%;
+  height: 605px;
+  overflow: hidden;
+}
+.desire-results .desire-results-inner .title-end {
+  max-width: 260px;
+  margin-bottom: -130px;
+}
+.desire-results .desire-results-inner .btn {
+  min-width: 370px;
+  line-height: 80px;
+  margin-top: 110px;
+  border: 1px solid var(--white);
+  color: var(--white) !important;
+  background: transparent !important;
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1920px;
   }
   .what-we-offer .container,
-  .game-experience .container {
+  .game-experience .container,
+  .book-consultation .container,
+  .schedule .container,
+  .coaching.seasoned-athlete .container {
     padding-inline: 140px;
   }
   .container,
