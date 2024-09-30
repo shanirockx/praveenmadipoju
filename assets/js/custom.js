@@ -36,6 +36,21 @@ var membersSwiper = new Swiper(".members-swiper", {
   },
 });
 
+var missionSwiper = new Swiper(".mission-swiper", { 
+  loop: true, 
+  slidesPerView: 2.5,
+  centeredSlides: true,
+  spaceBetween: 200, 
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'custom',
+  },
+  navigation: {
+    nextEl: ".mission-swiper .swiper-button-next",
+    prevEl: ".mission-swiper .swiper-button-prev",
+  }
+});
+
 $(function () {
   $("#tabcontainer .tabs").hide().eq(0).show();
   $("#tabcontainer-2 .tabs").hide().eq(0).show();

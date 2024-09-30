@@ -845,6 +845,25 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.mission .mission-swiper {
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+.mission .mission-swiper .swiper-slide img {
+  width: 855px;
+  height: 835px;
+  object-fit: cover;
+}
+.mission .mission-swiper .swiper-arrows-wrapper .swiper-arrows::after {
+  display: none;
+}
+.mission .mission-swiper .swiper-arrows-wrapper {
+  left: 50%;
+  bottom: 15px;
+  position: absolute;
+  width: calc(100% - 100px);
+  margin-left: calc(-50% + 50px);
+}
 .join-team {
   color: #f7f6f2;
   background: #dbb962;
@@ -1115,6 +1134,29 @@ body {
 }
 .retreat-includes .retreat-includes-wrapper .includes-listing li + li {
   margin-top: 30px;
+}
+.retreat-hover-img .hoverable-list {
+  padding: 0;
+  list-style: none;
+  max-width: 760px;
+  margin: 170px auto 0;
+}
+.retreat-hover-img .hoverable-list li {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 60px;
+  color: #BA7D5D;
+  line-height: 95px;
+  font-family: "Neue Plak SemiBold";
+}
+.retreat-hover-img .hoverable-list li.active {
+  opacity: 1;
+}
+.retreat-hover-img .program-kinds-preview {
+  width: 760px;
+  height: 900px;
+  object-fit: cover;
+  margin: -20px 100px 0 0;
 }
 .packages {
   margin-top: 100px;
@@ -1426,11 +1468,14 @@ body {
 .diverse-programs {
   margin-top: 150px;
 }
-.diverse-programs .heading {
+.diverse-programs .diverse-programs-inner {
+  max-width: 630px;
+}
+.diverse-programs .diverse-programs-inner .heading {
   font-size: 75px;
   line-height: 95px;
 }
-.diverse-programs .content {
+.diverse-programs .diverse-programs-inner .content {
   font-size: 34px;
   line-height: 85px;
 }
