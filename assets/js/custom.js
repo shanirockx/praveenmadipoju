@@ -54,23 +54,43 @@ $(function () {
 
 function initMegaMenuObserver() {
   if (window.innerWidth > 1199) {
-    const targetNode = document.getElementById('megaMenu');
+    const targetNode = document.getElementById("megaMenu");
     const observer = new MutationObserver((mutationsList) => {
       for (const mutation of mutationsList) {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-          if (targetNode.classList.contains('show')) {
-            $('header').addClass('show-mega-menu');
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          if (targetNode.classList.contains("show")) {
+            $("header").addClass("show-mega-menu");
           } else {
-            $('header').removeClass('show-mega-menu');
+            $("header").removeClass("show-mega-menu");
           }
         }
       }
     });
 
-    const config = { attributes: true }; 
+    const config = { attributes: true };
     observer.observe(targetNode, config);
   }
 }
-window.addEventListener('resize', initMegaMenuObserver);
+window.addEventListener("resize", initMegaMenuObserver);
 initMegaMenuObserver();
 
+const hoverableLists = document.querySelectorAll(".hoverable-list");
+hoverableLists.forEach((list) => {
+  const imgContainerId = list.getAttribute("data-img-container");
+  const imgElement = document.getElementById(imgContainerId);
+  list.addEventListener("mouseover", (event) => {
+    if (event.target.tagName === "LI") {
+      const newImgSrc = event.target.getAttribute("data-img-target");
+      if (imgElement) {
+        imgElement.src = newImgSrc;
+      }
+      list
+        .querySelectorAll("li")
+        .forEach((li) => li.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+  });
+});

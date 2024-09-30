@@ -180,7 +180,7 @@ body {
   display: block;
 }
 .header.show-mega-menu .navbar .navbar-nav .nav-link {
-  color: #fff;
+  color: var(--white);
 }
 .header.show-mega-menu
   .navbar
@@ -189,11 +189,11 @@ body {
   .nav-link.dropdown-toggle
   svg
   path {
-  fill: #fff;
+  fill: var(--white);
 }
 .header.show-mega-menu .btn {
   color: #ca674c;
-  background: #fff;
+  background: var(--white);
 }
 .hero {
   overflow: hidden;
@@ -386,7 +386,7 @@ body {
   min-width: 235px;
   margin-top: 45px;
   line-height: 80px;
-  background: #fff;
+  background: var(--white);
   color: #dbb962 !important;
 }
 .champion {
@@ -518,8 +518,8 @@ body {
   max-width: 1525px;
 }
 .newsletter .newsletter-text {
-  color: #fff;
   max-width: 390px;
+  color: var(--white);
 }
 .newsletter .newsletter-text .page-title {
   margin-bottom: 30px;
@@ -621,14 +621,14 @@ body {
   font-size: 22px;
   border-radius: 0;
   color: var(--primary);
-  background: #fff !important;
   border: 1px solid var(--primary);
+  background: var(--white) !important;
 }
 .theme-form .form-wrapper select.form-control {
   border: none;
-  border-right: 22px solid #fff;
+  border-right: 22px solid var(--white);
   outline: 1px solid var(--primary);
-  background: #fff url(assets/img/arrow-icon.png) no-repeat center right !important;
+  background: var(--white) url(assets/img/arrow-icon.png) no-repeat center right !important;
 }
 .theme-form .form-wrapper textarea.form-control {
   resize: none;
@@ -676,13 +676,26 @@ body {
 }
 .faqs .accordion .accordion-item .accordion-body {
   max-width: 1180px;
+  color: var(--primary);
   padding: 40px 0 150px;
 }
-.faqs .accordion .accordion-item .accordion-body p {
+.faqs .accordion .accordion-item .accordion-body h1,
+.faqs .accordion .accordion-item .accordion-body h2,
+.faqs .accordion .accordion-item .accordion-body h3,
+.faqs .accordion .accordion-item .accordion-body h5,
+.faqs .accordion .accordion-item .accordion-body h5,
+.faqs .accordion .accordion-item .accordion-body h6 {
+  font-size: 45px;
+}
+.faqs .accordion .accordion-item .accordion-body p,
+.faqs .accordion .accordion-item .accordion-body ul {
   font-size: 28px;
   line-height: 36px;
   margin-bottom: 30px;
-  color: var(--primary);
+}
+.faqs .accordion .accordion-item .accordion-body .btn {
+  min-width: 370px;
+  line-height: 90px;
 }
 .client-says {
   padding: 135px 0;
@@ -873,21 +886,21 @@ body {
   margin-top: 50px;
   line-height: 65px;
   min-width: 205px;
-  color: #cc914a !important;
   border: 2px solid #ba7d5d;
+  color: var(--primary) !important;
   background: transparent !important;
 }
 .upcoming-table {
   width: 620px;
-  border: 1px solid #cc914a;
+  border: 1px solid var(--primary);
 }
 .upcoming-table thead tr th {
   padding: 7px;
   font-size: 90px;
   font-weight: 600;
   text-align: center;
-  border-right: 1px solid #cc914a;
-  border-bottom: 1px solid #cc914a;
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 .upcoming-table tbody tr td {
   padding: 7px;
@@ -975,10 +988,10 @@ body {
   max-width: 1380px;
 }
 .retreat-quote .quote-title {
-  color: #fff;
   font-size: 75px;
   line-height: 90px;
   text-align: center;
+  color: var(--white);
 }
 .retreat-inforgraphic {
   margin-top: 190px;
@@ -1099,8 +1112,8 @@ body {
   min-width: 230px;
   margin-top: 30px;
   line-height: 65px;
-  color: #cc914a !important;
-  border: 2px solid #cc914a;
+  border: 2px solid var(--primary);
+  color: var(--primary) !important;
   background: transparent !important;
 }
 .hero.event-hero {
@@ -1183,7 +1196,7 @@ body {
 .our-programs.community-event .programs-text {
   margin: auto;
   max-width: 970px;
-  color: #cc914a;
+  color: var(--primary);
 }
 .our-programs.community-event .programs-text .page-title {
   font-size: 75px;
@@ -1191,13 +1204,13 @@ body {
 }
 .our-programs.community-event .programs-text p {
   font-size: 28px;
-  color: #cc914a;
+  color: var(--primary);
   line-height: 38px;
 }
 .our-programs.community-event .our-programs-obstacle .btn {
   min-width: 295px;
   border-radius: 50px;
-  color: #cc914a !important;
+  color: var(--primary) !important;
 }
 .hero.hero-home-program {
   margin-top: 70px;
@@ -1262,6 +1275,10 @@ body {
   background: #dbb962;
   padding: 150px 0 180px;
 }
+.program-cta.bg-transparent .btn {
+  color: var(--white) !important;
+  background: var(--primary) !important;
+}
 .program-cta .container {
   max-width: 970px;
 }
@@ -1273,8 +1290,8 @@ body {
 .program-cta .btn {
   min-width: 390px;
   line-height: 70px;
-  color: #cc914a !important;
-  background: #fff !important;
+  color: var(--primary) !important;
+  background: var(--white) !important;
 }
 .what-we-offer {
   padding: 140px 0;
@@ -1285,14 +1302,14 @@ body {
   line-height: 65px;
 }
 .what-we-offer .offer-listing:first-child {
-  border-top: 1px solid #cc914a;
+  border-top: 1px solid var(--primary);
 }
 .what-we-offer .offer-listing {
   gap: 45px;
   display: flex;
   padding: 50px 0;
   justify-content: space-between;
-  border-bottom: 1px solid #cc914a;
+  border-bottom: 1px solid var(--primary);
 }
 .what-we-offer .offer-listing .offer-title {
   gap: 45px;
@@ -1309,11 +1326,11 @@ body {
   height: 87px;
   display: flex;
   font-size: 65px;
-  color: #cc914a;
   align-items: center;
   border-radius: 999px;
+  color: var(--primary);
   justify-content: center;
-  border: 1px solid #cc914a;
+  border: 1px solid var(--primary);
 }
 .offer-listing .what-we-offer-content {
   max-width: 500px;
@@ -1347,7 +1364,7 @@ body {
 .team-work {
   padding: 130px 0;
   margin-top: 180px;
-  background: #DBB962;
+  background: #dbb962;
 }
 .team-work .team-slider {
   margin: 100px 0 70px;
@@ -1377,18 +1394,151 @@ body {
   font-size: 30px;
   line-height: 40px;
 }
+.diverse-programs {
+  margin-top: 150px;
+}
+.diverse-programs .heading {
+  font-size: 75px;
+  line-height: 95px;
+}
+.diverse-programs .content {
+  font-size: 34px;
+  line-height: 85px;
+}
+.diverse-programs .diverse-programs-thumbs {
+  margin-top: 100px;
+}
+.diverse-programs .diverse-programs-thumbs .program-thumb {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+.diverse-programs .diverse-programs-thumbs .program-title {
+  margin: 20px 0;
+  font-size: 42px;
+  color: #dbb962;
+  line-height: 65px;
+  text-align: center;
+  font-family: "Neue Plak SemiBold";
+}
+.best-program {
+  padding: 200px 0;
+}
+.best-program .container {
+  max-width: 1050px;
+}
+.best-program .page-title {
+  padding-inline: 50px;
+}
+.best-program .faqs h4 {
+  margin: 20px 0;
+  font-size: 45px;
+  line-height: 85px;
+}
+.program-kinds.yellow {
+  background: #edbf4a;
+}
+.program-kinds.brown {
+  background: #c5664c;
+}
+.program-kinds.white * {
+  color: #f28269 !important;
+}
+.program-kinds.white .btn {
+  color: var(--white) !important;
+  background: #f28269 !important;
+}
+.program-kinds.dark-brown {
+  background: #df483c;
+}
+.program-kinds {
+  padding: 110px 0 160px;
+}
+.program-kinds .container {
+  max-width: 1600px;
+}
+.program-kinds .page-title {
+  color: var(--white);
+  margin-bottom: 150px;
+}
+.program-kinds .program-kinds-preview {
+  width: 485px;
+  height: 840px;
+  object-fit: cover;
+}
+.program-kinds .program-kinds-content {
+  max-width: 830px;
+  margin-top: 50px;
+}
+.program-kinds .program-kinds-content p {
+  font-size: 34px;
+  line-height: 50px;
+  color: var(--white);
+}
+.program-kinds .program-kinds-content .hoverable-list {
+  padding: 0;
+  margin: 50px 0;
+  font-size: 75px;
+  list-style: none;
+  line-height: 120px;
+}
+.program-kinds .program-kinds-content .hoverable-list li {
+  opacity: 0.5;
+  cursor: pointer;
+  color: var(--white);
+  font-family: "Neue Plak SemiBold";
+}
+.program-kinds .program-kinds-content .hoverable-list li.active {
+  opacity: 1;
+}
+.program-kinds .program-kinds-content .btn {
+  min-width: 370px;
+  line-height: 80px;
+  color: var(--primary) !important;
+  background: var(--white) !important;
+}
+.hero.program-hero {
+  background: #f8f7ef;
+  padding: 110px 0 140px;
+}
+.hero.program-hero .container {
+  max-width: 1670px;
+}
+.hero.program-hero .hero-wrapper .page-title {
+  font-size: 75px;
+  line-height: 85px;
+}
+.hero.program-hero .hero-wrapper .hero-content {
+  padding-right: 150px;
+}
+.hero.program-hero .hero-wrapper .hero-content p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.hero.program-hero .hero-wrapper .hero-content .btn {
+  color: #cc914a !important;
+  border: 2px solid #cc914a;
+  background: transparent !important;
+}
+.hero.program-hero .program-img {
+  width: 640px;
+  height: 590px;
+  object-fit: cover;
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1920px;
   }
-  .what-we-offer .container, .game-experience .container {
+  .what-we-offer .container,
+  .game-experience .container {
     padding-inline: 140px;
   }
   .container,
   .container-fluid {
     padding-inline: 60px;
   }
-  .upcoming-retreat .container {
+  .upcoming-retreat .container,
+  .diverse-programs .container {
     padding-inline: 100px;
   }
 }
