@@ -1319,8 +1319,28 @@ body {
 .programs-thumb-slider {
   background: #dbb962;
 }
-.programs-thumb-slider .coaching {
+.programs-thumb-slider .coaching, .home-program-swiper {
   padding: 100px 0;
+}
+.home-program-swiper .swiper-slide .home-program-img {
+  width: 510px;
+  height: 510px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+.home-program-swiper .swiper-slide .home-program-content {
+  font-size: 34px;
+  line-height: 48px;
+}
+.home-program-swiper .swiper-arrows-wrapper {
+  left: 50%;
+  width: 300px;
+  bottom: 15px;
+  position: absolute;
+  margin-left: -150px;
+}
+.home-program-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
 }
 .program-video {
   padding: 150px 0;

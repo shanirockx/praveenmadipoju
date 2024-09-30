@@ -51,6 +51,18 @@ var missionSwiper = new Swiper(".mission-swiper", {
   }
 });
 
+var newSwiper = new Swiper(".home-program-swiper", { 
+  loop: true,  
+  slidesPerView: 3.95, 
+  spaceBetween: 55, 
+  centeredSlides: true,       
+  roundLengths: true,
+  navigation: {
+    nextEl: ".home-program-swiper .swiper-button-prev",
+    prevEl: ".home-program-swiper .swiper-button-next",
+  }
+});
+
 $(function () {
   $("#tabcontainer .tabs").hide().eq(0).show();
   $("#tabcontainer-2 .tabs").hide().eq(0).show();
