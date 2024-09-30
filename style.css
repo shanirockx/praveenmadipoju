@@ -499,10 +499,15 @@ body {
 .cta-programs .cta-programs-text .page-title {
   line-height: 100px;
 }
+.cta-programs .cta-programs-text .cta-desc {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 30px 10px 0;
+}
 .cta-programs .cta-programs-text .btn {
   min-width: 370px;
-  line-height: 90px;
   margin-top: 70px;
+  line-height: 90px;
   background: var(--primary-light);
 }
 .newsletter {
@@ -1254,7 +1259,7 @@ body {
   object-fit: cover;
 }
 .program-cta {
-  background: #DBB962;
+  background: #dbb962;
   padding: 150px 0 180px;
 }
 .program-cta .container {
@@ -1268,12 +1273,116 @@ body {
 .program-cta .btn {
   min-width: 390px;
   line-height: 70px;
-  color: #CC914A !important;
+  color: #cc914a !important;
   background: #fff !important;
+}
+.what-we-offer {
+  padding: 140px 0;
+  background: #f8f7ef;
+}
+.what-we-offer .headline {
+  font-size: 55px;
+  line-height: 65px;
+}
+.what-we-offer .offer-listing:first-child {
+  border-top: 1px solid #cc914a;
+}
+.what-we-offer .offer-listing {
+  gap: 45px;
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #cc914a;
+}
+.what-we-offer .offer-listing .offer-title {
+  gap: 45px;
+  display: flex;
+  align-items: center;
+}
+.offer-listing .offer-title .tagline {
+  margin: 0;
+  font-size: 100px;
+  font-family: "Neue Plak SemiBold";
+}
+.offer-listing .offer-title .count {
+  width: 87px;
+  height: 87px;
+  display: flex;
+  font-size: 65px;
+  color: #cc914a;
+  align-items: center;
+  border-radius: 999px;
+  justify-content: center;
+  border: 1px solid #cc914a;
+}
+.offer-listing .what-we-offer-content {
+  max-width: 500px;
+}
+.what-we-offer-content p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 38px;
+}
+.game-motive .container {
+  max-width: 1600px;
+}
+.game-motive .coaching span:last-child {
+  padding-left: 800px;
+}
+.game-motive .game-motive-inforgrphic {
+  height: 620px;
+  object-fit: cover;
+}
+.game-motive .game-motive-content {
+  padding-left: 100px;
+}
+.game-motive .game-motive-content h3 {
+  font-size: 60px;
+  line-height: 75px;
+}
+.game-motive .game-motive-content p {
+  font-size: 28px;
+  line-height: 34px;
+}
+.team-work {
+  padding: 130px 0;
+  margin-top: 180px;
+  background: #DBB962;
+}
+.team-work .team-slider {
+  margin: 100px 0 70px;
+}
+.team-work .team-work-content {
+  width: 920px;
+  margin: auto;
+  font-size: 34px;
+  line-height: 48px;
+}
+.game-experience {
+  padding: 150px 0;
+}
+.game-experience .page-title {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 100px;
+}
+.game-experience .game-experience-infographic {
+  height: 600px;
+  object-fit: cover;
+}
+.game-experience .game-experience-content {
+  padding-left: 100px;
+}
+.game-experience .game-experience-content p {
+  font-size: 30px;
+  line-height: 40px;
 }
 @media (min-width: 1400px) {
   .container {
     max-width: 1920px;
+  }
+  .what-we-offer .container, .game-experience .container {
+    padding-inline: 140px;
   }
   .container,
   .container-fluid {
