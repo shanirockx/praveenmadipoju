@@ -132,6 +132,7 @@ body {
   .list-itens {
   gap: 10px;
   display: flex;
+  cursor: pointer;
   margin-bottom: 35px;
   flex-direction: column;
 }
@@ -1145,7 +1146,7 @@ body {
   opacity: 0.5;
   cursor: pointer;
   font-size: 60px;
-  color: #BA7D5D;
+  color: #ba7d5d;
   line-height: 95px;
   font-family: "Neue Plak SemiBold";
 }
@@ -1319,7 +1320,8 @@ body {
 .programs-thumb-slider {
   background: #dbb962;
 }
-.programs-thumb-slider .coaching, .home-program-swiper {
+.programs-thumb-slider .coaching,
+.home-program-swiper {
   padding: 100px 0;
 }
 .home-program-swiper .swiper-slide .home-program-img {
@@ -1417,7 +1419,7 @@ body {
   height: 87px;
   display: flex;
   font-size: 65px;
-  align-items: center;
+  line-height: 75px;
   border-radius: 999px;
   color: var(--primary);
   justify-content: center;
@@ -1869,6 +1871,104 @@ body {
   border: 2px solid #ba7d5d;
   background: transparent !important;
 }
+.classes-detail .main-heading {
+  font-size: 90px;
+  line-height: 115px;
+  font-family: "Neue Plak SemiBold";
+}
+.classes-detail .page-title {
+  color: #dbb962;
+}
+.classes-detail .page-content {
+  font-size: 22px;
+  margin-top: 50px;
+  line-height: 30px;
+}
+.program-gallery .program-gallery-listing {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 125px;
+  justify-content: space-between;
+}
+.program-gallery .program-gallery-listing .program-about .program-about-img {
+  width: 740px;
+  object-fit: cover;
+}
+.program-gallery .program-gallery-listing .program-about {
+  margin-bottom: 200px;
+}
+.program-gallery .program-gallery-listing .program-about:nth-of-type(3) {
+  margin-top: 530px;
+}
+.program-gallery .program-gallery-listing .program-about:nth-of-type(6) {
+  margin-top: -530px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content {
+  max-width: 740px;
+  padding: 20px 25px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content
+  h3 {
+  font-size: 60px;
+  line-height: 100px;
+  margin-bottom: 20px;
+  font-family: "Neue Plak SemiBold";
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content
+  p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  padding-left: 40px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(1)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(3)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(4)
+  .program-about-img {
+  height: 655px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(5)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(6)
+  .program-about-img {
+  height: 770px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(2)
+  .program-about-img {
+  height: 940px;
+}
+.program-cta.classes-cta .page-title {
+  margin-bottom: 50px;
+}
+.program-cta.classes-cta .btn {
+  min-width: 330px;
+  color: #fff !important;
+  background: #cc914a !important;
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1920px;
@@ -1885,7 +1985,8 @@ body {
     padding-inline: 60px;
   }
   .upcoming-retreat .container,
-  .diverse-programs .container {
+  .diverse-programs .container,
+  .program-gallery .container {
     padding-inline: 100px;
   }
 }

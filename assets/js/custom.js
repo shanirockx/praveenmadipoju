@@ -121,3 +121,14 @@ hoverableLists.forEach((list) => {
     }
   });
 });
+
+document.querySelectorAll('.list-itens').forEach(item => {
+  item.addEventListener('mouseover', function() {
+    const newImage = this.getAttribute('data-image');
+    document.getElementById('megaMenuImage').src = newImage;
+  });
+
+  item.addEventListener('mouseout', function() {
+    document.getElementById('megaMenuImage').src = 'assets/img/program-trainee.png';
+  });
+});
