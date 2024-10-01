@@ -377,7 +377,6 @@ body {
   width: 85%;
   max-height: 680px;
   object-fit: cover;
-  border-radius: 20px;
 }
 .our-programs .program-swiper .swiper-arrows::after {
   display: none;
@@ -1474,6 +1473,7 @@ body {
   width: 87px;
   height: 87px;
   display: flex;
+  flex-shrink: 0;
   font-size: 65px;
   line-height: 75px;
   border-radius: 999px;
@@ -2199,6 +2199,120 @@ body {
 .cta-obstacle .page-title {
   margin-bottom: 50px;
 }
+.membership-tabs .nav-tabs {
+  border: none;
+  justify-content: center;
+}
+.membership-tabs .nav-tabs .nav-link {
+  border: none;
+  font-size: 45px;
+  color: #eacba6;
+  line-height: 135px;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .nav-tabs .nav-link.active {
+  color: #cc914a;
+}
+.membership-tabs .tab-pane .obstacle-program-text {
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  margin: 50px 0 100px;
+}
+.membership-tabs .tab-pane .member-plan {
+  height: 100%;
+  color: #ba7d5d;
+  position: relative;
+  border-radius: 15px;
+  padding: 20px 50px 60px;
+  border: 1px solid #d8d8d8;
+}
+.membership-tabs .tab-pane .member-plan .plan-title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 90px;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .tab-pane .member-plan .plan-price {
+  font-size: 22px;
+  line-height: 90px;
+  position: relative;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .tab-pane .member-plan .plan-price .price-symbol {
+  top: 0;
+  line-height: 75px;
+  position: absolute;
+}
+.membership-tabs .tab-pane .member-plan .plan-price .price {
+  font-size: 45px;
+  line-height: 90px;
+  padding-left: 50px;
+}
+.membership-tabs .tab-pane .member-plan .btn-outline-primary {
+  font-size: 20px;
+  line-height: 65px;
+  margin: 10px 0 40px;
+  border: 2px solid #ba7d5d;
+  color: #ba7d5d !important;
+  background: transparent !important;
+}
+.membership-tabs .tab-pane .member-plan .plan-detail {
+  margin: 0;
+  font-size: 22px;
+  color: #cc914a;
+  line-height: 34px;
+  padding-right: 40px;
+}
+.membership-tabs .tab-pane .member-plan .best-value {
+  left: 0;
+  top: -22px;
+  font-size: 25px;
+  min-width: 185px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  border-radius: 20px;
+  background: #e9bc4a;
+  display: inline-block;
+}
+.membership-tabs .tab-pane .member-plan-support .page-title {
+  font-size: 42px;
+  color: #ba7d5d;
+  line-height: 85px;
+  padding-left: 100px;
+  margin: 35px 0 20px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan {
+  height: inherit;
+  padding: 50px 100px 70px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan .plan-subheading {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 10px 0 40px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 170px;
+  margin-top: 50px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper .plan-detail {
+  padding: 0;
+  list-style: none;
+  max-width: calc(33.333% - 113.333px);
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper .plan-detail li + li {
+  margin-top: 40px;
+}
+.membership-tabs .tab-pane .member-plan-support .disclaimer {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #CC914A;
+  line-height: 34px; 
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1920px;
@@ -2207,7 +2321,8 @@ body {
   .game-experience .container,
   .book-consultation .container,
   .schedule .container,
-  .coaching.seasoned-athlete .container {
+  .coaching.seasoned-athlete .container,
+  .membership-tabs .container {
     padding-inline: 140px;
   }
   .container,
