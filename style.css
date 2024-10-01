@@ -377,6 +377,7 @@ body {
   width: 85%;
   max-height: 680px;
   object-fit: cover;
+  border-radius: 20px;
 }
 .our-programs .program-swiper .swiper-arrows::after {
   display: none;
@@ -423,7 +424,7 @@ body {
 }
 .champion .champion-text {
   margin: auto;
-  max-width: 800px;
+  max-width: 820px;
 }
 .champion .champion-text .page-title {
   margin-bottom: 55px;
@@ -434,24 +435,36 @@ body {
   line-height: 40px;
 }
 .champion .champion-gallery {
-  gap: 69px;
+  gap: 70px;
   display: flex;
-  margin-top: 150px;
   justify-content: center;
+}
+.champion .champion-gallery:nth-of-type(1) {
+  margin-top: 150px;
 }
 .champion .champion-gallery .gallery-item {
   width: 268px;
   height: 548px;
   overflow: hidden;
+  margin-top: -192px;
   border-radius: 15px;
 }
+.champion .champion-gallery:nth-of-type(1) .gallery-item {
+  margin-top: 0;
+}
 .champion .champion-gallery .gallery-item:nth-child(even) {
+  margin-top: 70px;
+}
+.champion .champion-gallery:nth-of-type(1) .gallery-item:nth-child(even) {
   margin-top: 262px;
 }
 .champion .champion-gallery .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.champion.obstacle-champion {
+  padding-block: 150px;
 }
 .our-clients {
   background: #f8f7ef;
@@ -523,7 +536,7 @@ body {
 }
 .cta-programs .cta-programs-text {
   margin: auto;
-  max-width: 990px;
+  max-width: 800px;
 }
 .cta-programs .cta-programs-text .page-title {
   line-height: 100px;
@@ -1414,7 +1427,7 @@ body {
   font-size: 100px;
   font-family: "Neue Plak SemiBold";
 }
-.offer-listing .offer-title .count {
+.offer-listing .offer-title .count, .game-experience.obstacle-game .game-experience-steps .steps .count {
   width: 87px;
   height: 87px;
   display: flex;
@@ -1458,9 +1471,6 @@ body {
   padding: 130px 0;
   margin-top: 180px;
   background: #dbb962;
-}
-.team-work .team-slider {
-  margin: 100px 0 70px;
 }
 .team-work .team-work-content {
   width: 920px;
@@ -1968,6 +1978,178 @@ body {
   min-width: 330px;
   color: #fff !important;
   background: #cc914a !important;
+}
+.membership-guide {
+  padding: 140px 0;
+  color: #ba7d5d;
+  background: #ecd5bf;
+}
+.membership-guide .membership-guide-detail {
+  max-width: 700px;
+}
+.membership-guide .membership-guide-detail:nth-of-type(2) {
+  margin: 70px auto 0;
+}
+.membership-guide .membership-guide-detail:nth-of-type(3) {
+  margin: 100px 0 0 auto;
+}
+.membership-guide .membership-guide-detail p {
+  font-size: 30px;
+  margin: 15px 0 0;
+  line-height: 42px;
+}
+.hero.obstacle-hero .container, .event-gallery.event-obstacle .container {
+  max-width: 1750px;
+}
+.hero.obstacle-hero .hero-wrapper {
+  max-width: 100%;
+}
+.hero.obstacle-hero .obstacle-img {
+  width: 925px;
+  height: 595px;
+  object-fit: cover;
+}
+.event-gallery.event-obstacle .page-title {
+  font-size: 45px;
+  max-width: 470px;
+  line-height: 60px;
+}
+.event-gallery.event-obstacle .event-gallery-text {
+  margin: auto;
+  font-size: 42px;
+  max-width: 965px;
+  line-height: 55px;
+  padding: 140px 0 0 0;
+}
+.event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) {
+  margin-block: -170px 120px;
+  justify-content: flex-end;
+}
+.event-gallery.event-obstacle .event-gallery-item img {
+  border-radius: 0;
+}
+.event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) img {
+  width: 640px;
+  height: 548px;
+}
+.event-gallery.event-obstacle .event-gallery-item:nth-of-type(2) img:nth-child(1) {
+  width: 335px;
+  height: 520px;
+  margin: -350px 0 0 100px;
+}
+.event-gallery.event-obstacle .event-gallery-item:nth-of-type(2) img:nth-child(2) {
+  width: 765px;
+  height: 475px;
+}
+.game-experience.obstacle-game .game-experience-steps {
+  gap: 30px;
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-between;
+}
+.game-experience.obstacle-game .game-experience-steps .steps {
+  max-width: 470px;
+}
+.game-experience.obstacle-game .game-experience-steps .steps p {
+  font-size: 30px;
+  margin: 40px 0 0;
+  line-height: 40px;
+}
+.game-experience.obstacle-game .game-experience-content p {
+  font-size: 40px;
+  line-height: 55px;
+}
+.game-experience.obstacle-game .game-experience-content .btn {
+  min-width: 290px;
+  line-height: 90px;
+  margin: 65px 0 -25px 0;
+}
+.obstacle-program {
+  background: #DBB962;
+}
+.obstacle-program .page-title {
+  margin: auto;
+  max-width: 1000px;
+}
+.champion .champion-text.champion-last {
+  margin-top: 150px;
+}
+.champion .champion-text.champion-last .page-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.champion .champion-text.champion-last .champion-cta {
+  gap: 15px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.champion .champion-text.champion-last .champion-cta .btn.btn-outline-primary {
+  color: #CC914A !important;
+  border: 2px solid #CC914A;
+  background: transparent !important;
+}
+.champion .champion-text.champion-last .champion-cta .btn {
+  min-width: 275px;
+  line-height: 70px;
+}
+.membership-benefits {
+  background: #dbb962;
+  padding: 100px 0 200px;
+}
+.membership-benefits .container {
+  max-width: 1500px;
+}
+.membership-benefits .page-title.heading {
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+}
+.membership-benefits .benefits-listing {
+  gap: 66px;
+  display: flex;
+  margin-top: 85px;
+}
+.membership-benefits .benefits-listing:nth-child(odd) {
+  gap: 140px;
+  align-items: flex-end;
+}
+.membership-benefits .benefits-listing .page-title {
+  font-size: 90px;
+  max-width: 770px;
+  line-height: 90px;
+}
+.membership-benefits .benefits-listing:nth-child(even) p {
+  margin-top: 35px;
+  max-width: 440px;
+}
+.membership-benefits .benefits-listing:nth-child(odd) p {
+  margin-top: 50px;
+  max-width: 550px;
+}
+.membership-benefits
+  .benefits-listing:nth-child(odd)
+  .benefits-listing-content {
+  margin-bottom: -75px;
+}
+.membership-benefits .benefits-listing img {
+  width: 531px;
+  height: 558px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+.membership-benefits .benefits-listing p {
+  font-size: 30px;
+}
+.cta-programs.cta-membership .btn {
+  min-width: 450px;
+}
+.cta-obstacle p {
+  font-size: 30px;
+  line-height: 38px;
+}
+.cta-obstacle .page-title {
+  margin-bottom: 50px;
 }
 @media (min-width: 1400px) {
   .container {
