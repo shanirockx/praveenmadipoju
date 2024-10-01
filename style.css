@@ -749,6 +749,48 @@ body {
   color: #c08769;
   text-align: center;
 }
+.client-swiper .swiper-wrapper {
+  padding: 100px 0 180px;
+}
+.client-swiper .client-quotes-wrapper {
+  gap: 100px;
+  margin: auto;
+  display: flex;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 1350px;
+  align-items: center;
+}
+.client-swiper .client-quotes-wrapper img {
+  width: 550px;
+  height: 700px;
+  border-radius: 15px;
+}
+.client-swiper .client-quotes-wrapper .client-quotes {
+  max-width: 715px;
+  color: #ba7d5d;
+}
+.client-swiper .client-quotes-wrapper .client-quotes h4 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "Neue Plak SemiBold";
+}
+.client-swiper .swiper-arrows-wrapper {
+  width: 100%;
+  bottom: 15px;
+  position: absolute;
+}
+.client-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
+}
+.client-swiper .swiper-pagination {
+  left: 50%;
+  width: auto;
+  font-size: 32px;
+  color: #ba7d5d;
+  line-height: 36px;
+  transform: translateX(-50%);
+}
 .contact-us .guide-form-wrapper {
   margin: auto;
   max-width: 840px;
@@ -1427,7 +1469,8 @@ body {
   font-size: 100px;
   font-family: "Neue Plak SemiBold";
 }
-.offer-listing .offer-title .count, .game-experience.obstacle-game .game-experience-steps .steps .count {
+.offer-listing .offer-title .count,
+.game-experience.obstacle-game .game-experience-steps .steps .count {
   width: 87px;
   height: 87px;
   display: flex;
@@ -1998,7 +2041,8 @@ body {
   margin: 15px 0 0;
   line-height: 42px;
 }
-.hero.obstacle-hero .container, .event-gallery.event-obstacle .container {
+.hero.obstacle-hero .container,
+.event-gallery.event-obstacle .container {
   max-width: 1750px;
 }
 .hero.obstacle-hero .hero-wrapper {
@@ -2032,12 +2076,16 @@ body {
   width: 640px;
   height: 548px;
 }
-.event-gallery.event-obstacle .event-gallery-item:nth-of-type(2) img:nth-child(1) {
+.event-gallery.event-obstacle
+  .event-gallery-item:nth-of-type(2)
+  img:nth-child(1) {
   width: 335px;
   height: 520px;
   margin: -350px 0 0 100px;
 }
-.event-gallery.event-obstacle .event-gallery-item:nth-of-type(2) img:nth-child(2) {
+.event-gallery.event-obstacle
+  .event-gallery-item:nth-of-type(2)
+  img:nth-child(2) {
   width: 765px;
   height: 475px;
 }
@@ -2065,7 +2113,7 @@ body {
   margin: 65px 0 -25px 0;
 }
 .obstacle-program {
-  background: #DBB962;
+  background: #dbb962;
 }
 .obstacle-program .page-title {
   margin: auto;
@@ -2085,8 +2133,8 @@ body {
   justify-content: center;
 }
 .champion .champion-text.champion-last .champion-cta .btn.btn-outline-primary {
-  color: #CC914A !important;
-  border: 2px solid #CC914A;
+  color: #cc914a !important;
+  border: 2px solid #cc914a;
   background: transparent !important;
 }
 .champion .champion-text.champion-last .champion-cta .btn {

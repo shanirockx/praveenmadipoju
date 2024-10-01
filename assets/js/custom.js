@@ -51,7 +51,7 @@ var missionSwiper = new Swiper(".mission-swiper", {
   }
 });
 
-var newSwiper = new Swiper(".home-program-swiper", { 
+var homeProgramSwiper = new Swiper(".home-program-swiper", { 
   loop: true,  
   slidesPerView: 3.95, 
   spaceBetween: 55, 
@@ -60,6 +60,23 @@ var newSwiper = new Swiper(".home-program-swiper", {
   navigation: {
     nextEl: ".home-program-swiper .swiper-button-prev",
     prevEl: ".home-program-swiper .swiper-button-next",
+  }
+});
+
+var clientSwiper = new Swiper(".client-swiper", { 
+  loop: true, 
+  slidesPerView: 1,
+  centeredSlides: true, 
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'custom',
+    renderCustom: function (swiper, current, total) {
+      return current + ' / ' + total;
+    },
+  },
+  navigation: {
+    nextEl: ".client-swiper .swiper-button-next",
+    prevEl: ".client-swiper .swiper-button-prev",
   }
 });
 
