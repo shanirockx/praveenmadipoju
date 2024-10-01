@@ -51,7 +51,7 @@ body {
   padding: 40px 40px 40px 20px;
 }
 .header .navbar .navbar-brand img {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 .header .navbar .navbar-brand .white-logo {
   width: 243px;
@@ -79,7 +79,7 @@ body {
 }
 .header .navbar .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle svg {
   margin-left: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 .header
   .navbar
@@ -161,9 +161,10 @@ body {
 .header .navbar .navbar-nav .nav-link {
   padding: 0;
   font-size: 20px;
+  text-wrap: nowrap;
   line-height: 65px;
   color: var(--primary);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   font-family: "Neue Plak SemiBold";
 }
 .header .navbar .navbar-nav .nav-link.active {
@@ -174,7 +175,7 @@ body {
   min-width: 160px;
   line-height: 50px;
   background: #ca674c;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   font-family: "Neue Plak SemiBold";
 }
 .header.show-mega-menu .navbar .navbar-brand .white-logo {
@@ -810,6 +811,7 @@ body {
   padding: 150px 0 200px;
 }
 .lets-chat .lets-chat-inner {
+  gap: 75px;
   margin: auto;
   display: flex;
   color: #f7f6f2;
@@ -2394,6 +2396,57 @@ body {
   }
   .header .navbar .navbar-nav .nav-item + .nav-item {
     margin-left: 0;
+  }
+  .header.mobile-menu {
+    background: #DBB962;
+  }
+  .header.mobile-menu .navbar .navbar-collapse {
+    min-height: calc(100svh - 95px);
+  }
+  .header.mobile-menu .navbar .navbar-brand img.colored-logo, .header .navbar .navbar-toggler .menu-close, .header.mobile-menu .navbar .navbar-toggler .menu-bar {
+    display: none;
+  }
+  .header.mobile-menu .navbar .navbar-brand .white-logo, .header.mobile-menu .navbar .navbar-toggler .menu-close {
+    display: block;
+  }
+  .header.mobile-menu .navbar .navbar-nav {
+    margin-block: 40px !important;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-link {
+    padding: 0 50px;
+    font-size: 32px;
+    line-height: 55px;
+    color: var(--white);
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle svg path {
+    fill: var(--white);
+  }
+  .header.mobile-menu .btn {
+    margin: 0 50px 50px;
+    width: calc(100% - 100px);
+    color: #CA674C !important;
+    background: #fff !important;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    padding: 10px 60px 20px;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper {
+    gap: 0;
+    flex-direction: column;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing {
+    min-width: 100%;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens {
+    margin: 0;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens h4 {
+    font-family: "Neue Plak SemiBold";
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens p {
+    display: none;
   }
   .our-clients .members-swiper {
     max-height: 600px;

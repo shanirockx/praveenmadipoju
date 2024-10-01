@@ -19,6 +19,7 @@
           </a>
           <button
             class="navbar-toggler"
+            id="toggle-menu"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -27,15 +28,31 @@
             aria-label="Toggle navigation"
           >
             <svg
-              width="27"
-              height="16"
-              viewBox="0 0 27 16"
-              fill="none"
+              class="menu-bar"
               xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#cc914a"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
             >
-              <rect width="27" height="4" fill="#CC914A" />
-              <rect y="6" width="27" height="4" fill="#CC914A" />
-              <rect y="12" width="27" height="4" fill="#CC914A" />
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <svg
+              class="menu-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#fff"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
             </svg>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,7 +87,7 @@
                 >
                   <div class="row">
                     <div
-                      class="align-items-center col-md-6 d-flex justify-content-center"
+                      class="align-items-center col-md-6 d-flex d-none d-xl-flex justify-content-center"
                     >
                       <img
                         src="assets/img/program-trainee.png"
@@ -226,39 +243,19 @@
             <div class="swiper program-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img
-                    src="assets/img/game-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/game-1.png" class="img-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="assets/img/game-2.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/game-2.png" class="img-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="assets/img/game-3.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/game-3.png" class="img-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="assets/img/game-4.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/game-4.png" class="img-fluid" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="assets/img/game-5.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/game-5.png" class="img-fluid" alt="" />
                 </div>
               </div>
               <div class="swiper-arrows-wrapper">
@@ -293,7 +290,12 @@
               </div>
             </div>
             <div class="team-work-content text-start">
-              <p>Competition can tear the best individuals apart. With our Gov Games training, you master the techniques to overcome any obstacle and build unbeatable teamwork as well as problem solving skills to finish strong, to finish top.</p>
+              <p>
+                Competition can tear the best individuals apart. With our Gov
+                Games training, you master the techniques to overcome any
+                obstacle and build unbeatable teamwork as well as problem
+                solving skills to finish strong, to finish top.
+              </p>
             </div>
           </div>
         </div>

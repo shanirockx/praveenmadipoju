@@ -36,48 +36,48 @@ var membersSwiper = new Swiper(".members-swiper", {
   },
 });
 
-var missionSwiper = new Swiper(".mission-swiper", { 
-  loop: true, 
+var missionSwiper = new Swiper(".mission-swiper", {
+  loop: true,
   slidesPerView: 2.5,
   centeredSlides: true,
-  spaceBetween: 200, 
+  spaceBetween: 200,
   pagination: {
-    el: '.swiper-pagination',
-    type: 'custom',
+    el: ".swiper-pagination",
+    type: "custom",
   },
   navigation: {
     nextEl: ".mission-swiper .swiper-button-next",
     prevEl: ".mission-swiper .swiper-button-prev",
-  }
+  },
 });
 
-var homeProgramSwiper = new Swiper(".home-program-swiper", { 
-  loop: true,  
-  slidesPerView: 3.95, 
-  spaceBetween: 55, 
-  centeredSlides: true,       
+var homeProgramSwiper = new Swiper(".home-program-swiper", {
+  loop: true,
+  slidesPerView: 3.95,
+  spaceBetween: 55,
+  centeredSlides: true,
   roundLengths: true,
   navigation: {
     nextEl: ".home-program-swiper .swiper-button-prev",
     prevEl: ".home-program-swiper .swiper-button-next",
-  }
+  },
 });
 
-var clientSwiper = new Swiper(".client-swiper", { 
-  loop: true, 
+var clientSwiper = new Swiper(".client-swiper", {
+  loop: true,
   slidesPerView: 1,
-  centeredSlides: true, 
+  centeredSlides: true,
   pagination: {
-    el: '.swiper-pagination',
-    type: 'custom',
+    el: ".swiper-pagination",
+    type: "custom",
     renderCustom: function (swiper, current, total) {
-      return current + ' / ' + total;
+      return current + " / " + total;
     },
   },
   navigation: {
     nextEl: ".client-swiper .swiper-button-next",
     prevEl: ".client-swiper .swiper-button-prev",
-  }
+  },
 });
 
 $(function () {
@@ -139,13 +139,20 @@ hoverableLists.forEach((list) => {
   });
 });
 
-document.querySelectorAll('.list-itens').forEach(item => {
-  item.addEventListener('mouseover', function() {
-    const newImage = this.getAttribute('data-image');
-    document.getElementById('megaMenuImage').src = newImage;
+document.querySelectorAll(".list-itens").forEach((item) => {
+  item.addEventListener("mouseover", function () {
+    const newImage = this.getAttribute("data-image");
+    document.getElementById("megaMenuImage").src = newImage;
   });
 
-  item.addEventListener('mouseout', function() {
-    document.getElementById('megaMenuImage').src = 'assets/img/program-trainee.png';
+  item.addEventListener("mouseout", function () {
+    document.getElementById("megaMenuImage").src =
+      "assets/img/program-trainee.png";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("toggle-menu").addEventListener("click", function () {
+    document.querySelector("header").classList.toggle("mobile-menu");
   });
 });
