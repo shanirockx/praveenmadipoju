@@ -13,7 +13,7 @@ body {
 }
 .container,
 .container-fluid {
-  padding-inline: 20px;
+  padding-inline: 35px;
 }
 .page-title {
   font-size: 75px;
@@ -643,10 +643,15 @@ body {
   color: var(--light);
   margin-bottom: 23px;
 }
+.guide .guide-img {
+  height: 750px;
+  object-fit: cover;
+}
 .guide .guide-form-wrapper {
   max-width: 770px;
 }
 .guide .guide-form-wrapper .page-title {
+  font-size: 65px;
   margin-bottom: 50px;
 }
 .theme-form .form-wrapper {
@@ -820,6 +825,7 @@ body {
   justify-content: space-between;
 }
 .lets-chat .lets-chat-inner h2 {
+  flex-shrink: 0;
   font-size: 115px;
 }
 .lets-chat .lets-chat-inner p {
@@ -2295,29 +2301,47 @@ body {
   line-height: 38px;
   margin: 10px 0 40px;
 }
-.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper {
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 170px;
   margin-top: 50px;
 }
-.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper .plan-detail {
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper
+  .plan-detail {
   padding: 0;
   list-style: none;
   max-width: calc(33.333% - 113.333px);
 }
-.membership-tabs .tab-pane .member-plan-support .member-plan .plan-detail-wrapper .plan-detail li + li {
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper
+  .plan-detail
+  li
+  + li {
   margin-top: 40px;
 }
 .membership-tabs .tab-pane .member-plan-support .disclaimer {
   margin: 30px 0;
   font-size: 20px;
-  color: #CC914A;
-  line-height: 34px; 
+  color: #cc914a;
+  line-height: 34px;
 }
 @media (min-width: 1400px) {
-  .container {
+  .container,
+  .container-fluid {
     max-width: 1920px;
+    padding-inline: 60px;
   }
   .what-we-offer .container,
   .game-experience .container,
@@ -2327,14 +2351,28 @@ body {
   .membership-tabs .container {
     padding-inline: 140px;
   }
-  .container,
-  .container-fluid {
-    padding-inline: 60px;
-  }
   .upcoming-retreat .container,
   .diverse-programs .container,
   .program-gallery .container {
     padding-inline: 100px;
+  }
+}
+@media (max-width: 1560px) {
+  .guide .guide-form-wrapper .page-title {
+    font-size: 56px;
+  }
+  .lets-chat .lets-chat-inner {
+    gap: 50px;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    font-size: 90px;
+  }
+  .lets-chat .lets-chat-inner p {
+    font-size: 24px;
+  }
+  .lets-chat .lets-chat-inner .btn {
+    font-size: 24px;
+    min-width: 180px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -2375,8 +2413,16 @@ body {
     width: 370px;
     height: 573px;
   }
+  .guide .guide-form-wrapper .page-title {
+    font-size: 48px;
+  }
+  .guide .guide-img {
+    height: 600px;
+  }
   .champion .champion-gallery {
     gap: 40px;
+    padding-top: 70px;
+    margin-top: 0 !important;
   }
   .coaching .coaching-grid h3 {
     font-size: 26px;
@@ -2398,15 +2444,18 @@ body {
     margin-left: 0;
   }
   .header.mobile-menu {
-    background: #DBB962;
+    background: #dbb962;
   }
   .header.mobile-menu .navbar .navbar-collapse {
     min-height: calc(100svh - 95px);
   }
-  .header.mobile-menu .navbar .navbar-brand img.colored-logo, .header .navbar .navbar-toggler .menu-close, .header.mobile-menu .navbar .navbar-toggler .menu-bar {
+  .header.mobile-menu .navbar .navbar-brand img.colored-logo,
+  .header .navbar .navbar-toggler .menu-close,
+  .header.mobile-menu .navbar .navbar-toggler .menu-bar {
     display: none;
   }
-  .header.mobile-menu .navbar .navbar-brand .white-logo, .header.mobile-menu .navbar .navbar-toggler .menu-close {
+  .header.mobile-menu .navbar .navbar-brand .white-logo,
+  .header.mobile-menu .navbar .navbar-toggler .menu-close {
     display: block;
   }
   .header.mobile-menu .navbar .navbar-nav {
@@ -2418,35 +2467,102 @@ body {
     line-height: 55px;
     color: var(--white);
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle svg path {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .nav-link.dropdown-toggle
+    svg
+    path {
     fill: var(--white);
   }
   .header.mobile-menu .btn {
     margin: 0 50px 50px;
     width: calc(100% - 100px);
-    color: #CA674C !important;
+    color: #ca674c !important;
     background: #fff !important;
   }
   .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
     padding: 10px 60px 20px;
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper {
     gap: 0;
     flex-direction: column;
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing {
     min-width: 100%;
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens {
     margin: 0;
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens h4 {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens
+    h4 {
     font-family: "Neue Plak SemiBold";
     font-size: 20px;
     line-height: 40px;
   }
-  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-listing-wrapper .mega-menu-listing .list-itens p {
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens
+    p {
     display: none;
+  }
+  .guide .guide-img {
+    height: 550px;
+  }
+  .guide .guide-form-wrapper .page-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .lets-chat {
+    padding: 100px 0;
+  }
+  .lets-chat .lets-chat-inner {
+    flex-wrap: wrap;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    width: 100%;
+    font-size: 70px;
+  }
+  .client-swiper .client-quotes-wrapper {
+    gap: 50px;
+    font-size: 24px;
+  }
+  .client-swiper .swiper-pagination {
+    font-size: 24px;
+  }
+  .client-swiper .client-quotes-wrapper img {
+    height: 550px;
   }
   .our-clients .members-swiper {
     max-height: 600px;
@@ -2473,7 +2589,7 @@ body {
   .page-title,
   .our-programs .programs-text .page-title,
   .our-programs .our-programs-obstacle .page-title {
-    font-size: 45px;
+    font-size: 45px !important;
     line-height: 50px !important;
   }
   .hero .hero-wrapper .page-title {
@@ -2490,11 +2606,29 @@ body {
     width: 300px;
     height: 473px;
   }
+  .faqs,
+  .contact-us,
+  .guide {
+    padding: 0px 0 70px;
+  }
+  .guide .guide-form-wrapper {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .theme-form .btn {
+    margin-top: 30px;
+  }
+  .client-swiper .client-quotes-wrapper {
+    flex-wrap: wrap;
+  }
+  .client-swiper .client-quotes-wrapper img {
+    margin: auto;
+  }
   .coaching .page-title {
-    margin-left: -100px;
+    margin-left: -50px;
   }
   .coaching .page-title span {
-    padding-left: 200px;
+    padding-left: 100px;
   }
   .coaching .coaching-grid {
     margin: 60px auto 0;
@@ -2506,8 +2640,11 @@ body {
     font-size: 18px;
     line-height: 25px;
   }
+  .champion .champion-gallery:nth-of-type(1) .gallery-item:nth-child(even) {
+    margin-top: 0;
+  }
   .wellness {
-    padding: 60px 40px;
+    padding: 60px 0;
   }
   .wellness .wellness-text {
     padding: 30px 0 0 30px;
@@ -2524,9 +2661,6 @@ body {
   }
   .champion .container {
     max-width: 100%;
-  }
-  .champion .champion-text {
-    padding-inline: 50px;
   }
   .champion .champion-text .page-title {
     margin-bottom: 30px;
@@ -2578,14 +2712,14 @@ body {
     margin-left: -280px;
   }
   .our-clients {
-    padding-block: 60px 90px;
+    padding-block: 60px;
   }
   .members-swiper-wrapper .row {
     flex-direction: column-reverse;
   }
   .our-clients .members-swiper .swiper-slide .client-text {
     max-width: 100%;
-    padding: 60px 60px 130px;
+    padding: 60px 0 80px;
   }
   .our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
     margin: 30px 15px 0;
@@ -2600,7 +2734,7 @@ body {
   }
   .newsletter,
   .cta-programs {
-    padding: 60px 50px;
+    padding: 60px 0;
   }
   .newsletter .newsletter-text {
     max-width: 100%;
@@ -2628,7 +2762,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
-    padding-bottom: 30px;
+    padding: 0 0 30px;
   }
   .hero .hero-img {
     gap: 15px;
@@ -2637,6 +2771,32 @@ body {
   .hero .hero-img .img-item {
     width: 193px;
     height: 261px;
+  }
+  .contact-us .guide-form-wrapper .page-title {
+    margin-bottom: 15px;
+  }
+  .contact-us .guide-form-wrapper p {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .contact-us .guide-form-wrapper .theme-form {
+    padding: 0;
+  }
+  .faqs .container .page-title {
+    margin-bottom: 50px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    padding: 12px 0;
+    font-size: 30px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+    background-position: bottom;
+  }
+  .client-swiper .swiper-wrapper {
+    padding: 50px 0 80px;
+  }
+  .client-says {
+    padding: 70px 0;
   }
   .newsletter .newsletter-form {
     margin: 20px 0;
@@ -2652,7 +2812,7 @@ body {
     margin-left: -200px;
   }
   .footer {
-    padding: 40px;
+    padding: 40px 0;
   }
   .footer .footer-links {
     margin-bottom: 45px;
@@ -2683,12 +2843,34 @@ body {
 }
 @media (max-width: 575.98px) {
   .page-title {
-    font-size: 26px;
+    font-size: 26px !important;
     line-height: 32px !important;
   }
   .hero .hero-wrapper .page-title {
     font-size: 30px !important;
     line-height: 40px !important;
+  }
+  .lets-chat {
+    padding: 50px 0;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    font-size: 40px;
+    line-height: 32px;
+  }
+  .lets-chat .lets-chat-inner p:first-child {
+    margin-bottom: 20px !important;
+  }
+  .lets-chat .lets-chat-inner .btn,
+  .theme-form .btn {
+    font-size: 18px;
+    min-width: 150px;
+    line-height: 50px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 20px;
+  }
+  .faqs .accordion .accordion-item .accordion-body {
+    padding: 20px 0 50px;
   }
   .our-programs .programs-text .page-title {
     font-size: 30px;
@@ -2705,16 +2887,28 @@ body {
     overflow: hidden;
   }
   .champion .champion-gallery {
-    margin: 0 -12%;
     padding: 15% 0 10%;
+    margin: 0 -12% !important;
   }
   .champion .champion-text p,
-  .our-clients .members-swiper .swiper-slide .client-text p {
+  .our-clients .members-swiper .swiper-slide .client-text p,
+  .lets-chat .lets-chat-inner p,
+  .contact-us .guide-form-wrapper p, .faqs .accordion .accordion-item .accordion-body p, .faqs .accordion .accordion-item .accordion-body ul {
     font-size: 18px;
     line-height: 25px;
   }
+  .faqs .accordion .accordion-item .accordion-body p, .faqs .accordion .accordion-item .accordion-body ul {
+    margin-bottom: 20px;
+  }
+  .theme-form .form-wrapper label {
+    font-size: 18px;
+    line-height: 45px;
+  }
   .members-swiper-wrapper {
     margin-top: 50px;
+  }
+  .theme-form .form-wrapper select.form-control {
+    background-size: 20px !important;
   }
   .our-clients .client-video {
     width: 265px;
@@ -2745,5 +2939,13 @@ body {
   }
   .footer .copyright .copyright-text p {
     font-size: 14px;
+  }
+  .client-swiper .swiper-pagination {
+    bottom: -5px;
+    font-size: 18px;
+    font-family: "Neue Plak SemiBold";
+  }
+  .swiper-arrows-wrapper .swiper-arrows {
+    width: 20px;
   }
 }
