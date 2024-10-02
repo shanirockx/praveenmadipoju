@@ -345,7 +345,7 @@ body {
   padding: 140px 0 180px;
   background: #f8f7ef;
 }
-.wellness .container {
+.wellness .container-fluid {
   max-width: 1100px;
 }
 .wellness .wellness-text {
@@ -556,7 +556,7 @@ body {
   padding-block: 120px 135px;
   background: var(--primary-light);
 }
-.newsletter .container {
+.newsletter .container-fluid {
   max-width: 1525px;
 }
 .newsletter .newsletter-text {
@@ -605,7 +605,7 @@ body {
 .footer {
   padding: 90px 0;
 }
-.footer .container {
+.footer .container-fluid {
   max-width: 1720px;
 }
 .footer .footer-links {
@@ -699,10 +699,10 @@ body {
 .guide {
   padding: 60px 0 150px;
 }
-.faqs .container {
+.faqs .container-fluid {
   max-width: 1600px;
 }
-.faqs .container .page-title {
+.faqs .page-title {
   margin-bottom: 100px;
 }
 .faqs .accordion .accordion-item {
@@ -873,7 +873,7 @@ body {
 .mission {
   padding: 90px 0 150px;
 }
-.mission .container {
+.mission .container-fluid {
   margin: auto;
   max-width: 1725px;
 }
@@ -932,7 +932,7 @@ body {
   background: #dbb962;
   padding: 100px 0 200px;
 }
-.join-team .container {
+.join-team .container-fluid {
   max-width: 1550px;
 }
 .join-team .join-team-wrapper {
@@ -966,6 +966,11 @@ body {
   font-size: 34px;
   line-height: 44px;
 }
+.hero.retreat-hero .retreat-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
 .retreat-tagline .tagline {
   font-size: 45px;
   max-width: 1332px;
@@ -987,7 +992,7 @@ body {
   line-height: 34px;
 }
 .upcoming-retreat-wrapper .retreat-title {
-  font-size: 70px;
+  font-size: 62px;
   line-height: 75px;
   margin-bottom: 30px;
 }
@@ -996,7 +1001,7 @@ body {
   margin-top: 50px;
   line-height: 65px;
   min-width: 205px;
-  border: 2px solid #ba7d5d;
+  border: 2px solid var(--primary);
   color: var(--primary) !important;
   background: transparent !important;
 }
@@ -1006,6 +1011,7 @@ body {
 }
 .upcoming-table thead tr th {
   padding: 7px;
+  width: 33.333%;
   font-size: 90px;
   font-weight: 600;
   text-align: center;
@@ -1020,9 +1026,6 @@ body {
 }
 .retreat-grid {
   padding: 150px 0 180px;
-}
-.retreat-grid .container {
-  padding-inline: 120px;
 }
 .retreat-grid .retreat-grid-content {
   max-width: 550px;
@@ -1094,7 +1097,7 @@ body {
   padding: 270px 0;
   background: #f7d085;
 }
-.retreat-quote .container {
+.retreat-quote .container-fluid {
   max-width: 1380px;
 }
 .retreat-quote .quote-title {
@@ -1106,7 +1109,7 @@ body {
 .retreat-inforgraphic {
   margin-top: 190px;
 }
-.retreat-inforgraphic .container {
+.retreat-inforgraphic .container-fluid {
   max-width: 1250px;
 }
 .retreat-detail {
@@ -2343,17 +2346,18 @@ body {
     max-width: 1920px;
     padding-inline: 60px;
   }
-  .what-we-offer .container,
-  .game-experience .container,
-  .book-consultation .container,
-  .schedule .container,
-  .coaching.seasoned-athlete .container,
-  .membership-tabs .container {
+  .what-we-offer .container-fluid,
+  .game-experience .container-fluid,
+  .book-consultation .container-fluid,
+  .schedule .container-fluid,
+  .coaching.seasoned-athlete .container-fluid,
+  .membership-tabs .container-fluid {
     padding-inline: 140px;
   }
-  .upcoming-retreat .container,
-  .diverse-programs .container,
-  .program-gallery .container {
+  .upcoming-retreat .container-fluid,
+  .diverse-programs .container-fluid,
+  .program-gallery .container-fluid,
+  .retreat-grid .container-fluid {
     padding-inline: 100px;
   }
 }
@@ -2368,6 +2372,13 @@ body {
   }
   .story-hero.hero .story-img {
     height: 650px;
+  }
+  .upcoming-retreat .upcoming-retreat-wrapper {
+    padding: 60px;
+    background: #f8f7ef;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    font-size: 55px;
   }
 }
 @media (max-width: 1560px) {
@@ -2394,6 +2405,9 @@ body {
     font-size: 65px;
     line-height: 73px;
     margin-left: -50px;
+  }
+  .hero.retreat-hero .retreat-img {
+    height: 600px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -2463,6 +2477,43 @@ body {
   }
   .mission-gallery .gallery-item.right {
     width: 58%;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    font-size: 50px;
+  }
+  .upcoming-table thead tr th {
+    font-size: 75px;
+  }
+  .upcoming-table tbody tr td {
+    font-size: 30px;
+  }
+  .retreat-grid .retreat-grid-img img {
+    height: 500px;
+  }
+  .retreat-grid .retreat-grid-content h3 {
+    font-size: 65px;
+    line-height: 85px;
+    margin-bottom: 20px;
+  }
+  .retreat-grid .retreat-grid-content p {
+    font-size: 24px;
+    padding-inline: 40px;
+  }
+  .retreat-grid .row:nth-child(2) {
+    margin-bottom: 250px;
+  }
+  .retreat-grid .row:nth-child(even) .retreat-grid-img img {
+    padding-right: 30px;
+  }
+  .retreat-grid .row:nth-child(odd) .retreat-grid-img img {
+    padding-left: 30px;
+  }
+  .retreat-quote {
+    padding: 150px 0;
+  }
+  .retreat-quote .quote-title {
+    font-size: 55px;
+    line-height: 70px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -2592,6 +2643,9 @@ body {
     width: 100%;
     height: 450px;
   }
+  .hero.retreat-hero .retreat-img {
+    height: 550px;
+  }
   .support-story.coaching .page-title {
     margin: 0;
     font-size: 58px;
@@ -2647,6 +2701,22 @@ body {
   .our-clients {
     padding-block: 60px 90px;
   }
+  .retreat-tagline .tagline {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 100px auto;
+  }
+  .upcoming-retreat-wrapper .btn {
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 50px;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    line-height: 50px;
+  }
+  .retreat-grid {
+    padding: 100px 0;
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -2656,7 +2726,7 @@ body {
     line-height: 50px !important;
   }
   .hero .hero-wrapper .page-title {
-    font-size: 45px;
+    font-size: 45px !important;
     line-height: 50px !important;
   }
   .hero .hero-wrapper {
@@ -2676,10 +2746,16 @@ body {
   .story-hero.hero {
     padding: 0 0 50px;
   }
+  .hero.retreat-hero .retreat-img {
+    height: 450px;
+  }
   .faqs,
   .contact-us,
   .guide {
     padding: 0px 0 70px;
+  }
+  .faqs .page-title {
+    margin-bottom: 40px;
   }
   .guide .guide-form-wrapper {
     width: 100%;
@@ -2719,6 +2795,10 @@ body {
   .mission .mission-swiper {
     margin-top: 70px;
     padding-bottom: 70px;
+  }
+  .upcoming-table {
+    width: 100%;
+    margin: 50px 0 20px;
   }
   .client-swiper .client-quotes-wrapper,
   .mission-gallery {
@@ -2883,6 +2963,59 @@ body {
   .join-team .join-team-wrapper .join-team-content {
     padding-left: 0;
   }
+  .retreat-tagline .tagline {
+    margin: 70px auto;
+    padding-inline: 35px;
+  }
+  .upcoming-retreat .upcoming-retreat-wrapper {
+    padding: 30px;
+  }
+  .upcoming-table thead tr th {
+    font-size: 40px;
+  }
+  .upcoming-table tbody tr td {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .retreat-quote {
+    padding: 80px 0;
+  }
+  .retreat-quote .quote-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .retreat-inforgraphic {
+    margin-top: 100px;
+  }
+  .retreat-grid .row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .retreat-grid .row *,
+  .retreat-grid .row {
+    margin: 0 !important;
+  }
+  .retreat-grid .row + .row {
+    margin-top: 70px !important;
+  }
+  .retreat-grid .row .content-col {
+    margin-top: 30px !important;
+    justify-content: flex-start !important;
+  }
+  .retreat-grid .retreat-grid-content {
+    padding: 0;
+  }
+  .retreat-grid {
+    padding: 50px 0;
+  }
+  .retreat-grid .row .retreat-grid-img img {
+    width: 85%;
+    height: 400px;
+    padding: 0 !important;
+  }
+  .retreat-grid .retreat-grid-content h3 {
+    font-size: 45px;
+    line-height: 85px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -2895,6 +3028,9 @@ body {
   .hero .hero-img .img-item {
     width: 193px;
     height: 261px;
+  }
+  .hero.retreat-hero .retreat-img {
+    height: 300px;
   }
   .contact-us .guide-form-wrapper .page-title {
     margin-bottom: 15px;
@@ -2967,6 +3103,11 @@ body {
   .footer .copyright .copyright-text {
     max-width: 100%;
   }
+  .retreat-tagline .tagline {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 50px auto;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title {
@@ -3025,17 +3166,24 @@ body {
   .faqs .accordion .accordion-item .accordion-body p,
   .faqs .accordion .accordion-item .accordion-body ul,
   .story-hero.hero .hero-wrapper .hero-content p,
-  .mission .mission-wrapper p, .join-team .join-team-wrapper .join-team-content p {
+  .mission .mission-wrapper p,
+  .join-team .join-team-wrapper .join-team-content p,
+  .retreat-tagline .tagline,
+  .retreat-grid .retreat-grid-content p {
     font-size: 18px;
     line-height: 25px;
+  }
+  .retreat-tagline .tagline {
+    margin: 30px auto;
   }
   .join-team .join-team-wrapper h3 {
     font-size: 20px;
   }
   .faqs .accordion .accordion-item .accordion-body p,
   .faqs .accordion .accordion-item .accordion-body ul,
-  .story-hero.hero .hero-wrapper .hero-content p {
-    margin-bottom: 20px;
+  .story-hero.hero .hero-wrapper .hero-content p,
+  .retreat-grid .retreat-grid-content h3 {
+    margin-bottom: 20px !important;
   }
   .story-hero.hero .story-img {
     height: 350px;
@@ -3069,7 +3217,9 @@ body {
     height: 50px;
     font-size: 18px;
   }
-  .newsletter-form .btn, .join-team .join-team-wrapper .join-team-content .btn {
+  .newsletter-form .btn,
+  .join-team .join-team-wrapper .join-team-content .btn,
+  .upcoming-retreat-wrapper .btn {
     font-size: 18px;
     margin-top: 15px;
     line-height: 50px;
@@ -3087,5 +3237,16 @@ body {
   }
   .swiper-arrows-wrapper .swiper-arrows {
     width: 20px;
+  }
+  .retreat-inforgraphic {
+    margin-top: 40px;
+  }
+  .retreat-quote .quote-title,
+  .retreat-grid .retreat-grid-content h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .retreat-grid .row .retreat-grid-img img {
+    height: 270px;
   }
 }
