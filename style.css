@@ -1177,7 +1177,7 @@ body {
 .champion.retreat-champion .champion-gallery {
   margin-top: -50px;
 }
-.retreat-includes .container {
+.retreat-includes .container-fluid {
   padding: 0 95px;
 }
 .retreat-includes .retreat-includes-wrapper {
@@ -1229,7 +1229,7 @@ body {
   padding: 100px 0 150px;
   background: #f7d085;
 }
-.packages .container {
+.packages .container-fluid {
   max-width: 1480px;
 }
 .packages h3 {
@@ -1287,7 +1287,7 @@ body {
 .event-gallery {
   margin: 100px 0 160px;
 }
-.event-gallery .container {
+.event-gallery .container-fluid {
   max-width: 1430px;
 }
 .event-gallery .page-title {
@@ -1357,7 +1357,11 @@ body {
 .hero.hero-home-program .hero-wrapper .page-title {
   max-width: 600px;
 }
-.programs-listing .container {
+.hero.hero-home-program .hero-home-program-img {
+  height: 757px;
+  object-fit: cover;
+}
+.programs-listing .container-fluid {
   max-width: 1485px;
 }
 .programs-listing .row {
@@ -1418,9 +1422,9 @@ body {
 }
 .program-video .video-wrapper {
   margin: auto;
-  width: 1110px;
   height: 625px;
   overflow: hidden;
+  max-width: 1110px;
   border-radius: 20px;
 }
 .program-video .video-wrapper iframe {
@@ -1436,7 +1440,7 @@ body {
   color: var(--white) !important;
   background: var(--primary) !important;
 }
-.program-cta .container {
+.program-cta .container-fluid {
   max-width: 970px;
 }
 .program-cta p {
@@ -1500,7 +1504,7 @@ body {
   font-size: 30px;
   line-height: 38px;
 }
-.game-motive .container {
+.game-motive .container-fluid {
   max-width: 1600px;
 }
 .game-motive .coaching span:last-child {
@@ -1584,7 +1588,7 @@ body {
 .best-program {
   padding: 200px 0;
 }
-.best-program .container {
+.best-program .container-fluid {
   max-width: 1050px;
 }
 .best-program .page-title {
@@ -1614,7 +1618,7 @@ body {
 .program-kinds {
   padding: 110px 0 160px;
 }
-.program-kinds .container {
+.program-kinds .container-fluid {
   max-width: 1600px;
 }
 .program-kinds .page-title {
@@ -1661,7 +1665,7 @@ body {
   background: #f8f7ef;
   padding: 110px 0 140px;
 }
-.hero.program-hero .container {
+.hero.program-hero .container-fluid {
   max-width: 1670px;
 }
 .hero.program-hero .hero-wrapper .page-title {
@@ -1789,7 +1793,7 @@ body {
 .program-listing {
   padding: 150px 0;
 }
-.program-listing .container {
+.program-listing .container-fluid {
   max-width: 1570px;
 }
 .program-listing .program-listing-text {
@@ -1818,7 +1822,7 @@ body {
   height: 757px;
   object-fit: cover;
 }
-.coaching.real-change .container {
+.coaching.real-change .container-fluid {
   max-width: 1650px;
 }
 .coaching.real-change .our-clients {
@@ -1905,7 +1909,7 @@ body {
   background: #f8f7ef;
   padding: 120px 0 190px;
 }
-.resources .container {
+.resources .container-fluid {
   max-width: 1300px;
 }
 .resources h5 {
@@ -2052,8 +2056,8 @@ body {
   margin: 15px 0 0;
   line-height: 42px;
 }
-.hero.obstacle-hero .container,
-.event-gallery.event-obstacle .container {
+.hero.obstacle-hero .container-fluid,
+.event-gallery.event-obstacle .container-fluid {
   max-width: 1750px;
 }
 .hero.obstacle-hero .hero-wrapper {
@@ -2156,7 +2160,7 @@ body {
   background: #dbb962;
   padding: 100px 0 200px;
 }
-.membership-benefits .container {
+.membership-benefits .container-fluid {
   max-width: 1500px;
 }
 .membership-benefits .page-title.heading {
@@ -2406,8 +2410,21 @@ body {
     line-height: 73px;
     margin-left: -50px;
   }
-  .hero.retreat-hero .retreat-img {
+  .hero.retreat-hero .retreat-img,
+  .hero.hero-home-program .hero-home-program-img {
     height: 600px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    width: 100%;
+    height: 310px;
+    margin-bottom: 30px;
+  }
+  .home-program-swiper .swiper-slide .home-program-content {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .hero.hero-home-program .hero-wrapper {
+    margin-top: 30px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -2487,7 +2504,8 @@ body {
   .upcoming-table tbody tr td {
     font-size: 30px;
   }
-  .retreat-grid .retreat-grid-img img {
+  .retreat-grid .retreat-grid-img img,
+  .hero.hero-home-program .hero-home-program-img {
     height: 500px;
   }
   .retreat-grid .retreat-grid-content h3 {
@@ -2714,8 +2732,35 @@ body {
   .upcoming-retreat-wrapper .retreat-title {
     line-height: 50px;
   }
-  .retreat-grid {
+  .retreat-grid,
+  .program-cta,
+  .program-video,
+  .coaching {
     padding: 100px 0;
+  }
+  .program-video .video-wrapper {
+    height: 500px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    height: 450px;
+  }
+  .coaching .page-title {
+    font-size: 55px;
+  }
+  .programs-listing .programs-listing-content h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .programs-listing .row {
+    margin-bottom: 100px;
+  }
+  .programs-listing .programs-listing-img {
+    height: 588px;
+  }
+  .programs-listing .programs-listing-content p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 991.98px) {
@@ -2836,7 +2881,9 @@ body {
     padding: 30px 0 0 30px;
   }
   .our-programs,
-  .coaching {
+  .coaching,
+  .programs-thumb-slider .coaching,
+  .home-program-swiper {
     padding-block: 70px;
   }
   .our-programs .our-programs-obstacle .btn {
@@ -2844,9 +2891,6 @@ body {
   }
   .champion {
     padding-block: 60px;
-  }
-  .champion .container {
-    max-width: 100%;
   }
   .champion .champion-text .page-title {
     margin-bottom: 30px;
@@ -3016,6 +3060,36 @@ body {
     font-size: 45px;
     line-height: 85px;
   }
+  .program-video .page-title {
+    margin-bottom: 50px;
+  }
+  .hero.hero-home-program .hero-wrapper,
+  .hero.hero-home-program {
+    margin-top: 0;
+  }
+  .hero.hero-home-program .hero-home-program-img {
+    width: 100%;
+    height: 600px;
+  }
+  .programs-listing .row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .programs-listing .programs-listing-content {
+    max-width: 100%;
+    padding: 0 30px 50px;
+  }
+  .programs-listing .programs-listing-img {
+    width: 100%;
+    height: 588px;
+  }
+  .programs-listing .row {
+    margin-bottom: 50px;
+  }
+  .programs-listing .programs-listing-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -3042,7 +3116,7 @@ body {
   .contact-us .guide-form-wrapper .theme-form {
     padding: 0;
   }
-  .faqs .container .page-title {
+  .faqs .page-title {
     margin-bottom: 50px;
   }
   .faqs .accordion .accordion-item .accordion-header .accordion-button {
@@ -3108,6 +3182,16 @@ body {
     line-height: 40px;
     margin: 50px auto;
   }
+  .program-video .video-wrapper {
+    height: 300px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    height: 250px;
+  }
+  .hero.hero-home-program .hero-home-program-img,
+  .programs-listing .programs-listing-img {
+    height: 450px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title {
@@ -3119,7 +3203,11 @@ body {
     font-size: 30px !important;
     line-height: 40px !important;
   }
-  .lets-chat {
+  .lets-chat,
+  .program-cta,
+  .program-video,
+  .home-program-swiper,
+  .coaching {
     padding: 50px 0;
   }
   .lets-chat .lets-chat-inner h2 {
@@ -3129,8 +3217,13 @@ body {
   .lets-chat .lets-chat-inner p:first-child {
     margin-bottom: 20px !important;
   }
+  .program-cta p {
+    margin-bottom: 30px;
+  }
   .lets-chat .lets-chat-inner .btn,
-  .theme-form .btn {
+  .theme-form .btn,
+  .program-cta .btn,
+  .programs-listing-content .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -3169,7 +3262,10 @@ body {
   .mission .mission-wrapper p,
   .join-team .join-team-wrapper .join-team-content p,
   .retreat-tagline .tagline,
-  .retreat-grid .retreat-grid-content p {
+  .retreat-grid .retreat-grid-content p,
+  .program-cta p,
+  .home-program-swiper .swiper-slide .home-program-content,
+  .programs-listing .programs-listing-content p {
     font-size: 18px;
     line-height: 25px;
   }
@@ -3242,11 +3338,13 @@ body {
     margin-top: 40px;
   }
   .retreat-quote .quote-title,
-  .retreat-grid .retreat-grid-content h3 {
+  .retreat-grid .retreat-grid-content h3,
+  .programs-listing .programs-listing-content h3 {
     font-size: 24px;
     line-height: 35px;
   }
-  .retreat-grid .row .retreat-grid-img img {
+  .retreat-grid .row .retreat-grid-img img,
+  .hero.hero-home-program .hero-home-program-img {
     height: 270px;
   }
 }

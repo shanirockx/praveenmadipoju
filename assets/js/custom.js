@@ -61,13 +61,27 @@ var missionSwiper = new Swiper(".mission-swiper", {
 
 var homeProgramSwiper = new Swiper(".home-program-swiper", {
   loop: true,
-  slidesPerView: 3.95,
-  spaceBetween: 55,
+  slidesPerView: 1.95,
+  spaceBetween: 20,
   centeredSlides: true,
   roundLengths: true,
   navigation: {
     nextEl: ".home-program-swiper .swiper-button-prev",
     prevEl: ".home-program-swiper .swiper-button-next",
+  },
+  breakpoints: {
+    1400: {
+      spaceBetween: 55,
+      slidesPerView: 3.95,
+    },
+    1200: {
+      spaceBetween: 30,
+      slidesPerView: 3.95,
+    },
+    1199: {
+      spaceBetween: 30,
+      slidesPerView: 2.95,
+    },
   },
 });
 
