@@ -1479,7 +1479,11 @@ body {
   display: flex;
   padding: 50px 0;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+.what-we-offer .row .offer-listing:nth-of-type(1) {
+  margin-top: 80px;
+  border-top: 2px solid var(--primary);
 }
 .what-we-offer .offer-listing .offer-title {
   gap: 45px;
@@ -1515,19 +1519,23 @@ body {
 .game-motive .container-fluid {
   max-width: 1600px;
 }
-.game-motive .coaching span:last-child {
-  padding-left: 800px;
+.game-motive .coaching {
+  padding-top: 25px;
+}
+.game-motive .coaching .page-title {
+  max-width: 1080px;
+}
+.game-motive .coaching .page-title span:nth-of-type(1) {
+  padding-right: 85px;
 }
 .game-motive .game-motive-inforgrphic {
   height: 620px;
   object-fit: cover;
 }
-.game-motive .game-motive-content {
-  padding-left: 100px;
-}
 .game-motive .game-motive-content h3 {
   font-size: 60px;
   line-height: 75px;
+  margin-bottom: 30px;
 }
 .game-motive .game-motive-content p {
   font-size: 28px;
@@ -1553,11 +1561,8 @@ body {
   margin: 0 auto 100px;
 }
 .game-experience .game-experience-infographic {
-  height: 600px;
+  height: 620px;
   object-fit: cover;
-}
-.game-experience .game-experience-content {
-  padding-left: 100px;
 }
 .game-experience .game-experience-content p {
   font-size: 30px;
@@ -2373,6 +2378,11 @@ body {
     padding-inline: 100px;
   }
 }
+@media (min-width: 1630.98px) and (max-width: 1820.98px) {
+  .offer-listing .offer-title .tagline {
+    font-size: 70px;
+  }
+}
 @media (max-width: 1630px) {
   .hero.story-hero .hero-wrapper .page-title {
     font-size: 75px;
@@ -2391,6 +2401,13 @@ body {
   }
   .upcoming-retreat-wrapper .retreat-title {
     font-size: 55px;
+  }
+  .game-experience .game-experience-content p {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 60px;
   }
 }
 @media (max-width: 1560px) {
@@ -2535,6 +2552,14 @@ body {
   .retreat-quote .quote-title {
     font-size: 55px;
     line-height: 70px;
+  }
+  .game-motive .game-motive-content h3 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .game-motive .game-motive-content p {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -2733,7 +2758,8 @@ body {
   .retreat-grid,
   .program-cta,
   .program-video,
-  .coaching {
+  .coaching,
+  .game-experience {
     padding: 100px 0;
   }
   .program-video .video-wrapper {
@@ -2767,6 +2793,44 @@ body {
   }
   .coaching.coaching-home-program .page-title {
     max-width: 700px;
+  }
+  .game-motive .coaching .page-title {
+    max-width: 810px;
+  }
+  .game-motive .game-motive-inforgrphic {
+    height: 520px;
+  }
+  .game-motive .game-motive-content h3 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .game-motive .game-motive-content p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .team-work {
+    padding: 100px 0;
+    margin-top: 100px;
+  }
+  .our-programs .programs-text .page-title {
+    font-size: 65px;
+    line-height: 85px;
+  }
+  .team-work .team-work-content {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .game-experience .page-title {
+    margin: 0 auto 70px;
+  }
+  .what-we-offer {
+    padding: 100px 0;
+  }
+  .what-we-offer .offer-listing {
+    flex-wrap: wrap;
+  }
+  .offer-listing .what-we-offer-content {
+    max-width: 100%;
   }
 }
 @media (max-width: 991.98px) {
@@ -2877,7 +2941,8 @@ body {
   .champion .champion-gallery:nth-of-type(1) .gallery-item:nth-child(even) {
     margin-top: 0;
   }
-  .wellness {
+  .wellness,
+  .game-experience {
     padding: 60px 0;
   }
   .wellness .wellness-text {
@@ -3099,6 +3164,29 @@ body {
   .coaching.coaching-home-program .page-title {
     max-width: 570px;
   }
+  .game-motive .coaching {
+    padding-top: 0px;
+  }
+  .game-motive .coaching .page-title {
+    max-width: 680px;
+  }
+  .game-motive .game-motive-content {
+    padding: 35px;
+  }
+  .team-work {
+    margin-top: 20px;
+  }
+  .team-work .team-work-content {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 20px 50px 0;
+  }
+  .game-experience .page-title {
+    margin: 0 auto 50px;
+  }
+  .game-experience .game-experience-content {
+    padding: 35px 35px 0;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -3198,14 +3286,53 @@ body {
   .programs-listing .programs-listing-img {
     height: 450px;
   }
-  .coaching.support-story .page-title {
+  .coaching.support-story .page-title,
+  .game-motive .coaching .page-title {
     max-width: 480px;
     font-size: 30px !important;
     line-height: 38px !important;
   }
+  .game-motive .game-motive-inforgrphic {
+    width: 100%;
+    height: 350px;
+  }
+  .what-we-offer {
+    padding: 70px 0;
+  }
+  .what-we-offer .headline {
+    margin: 0;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .what-we-offer .offer-listing {
+    padding: 30px 0;
+  }
+  .what-we-offer .row .offer-listing:nth-of-type(1) {
+    margin-top: 40px;
+  }
+  .what-we-offer .offer-listing .offer-title,
+  .what-we-offer .offer-listing {
+    gap: 30px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 40px;
+  }
+  .offer-listing .offer-title .count,
+  .game-experience.obstacle-game .game-experience-steps .steps .count {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .what-we-offer-content p {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 @media (max-width: 575.98px) {
-  .page-title {
+  .page-title,
+  .our-programs .programs-text .page-title,
+  .our-programs .our-programs-obstacle .page-title {
     font-size: 26px !important;
     line-height: 32px !important;
   }
@@ -3266,22 +3393,14 @@ body {
     padding: 15% 0 10%;
     margin: 0 -12% !important;
   }
-  .champion .champion-text p,
-  .our-clients .members-swiper .swiper-slide .client-text p,
-  .lets-chat .lets-chat-inner p,
-  .contact-us .guide-form-wrapper p,
-  .faqs .accordion .accordion-item .accordion-body p,
-  .faqs .accordion .accordion-item .accordion-body ul,
-  .story-hero.hero .hero-wrapper .hero-content p,
-  .mission .mission-wrapper p,
-  .join-team .join-team-wrapper .join-team-content p,
+  p,
+  ul,
   .retreat-tagline .tagline,
-  .retreat-grid .retreat-grid-content p,
-  .program-cta p,
   .home-program-swiper .swiper-slide .home-program-content,
-  .programs-listing .programs-listing-content p {
-    font-size: 18px;
-    line-height: 25px;
+  .team-work .team-work-content,
+  .cta-programs .cta-programs-text .cta-desc {
+    font-size: 18px !important;
+    line-height: 25px !important;
   }
   .retreat-tagline .tagline {
     margin: 30px auto;
@@ -3292,7 +3411,8 @@ body {
   .faqs .accordion .accordion-item .accordion-body p,
   .faqs .accordion .accordion-item .accordion-body ul,
   .story-hero.hero .hero-wrapper .hero-content p,
-  .retreat-grid .retreat-grid-content h3 {
+  .retreat-grid .retreat-grid-content h3,
+  .game-motive .game-motive-content h3 {
     margin-bottom: 20px !important;
   }
   .story-hero.hero .story-img {
@@ -3353,12 +3473,14 @@ body {
   }
   .retreat-quote .quote-title,
   .retreat-grid .retreat-grid-content h3,
-  .programs-listing .programs-listing-content h3 {
+  .programs-listing .programs-listing-content h3,
+  .game-motive .game-motive-content h3 {
     font-size: 24px;
     line-height: 35px;
   }
   .retreat-grid .row .retreat-grid-img img,
-  .hero.hero-home-program .hero-home-program-img {
+  .hero.hero-home-program .hero-home-program-img,
+  .game-motive .game-motive-inforgrphic {
     height: 270px;
   }
   .coaching.support-story .page-title {
@@ -3369,5 +3491,28 @@ body {
   }
   .coaching.coaching-home-program .page-title {
     max-width: 350px;
+  }
+  .game-motive .coaching .page-title, .what-we-offer .headline {
+    max-width: 380px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .game-motive .coaching .page-title span:nth-of-type(1) {
+    padding-right: 50px;
+  }
+  .what-we-offer .offer-listing .offer-title,
+  .what-we-offer .offer-listing {
+    gap: 15px;
+  }
+  .offer-listing .offer-title .count,
+  .game-experience.obstacle-game .game-experience-steps .steps .count {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 32px;
+    line-height: 44px;
   }
 }
