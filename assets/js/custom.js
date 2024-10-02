@@ -38,12 +38,20 @@ var membersSwiper = new Swiper(".members-swiper", {
 
 var missionSwiper = new Swiper(".mission-swiper", {
   loop: true,
+  spaceBetween: 30,
   slidesPerView: 2.5,
   centeredSlides: true,
-  spaceBetween: 200,
   pagination: {
     el: ".swiper-pagination",
     type: "custom",
+  },
+  breakpoints: {
+    1399: {
+      spaceBetween: 200,
+    },
+    1199: {
+      spaceBetween: 100,
+    },
   },
   navigation: {
     nextEl: ".mission-swiper .swiper-button-next",

@@ -2357,6 +2357,19 @@ body {
     padding-inline: 100px;
   }
 }
+@media (max-width: 1630px) {
+  .hero.story-hero .hero-wrapper .page-title {
+    font-size: 75px;
+    max-width: 650px;
+    line-height: 83px;
+  }
+  .story-hero.hero .hero-wrapper .hero-content {
+    padding: 50px 0 0 60px;
+  }
+  .story-hero.hero .story-img {
+    height: 650px;
+  }
+}
 @media (max-width: 1560px) {
   .guide .guide-form-wrapper .page-title {
     font-size: 56px;
@@ -2374,22 +2387,30 @@ body {
     font-size: 24px;
     min-width: 180px;
   }
+  .support-story.coaching {
+    padding: 170px 0;
+  }
+  .support-story.coaching .page-title {
+    font-size: 65px;
+    line-height: 73px;
+    margin-left: -50px;
+  }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
-  .hero .hero-wrapper .page-title {
+  .hero.index-hero .hero-wrapper .page-title {
     font-size: 68px;
     line-height: 60px;
   }
-  .hero .hero-wrapper {
+  .hero.index-hero .hero-wrapper {
     max-width: 700px;
   }
-  .hero .hero-wrapper .hero-content p {
+  .hero.index-hero .hero-wrapper .hero-content p {
     font-size: 36px;
   }
-  .hero .hero-img {
+  .hero.index-hero .hero-img {
     margin-left: 100px;
   }
-  .hero .hero-img .img-item {
+  .hero.index-hero .hero-img .img-item {
     width: 370px;
     height: 573px;
   }
@@ -2399,7 +2420,7 @@ body {
     max-width: 600px;
   }
   .hero .hero-wrapper .page-title {
-    font-size: 60px;
+    font-size: 60px !important;
     line-height: 68px !important;
   }
   .hero .hero-wrapper .hero-content {
@@ -2413,11 +2434,17 @@ body {
     width: 370px;
     height: 573px;
   }
+  .hero.story-hero .hero-wrapper .page-title {
+    max-width: 500px;
+  }
   .guide .guide-form-wrapper .page-title {
     font-size: 48px;
   }
   .guide .guide-img {
     height: 600px;
+  }
+  .mission .mission-swiper .swiper-slide img {
+    height: 635px;
   }
   .champion .champion-gallery {
     gap: 40px;
@@ -2427,6 +2454,15 @@ body {
   .coaching .coaching-grid h3 {
     font-size: 26px;
     line-height: 32px;
+  }
+  .mission-gallery .gallery-item {
+    height: 750px;
+  }
+  .mission-gallery .gallery-item.left {
+    width: 40%;
+  }
+  .mission-gallery .gallery-item.right {
+    width: 58%;
   }
 }
 @media (max-width: 1199.98px) {
@@ -2537,6 +2573,30 @@ body {
     p {
     display: none;
   }
+  .hero.story-hero .hero-wrapper {
+    max-width: 450px;
+  }
+  .hero.story-hero .hero-wrapper .page-title {
+    font-size: 50px !important;
+    line-height: 58px !important;
+  }
+  .story-hero.hero .hero-wrapper .hero-content {
+    padding: 30px 0 0 40px;
+  }
+  .story-hero.hero .hero-wrapper .hero-content p {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .story-hero.hero .story-img {
+    width: 100%;
+    height: 450px;
+  }
+  .support-story.coaching .page-title {
+    margin: 0;
+    font-size: 58px;
+    line-height: 65px;
+  }
   .guide .guide-img {
     height: 550px;
   }
@@ -2553,6 +2613,9 @@ body {
   .lets-chat .lets-chat-inner h2 {
     width: 100%;
     font-size: 70px;
+  }
+  .mission-gallery .gallery-item {
+    height: 650px;
   }
   .client-swiper .client-quotes-wrapper {
     gap: 50px;
@@ -2606,6 +2669,13 @@ body {
     width: 300px;
     height: 473px;
   }
+  .hero.story-hero .hero-wrapper {
+    max-width: 100%;
+    padding-block: 0;
+  }
+  .story-hero.hero {
+    padding: 0 0 50px;
+  }
   .faqs,
   .contact-us,
   .guide {
@@ -2618,11 +2688,47 @@ body {
   .theme-form .btn {
     margin-top: 30px;
   }
-  .client-swiper .client-quotes-wrapper {
+  .mission {
+    padding: 35px 0 70px;
+  }
+  .mission .mission-wrapper {
+    padding-left: 20px;
+    margin: 30px auto 0;
+  }
+  .mission .mission-wrapper .page-title {
+    margin-bottom: 20px;
+  }
+  .mission .mission-wrapper p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .mission .mission-swiper .swiper-slide img {
+    width: 100%;
+    height: 264px;
+  }
+  .mission-gallery .gallery-item.left {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .mission-gallery .gallery-item.right {
+    width: 108%;
+    height: 380px;
+  }
+  .mission .mission-swiper {
+    margin-top: 70px;
+    padding-bottom: 70px;
+  }
+  .client-swiper .client-quotes-wrapper,
+  .mission-gallery {
     flex-wrap: wrap;
   }
   .client-swiper .client-quotes-wrapper img {
     margin: auto;
+  }
+  .support-story.coaching {
+    padding: 100px 0;
   }
   .coaching .page-title {
     margin-left: -50px;
@@ -2759,6 +2865,24 @@ body {
   .newsletter-form .btn {
     margin-top: 20px;
   }
+  .join-team {
+    padding: 70px 0;
+  }
+  .join-team .page-title br {
+    display: none;
+  }
+  .join-team .join-team-wrapper {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .join-team .join-team-wrapper h3 {
+    font-size: 32px;
+    padding-left: 30px;
+    margin-bottom: 42px;
+  }
+  .join-team .join-team-wrapper .join-team-content {
+    padding-left: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -2791,6 +2915,9 @@ body {
   }
   .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
     background-position: bottom;
+  }
+  .support-story.coaching .page-title span {
+    padding-left: 70px;
   }
   .client-swiper .swiper-wrapper {
     padding: 50px 0 80px;
@@ -2846,7 +2973,8 @@ body {
     font-size: 26px !important;
     line-height: 32px !important;
   }
-  .hero .hero-wrapper .page-title {
+  .hero .hero-wrapper .page-title,
+  .hero.story-hero .hero-wrapper .page-title {
     font-size: 30px !important;
     line-height: 40px !important;
   }
@@ -2893,12 +3021,24 @@ body {
   .champion .champion-text p,
   .our-clients .members-swiper .swiper-slide .client-text p,
   .lets-chat .lets-chat-inner p,
-  .contact-us .guide-form-wrapper p, .faqs .accordion .accordion-item .accordion-body p, .faqs .accordion .accordion-item .accordion-body ul {
+  .contact-us .guide-form-wrapper p,
+  .faqs .accordion .accordion-item .accordion-body p,
+  .faqs .accordion .accordion-item .accordion-body ul,
+  .story-hero.hero .hero-wrapper .hero-content p,
+  .mission .mission-wrapper p, .join-team .join-team-wrapper .join-team-content p {
     font-size: 18px;
     line-height: 25px;
   }
-  .faqs .accordion .accordion-item .accordion-body p, .faqs .accordion .accordion-item .accordion-body ul {
+  .join-team .join-team-wrapper h3 {
+    font-size: 20px;
+  }
+  .faqs .accordion .accordion-item .accordion-body p,
+  .faqs .accordion .accordion-item .accordion-body ul,
+  .story-hero.hero .hero-wrapper .hero-content p {
     margin-bottom: 20px;
+  }
+  .story-hero.hero .story-img {
+    height: 350px;
   }
   .theme-form .form-wrapper label {
     font-size: 18px;
@@ -2929,7 +3069,7 @@ body {
     height: 50px;
     font-size: 18px;
   }
-  .newsletter-form .btn {
+  .newsletter-form .btn, .join-team .join-team-wrapper .join-team-content .btn {
     font-size: 18px;
     margin-top: 15px;
     line-height: 50px;
