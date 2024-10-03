@@ -297,6 +297,7 @@ body {
   cursor: pointer;
   padding: 0 10px;
   color: #e3c7a4;
+  text-wrap: nowrap;
   line-height: 32px;
   border-radius: 50px;
   display: inline-flex;
@@ -723,7 +724,12 @@ body {
   font-family: "Neue Plak SemiBold";
   background: transparent !important;
 }
-.faqs .accordion .accordion-item .accordion-header .accordion-button::after, .packages .accordion .accordion-item .accordion-header .accordion-button::after {
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after,
+.packages
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
   background-image: url(assets/img/arrow-icon.png);
 }
 .faqs .accordion .accordion-item .accordion-body {
@@ -1598,7 +1604,7 @@ body {
 }
 .diverse-programs .diverse-programs-thumbs .program-title {
   margin: 20px 0;
-  font-size: 42px;
+  font-size: 40px;
   color: #dbb962;
   line-height: 65px;
   text-align: center;
@@ -1646,7 +1652,7 @@ body {
 }
 .program-kinds .program-kinds-preview {
   width: 485px;
-  height: 840px;
+  height: 800px;
   object-fit: cover;
 }
 .program-kinds .program-kinds-content {
@@ -2398,7 +2404,11 @@ body {
   background: none;
   box-shadow: none;
 }
-.packages .accordion .accordion-item .accordion-header .accordion-button::after {
+.packages
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
   background-position: bottom;
 }
 @media (min-width: 1400px) {
@@ -2499,6 +2509,15 @@ body {
   .retreat-includes .retreat-includes-wrapper .includes-listing {
     font-size: 30px;
     line-height: 50px;
+  }
+  .diverse-programs {
+    margin-top: 100px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-title {
+    font-size: 32px;
+  }
+  .best-program {
+    padding: 100px 0;
   }
 }
 @media (max-width: 1560px) {
@@ -2722,6 +2741,13 @@ body {
   }
   .packages .package-detail .btn {
     line-height: 55px;
+  }
+  .diverse-programs,
+  .diverse-programs .diverse-programs-thumbs {
+    margin-top: 50px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-thumb {
+    height: 400px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3136,6 +3162,32 @@ body {
   .packages .package-detail h5 {
     font-size: 28px;
   }
+  .program-kinds {
+    padding: 100px 0;
+  }
+  .program-kinds .page-title {
+    margin-bottom: 100px;
+  }
+  .program-kinds .program-kinds-content {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .program-kinds .program-kinds-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .program-kinds .program-kinds-content .hoverable-list {
+    margin: 30px 0;
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .program-kinds .program-kinds-content .btn {
+    margin-top: 20px;
+    line-height: 70px;
+  }
+  .program-kinds .program-kinds-preview {
+    height: 600px;
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -3265,6 +3317,9 @@ body {
   .champion,
   .champion.retreat-champion {
     padding-block: 60px;
+  }
+  .best-program {
+    padding-block: 50px 0;
   }
   .champion.retreat-champion {
     padding-top: 0;
@@ -3526,7 +3581,7 @@ body {
     padding-block: 50px;
   }
   .coaching.real-change .page-title,
-  .seasoned-athlete .page-title {
+  .seasoned-athlete .page-title, .program-kinds .page-title {
     margin-bottom: 50px;
   }
   .desire-results {
@@ -3584,7 +3639,7 @@ body {
     font-size: 40px;
     line-height: 60px;
   }
-  .resources {
+  .resources, .program-kinds {
     padding: 100px 0;
   }
   .program-gallery .program-gallery-listing {
@@ -3662,6 +3717,71 @@ body {
   }
   .packages .accordion .accordion-item + .accordion-item {
     margin-top: 20px;
+  }
+  .diverse-programs .diverse-programs-inner .heading {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-thumb {
+    height: 300px;
+  }
+  .diverse-programs .diverse-programs-inner .content,
+  .best-program .faqs h4 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .best-program .faqs h4 {
+    margin: 20px 0;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 34px;
+  }
+  .faqs .accordion .accordion-item .accordion-body h1,
+  .faqs .accordion .accordion-item .accordion-body h2,
+  .faqs .accordion .accordion-item .accordion-body h3,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h6 {
+    font-size: 30px;
+  }
+  .faqs .accordion .accordion-item .accordion-body p,
+  .faqs .accordion .accordion-item .accordion-body ul {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .faqs .accordion .accordion-item .accordion-body .btn {
+    min-width: 300px;
+    line-height: 65px;
+  }
+  .program-kinds {
+    padding: 70px 0;
+  }
+  .program-kinds .program-kinds-content {
+    margin-top: 0;
+  }
+  .program-kinds .program-kinds-content .btn {
+    margin-top: 70px;
+  }
+  .hero.program-hero.hero-bottom {
+    padding: 60px 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper {
+    padding: 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .page-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 490px;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .hero-content {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .hero-content p {
+    text-align: start;
   }
 }
 @media (max-width: 767.98px) {
@@ -3779,7 +3899,8 @@ body {
     .program-about
     .program-about-content
     h3,
-  .retreat-includes .retreat-includes-wrapper .page-title, .packages .page-title {
+  .retreat-includes .retreat-includes-wrapper .page-title,
+  .packages .page-title {
     max-width: 480px;
     font-size: 30px !important;
     line-height: 38px !important;
@@ -3926,6 +4047,28 @@ body {
     font-size: 20px;
     line-height: 26.5px;
   }
+  .faqs .accordion .accordion-item .accordion-body h1,
+  .faqs .accordion .accordion-item .accordion-body h2,
+  .faqs .accordion .accordion-item .accordion-body h3,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h6 {
+    font-size: 24px;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs li a {
+    text-transform: capitalize;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs {
+    margin-bottom: 0;
+  }
+  .program-kinds .program-kinds-preview {
+    width: 305px;
+    height: 455px;
+    margin-top: 30px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 400px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -3969,7 +4112,9 @@ body {
   .schedule .btn,
   .seasoned-athlete.prefered-program .btn,
   .resource-program .btn,
-  .retreat-detail .btn, .packages .package-detail .btn {
+  .retreat-detail .btn,
+  .packages .package-detail .btn,
+  .faqs .accordion .accordion-item .accordion-body .btn, .program-kinds .program-kinds-content .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -4004,7 +4149,8 @@ body {
   .home-program-swiper .swiper-slide .home-program-content,
   .team-work .team-work-content,
   .cta-programs .cta-programs-text .cta-desc,
-  .book-consultation .theme-tabs .tab-content .tab-title span, .packages .package-detail h5 {
+  .book-consultation .theme-tabs .tab-content .tab-title span,
+  .packages .package-detail h5 {
     font-size: 18px !important;
     line-height: 25px !important;
   }
@@ -4110,7 +4256,7 @@ body {
     .members-swiper
     .swiper-slide
     .client-text
-    h2 {
+    h2, .best-program .faqs h4 {
     max-width: 380px;
     font-size: 24px !important;
     line-height: 32px !important;
@@ -4162,5 +4308,23 @@ body {
   }
   .packages .accordion .accordion-item .accordion-header .accordion-button {
     font-size: 26px;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs li a {
+    font-size: 12px;
+  }
+  .program-kinds .page-title {
+    margin-bottom: 30px;
+  }
+  .program-kinds .program-kinds-content .hoverable-list {
+    margin: 30px 0 20px;
+    font-size: 32px !important;
+    line-height: 57px !important;
+  }
+  .program-kinds .program-kinds-preview {
+    width: 205px;
+    height: 355px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 300px;
   }
 }
