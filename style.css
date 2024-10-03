@@ -723,7 +723,7 @@ body {
   font-family: "Neue Plak SemiBold";
   background: transparent !important;
 }
-.faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after, .packages .accordion .accordion-item .accordion-header .accordion-button::after {
   background-image: url(assets/img/arrow-icon.png);
 }
 .faqs .accordion .accordion-item .accordion-body {
@@ -1134,6 +1134,7 @@ body {
   gap: 40px;
   display: flex;
   margin-top: 50px;
+  width: calc(100% - 40px);
 }
 .retreat-detail .retreat-detail-gallery img:nth-child(1) {
   height: 700px;
@@ -1148,8 +1149,8 @@ body {
 }
 .retreat-detail .upcoming-table {
   margin: auto;
-  width: 830px;
   border: none;
+  max-width: 830px;
 }
 .retreat-detail .upcoming-table thead tr th {
   border: none;
@@ -1162,17 +1163,17 @@ body {
   min-width: 290px;
   margin-top: 80px;
   line-height: 90px;
-  background: #dbb962;
+  background: #dbb962 !important;
 }
 .hero.retreat-detail-hero {
   margin-top: 150px;
 }
-.hero.retreat-detail-hero .page-title {
+.hero.retreat-detail-hero .hero-wrapper .page-title {
   font-size: 65px;
   max-width: 600px;
   line-height: 75px;
 }
-.hero.retreat-detail-hero .hero-content p {
+.hero.retreat-detail-hero .hero-wrapper .hero-content p {
   font-size: 28px;
   line-height: 38px;
 }
@@ -1182,12 +1183,13 @@ body {
 .champion.retreat-champion .champion-gallery {
   margin-top: -50px;
 }
-.retreat-includes .container-fluid {
-  padding: 0 95px;
-}
 .retreat-includes .retreat-includes-wrapper {
   background: #f8f7ef;
-  padding: 70px 140px 140px;
+  padding: 70px 40px 140px;
+}
+.retreat-includes .retreat-includes-wrapper .retreat-includes-inner {
+  margin: auto;
+  max-width: 1425px;
 }
 .retreat-includes .retreat-includes-wrapper .page-title {
   text-align: center;
@@ -1201,7 +1203,10 @@ body {
   line-height: 60px;
 }
 .retreat-includes .retreat-includes-wrapper .includes-listing.right {
-  padding-left: 100px;
+  padding-left: 70px;
+}
+.retreat-includes .retreat-includes-wrapper .includes-listing.left {
+  padding-right: 50px;
 }
 .retreat-includes .retreat-includes-wrapper .includes-listing li + li {
   margin-top: 30px;
@@ -1244,6 +1249,7 @@ body {
 .packages .package-detail h5 {
   font-size: 35px;
   line-height: 50px;
+  color: var(--primary);
 }
 .packages .package-detail + .package-detail {
   margin-top: 90px;
@@ -2378,6 +2384,23 @@ body {
   color: #cc914a;
   line-height: 34px;
 }
+.packages .accordion {
+  margin-top: 50px;
+}
+.packages .accordion .accordion-item {
+  border: none;
+  background: none;
+}
+.packages .accordion .accordion-item .accordion-header .accordion-button {
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  background: none;
+  box-shadow: none;
+}
+.packages .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-position: bottom;
+}
 @media (min-width: 1400px) {
   .container,
   .container-fluid {
@@ -2396,7 +2419,8 @@ body {
   .diverse-programs .container-fluid,
   .program-gallery .container-fluid,
   .retreat-grid .container-fluid,
-  .desire-results .container-fluid {
+  .desire-results .container-fluid,
+  .retreat-includes .container-fluid {
     padding-inline: 100px;
   }
 }
@@ -2471,6 +2495,10 @@ body {
   .desire-results .desire-results-inner .desire-results-content .page-title {
     font-size: 55px;
     line-height: 60px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing {
+    font-size: 30px;
+    line-height: 50px;
   }
 }
 @media (max-width: 1560px) {
@@ -2668,6 +2696,32 @@ body {
   }
   .program-gallery .program-gallery-listing .program-about {
     margin-bottom: 80px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 750px;
+  }
+  .retreat-hover-img .hoverable-list {
+    margin: 100px auto 0;
+  }
+  .retreat-hover-img .hoverable-list li {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.right {
+    padding-left: 20px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.left {
+    padding-right: 40px;
+  }
+  .packages h3 {
+    font-size: 50px;
+  }
+  .packages .package-detail h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .packages .package-detail .btn {
+    line-height: 55px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3048,6 +3102,40 @@ body {
     font-size: 40px;
     margin-bottom: 0px;
   }
+  .hero.retreat-detail-hero {
+    margin-top: 100px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 500px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 600px;
+    margin-top: 60px;
+  }
+  .retreat-hover-img .hoverable-list {
+    margin: 50px auto 0;
+  }
+  .retreat-hover-img .hoverable-list li {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 500px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.right {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.left {
+    padding-right: 0;
+  }
+  .packages h3 {
+    margin: 50px 0;
+    font-size: 40px;
+  }
+  .packages .package-detail h5 {
+    font-size: 28px;
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -3170,11 +3258,16 @@ body {
   .home-program-swiper {
     padding-block: 70px;
   }
-  .our-programs .our-programs-obstacle .btn {
+  .our-programs .our-programs-obstacle .btn,
+  .retreat-detail .btn {
     line-height: 62px;
   }
-  .champion {
+  .champion,
+  .champion.retreat-champion {
     padding-block: 60px;
+  }
+  .champion.retreat-champion {
+    padding-top: 0;
   }
   .champion .champion-text .page-title {
     margin-bottom: 30px;
@@ -3544,6 +3637,32 @@ body {
   .classes-detail .page-content {
     margin-top: 20px;
   }
+  .retreat-detail .create-date {
+    font-size: 35px;
+    line-height: 85px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 500px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 600px;
+  }
+  .hero.retreat-detail-hero {
+    margin-top: 50px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 420px;
+  }
+  .packages {
+    margin-top: 50px;
+    padding: 50px 0 70px;
+  }
+  .packages .package-detail + .package-detail {
+    margin-top: 40px;
+  }
+  .packages .accordion .accordion-item + .accordion-item {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -3659,7 +3778,8 @@ body {
     .program-gallery-listing
     .program-about
     .program-about-content
-    h3 {
+    h3,
+  .retreat-includes .retreat-includes-wrapper .page-title, .packages .page-title {
     max-width: 480px;
     font-size: 30px !important;
     line-height: 38px !important;
@@ -3755,6 +3875,57 @@ body {
   .program-gallery .program-gallery-listing {
     margin: 50px 0;
   }
+  .retreat-detail {
+    margin-top: 0;
+  }
+  .retreat-detail .create-date {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .retreat-detail .retreat-detail-gallery {
+    gap: 10px;
+    margin-top: 40px;
+    width: calc(100% - 10px);
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 400px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .retreat-detail .btn {
+    margin-top: 40px;
+  }
+  .retreat-detail .upcoming-table {
+    margin-top: 10px;
+  }
+  .retreat-hover-img .hoverable-list {
+    gap: 40px;
+    display: flex;
+    margin: 0 -35px;
+    overflow-x: auto;
+    padding-left: 35px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    margin-top: 20px;
+  }
+  .retreat-hover-img .hoverable-list li {
+    text-wrap: nowrap;
+  }
+  .retreat-includes .retreat-includes-wrapper {
+    padding: 40px;
+  }
+  .retreat-includes .retreat-includes-wrapper .page-title {
+    margin-bottom: 40px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing {
+    font-size: 20px;
+    line-height: 26.5px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -3797,7 +3968,8 @@ body {
   .book-consultation .theme-tabs .tab-content .btn,
   .schedule .btn,
   .seasoned-athlete.prefered-program .btn,
-  .resource-program .btn {
+  .resource-program .btn,
+  .retreat-detail .btn, .packages .package-detail .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -3832,7 +4004,7 @@ body {
   .home-program-swiper .swiper-slide .home-program-content,
   .team-work .team-work-content,
   .cta-programs .cta-programs-text .cta-desc,
-  .book-consultation .theme-tabs .tab-content .tab-title span {
+  .book-consultation .theme-tabs .tab-content .tab-title span, .packages .package-detail h5 {
     font-size: 18px !important;
     line-height: 25px !important;
   }
@@ -3981,5 +4153,14 @@ body {
   .coaching .page-title span {
     display: inline;
     padding: 0 !important;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 185px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 210px;
+  }
+  .packages .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 26px;
   }
 }

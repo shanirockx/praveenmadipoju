@@ -201,7 +201,7 @@
     <section class="hero retreat-detail-hero">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6 col-lg-8">
             <div class="hero-wrapper">
               <h1 class="page-title">De-stress, recharge and reconnect</h1>
               <div class="hero-content">
@@ -219,7 +219,7 @@
           </div>
         </div>
         <div class="row retreat-hover-img">
-          <div class="col-6">
+          <div class="col-md-6">
             <ul class="hoverable-list" data-img-container="retreat-preview">
               <li class="active" data-img-target="assets/img/retreat-9.png">
                 Get active
@@ -238,7 +238,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 text-end">
+          <div class="col-md-6 text-end">
             <img
               id="retreat-preview"
               class="img-fluid program-kinds-preview"
@@ -294,38 +294,40 @@
         <div class="row">
           <div class="col-12">
             <div class="retreat-includes-wrapper">
-              <h1 class="page-title">What's included</h1>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="includes-listing">
-                    <li>
-                      Return flights + Airport Transfers <br />DXB to Zanzibar
-                    </li>
-                    <li>
-                      6 Night Luxury stay in a shared Deluxe room with 2 meals
-                      per day
-                    </li>
-                    <li>Daily workout & stretch sessions</li>
-                    <li>
-                      Daily Mindful Mornings with journaling and breathwork
-                    </li>
-                    <li>
-                      Private lunch on a beautiful sandbank in the middle of the
-                      ocean
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="includes-listing right">
-                    <li>
-                      National Forest hike to see some furry local friends
-                    </li>
-                    <li>2 snorkeling / diving trips</li>
-                    <li>Giant turtle sanctuary visit</li>
-                    <li>Spice market & Stone Town visit</li>
-                    <li>Exclusive warrior welcome pack</li>
-                    <li>Sunset dhow cruise</li>
-                  </ul>
+              <div class="retreat-includes-inner">
+                <h1 class="page-title">What's included</h1>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <ul class="includes-listing left">
+                      <li>
+                        Return flights + Airport Transfers DXB to Zanzibar
+                      </li>
+                      <li>
+                        6 Night Luxury stay in a shared Deluxe room with 2 meals
+                        per day
+                      </li>
+                      <li>Daily workout & stretch sessions</li>
+                      <li>
+                        Daily Mindful Mornings with journaling and breathwork
+                      </li>
+                      <li>
+                        Private lunch on a beautiful sandbank in the middle of
+                        the ocean
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-6">
+                    <ul class="includes-listing right">
+                      <li>
+                        National Forest hike to see some furry local friends
+                      </li>
+                      <li>2 snorkeling / diving trips</li>
+                      <li>Giant turtle sanctuary visit</li>
+                      <li>Spice market & Stone Town visit</li>
+                      <li>Exclusive warrior welcome pack</li>
+                      <li>Sunset dhow cruise</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -336,8 +338,8 @@
     <section class="packages">
       <div class="container-fluid">
         <h1 class="page-title text-white text-center">Packages</h1>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row d-none d-lg-flex">
+          <div class="col-lg-6">
             <h3 class="text-white">Scuba Diving Package</h3>
             <div class="package-detail">
               <h5>Shared Occupancy Deluxe Room <br />AED 5,500</h5>
@@ -348,7 +350,7 @@
               <button class="btn btn-outline-primary">Book this Package</button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h3 class="text-white">Snorkeling Package</h3>
             <div class="package-detail">
               <h5>Shared Occupancy Deluxe Room <br />AED 4,700</h5>
@@ -357,6 +359,76 @@
             <div class="package-detail">
               <h5>Single Occupancy Deluxe Room <br />AED 6,700</h5>
               <button class="btn btn-outline-primary">Book this Package</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion d-lg-none" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Scuba Diving Package
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="package-detail">
+                  <h5>Shared Occupancy Deluxe Room <br />AED 5,500</h5>
+                  <button class="btn btn-outline-primary">
+                    Book this Package
+                  </button>
+                </div>
+                <div class="package-detail">
+                  <h5>Single Occupancy Deluxe Room <br />AED 7,500</h5>
+                  <button class="btn btn-outline-primary">
+                    Book this Package
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Snorkeling Package
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="package-detail">
+                  <h5>Shared Occupancy Deluxe Room <br />AED 4,700</h5>
+                  <button class="btn btn-outline-primary">
+                    Book this Package
+                  </button>
+                </div>
+                <div class="package-detail">
+                  <h5>Single Occupancy Deluxe Room <br />AED 6,700</h5>
+                  <button class="btn btn-outline-primary">
+                    Book this Package
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
