@@ -342,7 +342,7 @@ body {
   line-height: 65px;
 }
 .theme-tabs .tab-content .btn {
-  width: 450px;
+  min-width: 450px;
   line-height: 70px;
   background: #ca674c;
 }
@@ -844,8 +844,8 @@ body {
   color: #f7f6f2;
   min-width: 205px;
   line-height: 65px;
-  border: 2px solid #f7f6f2;
   background: transparent !important;
+  border: 2px solid #f7f6f2 !important;
 }
 .story-hero.hero {
   padding: 60px 0 115px;
@@ -960,9 +960,9 @@ body {
   min-width: 250px;
   margin-top: 40px;
   line-height: 60px;
-  border: 2px solid #f7f6f2;
   color: #f7f6f2 !important;
   background: transparent !important;
+  border: 2px solid #f7f6f2 !important;
 }
 .hero.retreat-hero .hero-content {
   max-width: 600px;
@@ -1006,9 +1006,9 @@ body {
   margin-top: 50px;
   line-height: 65px;
   min-width: 205px;
-  border: 2px solid var(--primary);
   color: var(--primary) !important;
   background: transparent !important;
+  border: 2px solid var(--primary) !important;
 }
 .upcoming-table {
   width: 620px;
@@ -1253,9 +1253,9 @@ body {
   min-width: 230px;
   margin-top: 30px;
   line-height: 65px;
-  border: 2px solid var(--primary);
   color: var(--primary) !important;
   background: transparent !important;
+  border: 2px solid var(--primary) !important;
 }
 .hero.event-hero {
   margin-top: 70px;
@@ -1694,8 +1694,8 @@ body {
 }
 .hero.program-hero .hero-wrapper .hero-content .btn {
   color: #cc914a !important;
-  border: 2px solid #cc914a;
   background: transparent !important;
+  border: 2px solid #cc914a !important;
 }
 .hero.program-hero .program-img {
   width: 640px;
@@ -1766,11 +1766,16 @@ body {
 }
 .seasoned-athlete .page-title,
 .coaching.real-change .page-title {
-  font-size: 65px;
+  font-size: 55px;
+  max-width: 850px;
+  line-height: 70px;
   margin-bottom: 150px;
 }
-.seasoned-athlete .page-title span:nth-of-type(2) {
-  padding-left: 800px;
+.coaching.seasoned-athlete .page-title {
+  max-width: 985px;
+}
+.coaching.seasoned-athlete .page-title span:nth-of-type(1) {
+  padding-right: 100px;
 }
 .seasoned-athlete .seasoned-athlete-img {
   width: 730px;
@@ -1782,7 +1787,6 @@ body {
   font-size: 36px;
   max-width: 650px;
   line-height: 48px;
-  padding-left: 100px;
 }
 .seasoned-athlete.prefered-program .program-content-wrapper {
   max-width: 640px;
@@ -1893,7 +1897,7 @@ body {
   object-fit: cover;
 }
 .desire-results {
-  padding: 110px 60px;
+  padding: 110px 0;
   background: #f7e488;
 }
 .desire-results .desire-results-inner {
@@ -1901,14 +1905,28 @@ body {
   padding: 90px 110px;
   background: #dbb962;
 }
+.desire-results .desire-results-inner .desire-results-content {
+  gap: 60px;
+  display: flex;
+}
+.desire-results .desire-results-inner .desire-results-content .page-title {
+  width: calc(33.33% - 30px);
+}
 .desire-results .desire-results-inner .desire-results-img {
-  width: 100%;
+  width: 465px;
   height: 605px;
-  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 .desire-results .desire-results-inner .title-end {
-  max-width: 260px;
+  display: flex;
+  align-items: flex-end;
   margin-bottom: -130px;
+  justify-content: flex-end;
+  width: calc(33.33% - 30px);
+}
+.desire-results .desire-results-inner .title-end span {
+  max-width: 300px;
 }
 .desire-results .desire-results-inner .btn {
   min-width: 370px;
@@ -1931,6 +1949,7 @@ body {
   line-height: 65px;
 }
 .resource-program {
+  gap: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1947,10 +1966,11 @@ body {
 }
 .resource-program .btn {
   width: 325px;
+  flex-shrink: 0;
   line-height: 70px;
   color: #ba7d5d !important;
-  border: 2px solid #ba7d5d;
   background: transparent !important;
+  border: 2px solid #ba7d5d !important;
 }
 .classes-detail .main-heading {
   font-size: 90px;
@@ -2162,8 +2182,8 @@ body {
 }
 .champion .champion-text.champion-last .champion-cta .btn.btn-outline-primary {
   color: #cc914a !important;
-  border: 2px solid #cc914a;
   background: transparent !important;
+  border: 2px solid #cc914a !important;
 }
 .champion .champion-text.champion-last .champion-cta .btn {
   min-width: 275px;
@@ -2281,9 +2301,9 @@ body {
   font-size: 20px;
   line-height: 65px;
   margin: 10px 0 40px;
-  border: 2px solid #ba7d5d;
   color: #ba7d5d !important;
   background: transparent !important;
+  border: 2px solid #ba7d5d !important;
 }
 .membership-tabs .tab-pane .member-plan .plan-detail {
   margin: 0;
@@ -2374,7 +2394,8 @@ body {
   .upcoming-retreat .container-fluid,
   .diverse-programs .container-fluid,
   .program-gallery .container-fluid,
-  .retreat-grid .container-fluid {
+  .retreat-grid .container-fluid,
+  .desire-results .container-fluid {
     padding-inline: 100px;
   }
 }
@@ -2392,8 +2413,21 @@ body {
   .story-hero.hero .hero-wrapper .hero-content {
     padding: 50px 0 0 60px;
   }
-  .story-hero.hero .story-img {
+  .story-hero.hero .story-img,
+  .hero.hero-program .hero-program-img {
     height: 650px;
+  }
+  .hero.hero-program .hero-wrapper {
+    margin-top: 65px;
+  }
+  .hero .hero-wrapper .page-title {
+    font-size: 80px;
+  }
+  .hero.hero-program .hero-wrapper .hero-content {
+    padding-inline: 50px 0;
+  }
+  .hero .hero-wrapper .hero-content p {
+    font-size: 38px;
   }
   .upcoming-retreat .upcoming-retreat-wrapper {
     padding: 60px;
@@ -2408,6 +2442,34 @@ body {
   }
   .offer-listing .offer-title .tagline {
     font-size: 60px;
+  }
+  .our-clients .members-swiper .swiper-slide {
+    padding-inline: 30px 50px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .desire-results .desire-results-inner {
+    padding: 60px;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title {
+    font-size: 55px;
+    line-height: 60px;
   }
 }
 @media (max-width: 1560px) {
@@ -2445,6 +2507,9 @@ body {
   }
   .hero.hero-home-program .hero-wrapper {
     margin-top: 30px;
+  }
+  .hero.program-hero.bia-mama-hero .hero-wrapper .page-title {
+    font-size: 65px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -2491,7 +2556,8 @@ body {
   .guide .guide-form-wrapper .page-title {
     font-size: 48px;
   }
-  .guide .guide-img {
+  .guide .guide-img,
+  .hero.hero-program .hero-program-img {
     height: 600px;
   }
   .mission .mission-swiper .swiper-slide img {
@@ -2560,6 +2626,44 @@ body {
   .game-motive .game-motive-content p {
     font-size: 24px;
     line-height: 30px;
+  }
+  .coaching.real-change {
+    padding-block: 100px;
+  }
+  .seasoned-athlete .page-title,
+  .coaching.real-change .page-title {
+    margin-bottom: 100px;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 505px;
+  }
+  .desire-results .desire-results-inner .title-end {
+    margin-bottom: -75px;
+  }
+  .program-listing {
+    padding: 100px 0;
+  }
+  .program-listing .program-listing-text h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero.program-hero .hero-wrapper .hero-content {
+    padding-right: 50px;
+  }
+  .hero.program-hero.bia-mama-hero {
+    padding: 70px 0;
+  }
+  .hero.program-hero.bia-mama-hero .program-img {
+    width: 420px;
+    height: 600px;
+  }
+  .seasoned-athlete.prefered-program h3 {
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -2689,7 +2793,8 @@ body {
     width: 100%;
     height: 450px;
   }
-  .hero.retreat-hero .retreat-img {
+  .hero.retreat-hero .retreat-img,
+  .hero.hero-program .hero-program-img {
     height: 550px;
   }
   .guide .guide-img {
@@ -2831,6 +2936,105 @@ body {
   }
   .offer-listing .what-we-offer-content {
     max-width: 100%;
+  }
+  .coaching.real-change .page-title {
+    max-width: 745px;
+  }
+  .coaching.real-change .our-clients .members-swiper {
+    max-height: 600px;
+  }
+  .coaching.real-change .our-clients .real-change-img {
+    height: 600px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .desire-results .desire-results-inner {
+    padding: 40px;
+  }
+  .desire-results .desire-results-inner .desire-results-content {
+    gap: 30px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    width: 400px;
+  }
+  .coaching.seasoned-athlete .page-title {
+    font-size: 45px;
+    max-width: 850px;
+  }
+  .seasoned-athlete .seasoned-athlete-img {
+    height: 450px;
+  }
+  .seasoned-athlete .seasoned-athlete-text {
+    font-size: 30px;
+    max-width: 650px;
+  }
+  .schedule .timings-outer .timings h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .schedule {
+    padding: 70px 0;
+  }
+  .schedule .timings-outer {
+    margin-top: 30px;
+  }
+  .schedule .timings-outer .timings h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .book-consultation .page-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .book-consultation {
+    padding: 100px 0;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .book-consultation .book-text {
+    line-height: 35px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-duration {
+    margin: 10px 0;
+  }
+  .book-consultation .theme-tabs .tab-content .btn {
+    min-width: 350px;
+  }
+  .schedule .page-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .schedule .schedule-listing {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .seasoned-athlete.prefered-program h3 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .seasoned-athlete.prefered-program .btn {
+    margin-top: 0;
+    font-size: 24px;
+    min-width: 300px;
+    line-height: 60px;
+  }
+  .resource-program .btn {
+    width: 285px;
+  }
+  .resource-program h3 {
+    font-size: 60px;
+    line-height: 80px;
   }
 }
 @media (max-width: 991.98px) {
@@ -3132,10 +3336,12 @@ body {
     margin-bottom: 50px;
   }
   .hero.hero-home-program .hero-wrapper,
-  .hero.hero-home-program {
+  .hero.hero-home-program,
+  .hero.hero-program .hero-wrapper {
     margin-top: 0;
   }
-  .hero.hero-home-program .hero-home-program-img {
+  .hero.hero-home-program .hero-home-program-img,
+  .hero.hero-program .hero-program-img {
     width: 100%;
     height: 600px;
   }
@@ -3184,14 +3390,97 @@ body {
   .game-experience .page-title {
     margin: 0 auto 50px;
   }
-  .game-experience .game-experience-content {
+  .game-experience .game-experience-content,
+  .seasoned-athlete.prefered-program .program-content-wrapper {
     padding: 35px 35px 0;
   }
-  .retreat-grid .retreat-grid-content {
+  .retreat-grid .retreat-grid-content,
+  .seasoned-athlete .seasoned-athlete-text,
+  .seasoned-athlete.prefered-program .program-content-wrapper {
     max-width: 100%;
   }
   .retreat-grid .retreat-grid-content p {
     padding-inline: 20px 0;
+  }
+  .coaching.real-change .page-title {
+    max-width: 515px;
+  }
+  .coaching.real-change .our-clients .real-change-img {
+    width: 100%;
+    height: 500px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text {
+    max-width: 100%;
+    padding: 0 0 50px;
+  }
+  .coaching.real-change {
+    padding-block: 50px;
+  }
+  .coaching.real-change .page-title,
+  .seasoned-athlete .page-title {
+    margin-bottom: 50px;
+  }
+  .desire-results {
+    padding: 35px 0;
+  }
+  .desire-results .desire-results-inner .desire-results-content {
+    flex-wrap: wrap;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title,
+  .seasoned-athlete .seasoned-athlete-img {
+    width: 100%;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    width: 100%;
+    height: 800px;
+  }
+  .desire-results
+    .desire-results-inner
+    .desire-results-content
+    .page-title
+    span {
+    display: flex;
+    max-width: 300px;
+  }
+  .desire-results .desire-results-inner .title-end {
+    text-align: end;
+  }
+  .coaching.seasoned-athlete .page-title {
+    max-width: 710px;
+  }
+  .seasoned-athlete .seasoned-athlete-text {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 35px 35px 0;
+  }
+  .book-consultation .theme-tabs {
+    margin-top: 70px;
+  }
+  .book-consultation .theme-tabs .tab-content .btn {
+    margin-top: 50px;
+  }
+  .our-clients .members-swiper .swiper-slide {
+    padding: 30px 30px 0;
+  }
+  .schedule .schedule-listing {
+    font-size: 25px;
+    margin: 30px 0 0;
+    line-height: 50px;
+  }
+  .resource-program {
+    flex-wrap: wrap;
+  }
+  .resource-program h3 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .resources {
+    padding: 100px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -3289,16 +3578,25 @@ body {
     height: 250px;
   }
   .hero.hero-home-program .hero-home-program-img,
-  .programs-listing .programs-listing-img {
+  .programs-listing .programs-listing-img,
+  .hero.hero-program .hero-program-img {
     height: 450px;
   }
   .coaching.support-story .page-title,
-  .game-motive .coaching .page-title {
+  .game-motive .coaching .page-title,
+  .coaching.real-change .page-title,
+  .coaching.seasoned-athlete .page-title,
+  .book-consultation .page-title,
+  .resource-program h3 {
     max-width: 480px;
     font-size: 30px !important;
     line-height: 38px !important;
   }
-  .game-motive .game-motive-inforgrphic {
+  .coaching.real-change .page-title {
+    max-width: 345px;
+  }
+  .game-motive .game-motive-inforgrphic,
+  .seasoned-athlete .seasoned-athlete-img {
     width: 100%;
     height: 350px;
   }
@@ -3334,6 +3632,51 @@ body {
     font-size: 24px;
     line-height: 32px;
   }
+  .coaching.real-change .our-clients .real-change-img {
+    height: 370px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2,
+  .schedule .timings-outer .timings h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text h5 {
+    font-size: 18px;
+  }
+  .our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 30px 10px 0;
+  }
+  .desire-results
+    .desire-results-inner
+    .desire-results-content
+    .page-title
+    span {
+    max-width: 200px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 650px;
+  }
+  .program-listing {
+    padding: 50px 0;
+  }
+  .program-listing .program-listing-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .hero.program-hero.bia-mama-hero .program-img {
+    width: 300px;
+    height: 390px;
+  }
+  .resource-program + .resource-program {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -3351,7 +3694,8 @@ body {
   .program-cta,
   .program-video,
   .home-program-swiper,
-  .coaching {
+  .coaching,
+  .resources {
     padding: 50px 0;
   }
   .lets-chat .lets-chat-inner h2 {
@@ -3370,7 +3714,12 @@ body {
   .lets-chat .lets-chat-inner .btn,
   .theme-form .btn,
   .program-cta .btn,
-  .programs-listing-content .btn {
+  .programs-listing-content .btn,
+  .desire-results .desire-results-inner .btn,
+  .book-consultation .theme-tabs .tab-content .btn,
+  .schedule .btn,
+  .seasoned-athlete.prefered-program .btn,
+  .resource-program .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -3404,7 +3753,8 @@ body {
   .retreat-tagline .tagline,
   .home-program-swiper .swiper-slide .home-program-content,
   .team-work .team-work-content,
-  .cta-programs .cta-programs-text .cta-desc {
+  .cta-programs .cta-programs-text .cta-desc,
+  .book-consultation .theme-tabs .tab-content .tab-title span {
     font-size: 18px !important;
     line-height: 25px !important;
   }
@@ -3480,13 +3830,18 @@ body {
   .retreat-quote .quote-title,
   .retreat-grid .retreat-grid-content h3,
   .programs-listing .programs-listing-content h3,
-  .game-motive .game-motive-content h3 {
+  .game-motive .game-motive-content h3,
+  .program-listing .program-listing-text h3,
+  .schedule .timings-outer .timings h3,
+  .seasoned-athlete.prefered-program h3 {
     font-size: 24px;
     line-height: 35px;
   }
   .retreat-grid .row .retreat-grid-img img,
   .hero.hero-home-program .hero-home-program-img,
-  .game-motive .game-motive-inforgrphic {
+  .game-motive .game-motive-inforgrphic,
+  .hero.hero-program .hero-program-img,
+  .seasoned-athlete .seasoned-athlete-img {
     height: 270px;
   }
   .coaching.support-story .page-title {
@@ -3498,7 +3853,14 @@ body {
   .coaching.coaching-home-program .page-title {
     max-width: 350px;
   }
-  .game-motive .coaching .page-title, .what-we-offer .headline {
+  .game-motive .coaching .page-title,
+  .what-we-offer .headline,
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2 {
     max-width: 380px;
     font-size: 24px !important;
     line-height: 32px !important;
@@ -3520,5 +3882,26 @@ body {
   .offer-listing .offer-title .tagline {
     font-size: 28px;
     line-height: 44px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 450px;
+  }
+  .program-listing .program-listing-text h3 {
+    margin-bottom: 5px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-title {
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-duration {
+    margin: 20px 0 0;
+  }
+  .coaching .page-title {
+    text-align: center;
+  }
+  .coaching .page-title span {
+    display: inline;
+    padding: 0 !important;
   }
 }
