@@ -472,6 +472,9 @@ body {
 .champion.obstacle-champion {
   padding-block: 150px;
 }
+.champion.obstacle-champion .champion-gallery .gallery-item.show-mobile {
+  display: none;
+}
 .our-clients {
   background: #f8f7ef;
   padding-block: 90px 135px;
@@ -2107,7 +2110,8 @@ body {
   max-width: 1750px;
 }
 .hero.obstacle-hero .hero-wrapper {
-  max-width: 100%;
+  margin: inherit;
+  max-width: 800px;
 }
 .hero.obstacle-hero .obstacle-img {
   width: 925px;
@@ -2164,6 +2168,10 @@ body {
   margin: 40px 0 0;
   line-height: 40px;
 }
+.game-experience.obstacle-game .game-experience-content {
+  max-width: 650px;
+  padding-left: 100px;
+}
 .game-experience.obstacle-game .game-experience-content p {
   font-size: 40px;
   line-height: 55px;
@@ -2172,6 +2180,7 @@ body {
   min-width: 290px;
   line-height: 90px;
   margin: 65px 0 -25px 0;
+  background: #CC914A !important;
 }
 .obstacle-program {
   background: #dbb962;
@@ -2201,6 +2210,7 @@ body {
 .champion .champion-text.champion-last .champion-cta .btn {
   min-width: 275px;
   line-height: 70px;
+  background: #cc914a !important;
 }
 .membership-benefits {
   background: #dbb962;
@@ -2519,6 +2529,10 @@ body {
   .best-program {
     padding: 100px 0;
   }
+  .game-experience.obstacle-game .game-experience-content p {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 @media (max-width: 1560px) {
   .guide .guide-form-wrapper .page-title {
@@ -2558,6 +2572,10 @@ body {
   }
   .hero.program-hero.bia-mama-hero .hero-wrapper .page-title {
     font-size: 65px;
+  }
+  .hero.obstacle-hero .obstacle-img {
+    width: 725px;
+    height: 550px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -2611,9 +2629,11 @@ body {
   .mission .mission-swiper .swiper-slide img {
     height: 635px;
   }
+  .champion .champion-gallery:nth-of-type(1) {
+    padding-top: 70px;
+  }
   .champion .champion-gallery {
     gap: 40px;
-    padding-top: 70px;
     margin-top: 0 !important;
   }
   .coaching .coaching-grid h3 {
@@ -2748,6 +2768,23 @@ body {
   }
   .diverse-programs .diverse-programs-thumbs .program-thumb {
     height: 400px;
+  }
+  .membership-benefits .benefits-listing .page-title {
+    font-size: 75px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 90px;
+  }
+  .game-experience.obstacle-game .game-experience-content {
+    padding-left: 50px;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    margin: inherit;
+    max-width: 650px;
+  }
+  .hero.obstacle-hero .obstacle-img {
+    width: 625px;
+    height: 500px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3012,7 +3049,8 @@ body {
   .game-experience .page-title {
     margin: 0 auto 70px;
   }
-  .what-we-offer {
+  .what-we-offer,
+  .champion.obstacle-champion {
     padding: 100px 0;
   }
   .what-we-offer .offer-listing {
@@ -3188,6 +3226,33 @@ body {
   .program-kinds .program-kinds-preview {
     height: 600px;
   }
+  .membership-benefits .benefits-listing {
+    gap: 40px;
+    margin-top: 45px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 40px;
+  }
+  .membership-benefits .benefits-listing .page-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .membership-benefits .benefits-listing p {
+    font-size: 26px;
+  }
+  .membership-benefits .benefits-listing img {
+    height: 458px;
+  }
+  .membership-benefits .benefits-listing:nth-child(even) p {
+    margin: 20px 0 0;
+    max-width: 370px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    margin-top: 40px;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -3345,7 +3410,7 @@ body {
     justify-content: flex-start;
   }
   .champion .champion-gallery .gallery-item {
-    height: 335px;
+    height: 395px;
     width: calc(33.333% - 27px);
   }
   .champion .champion-gallery .gallery-item:nth-child(odd) {
@@ -3581,7 +3646,8 @@ body {
     padding-block: 50px;
   }
   .coaching.real-change .page-title,
-  .seasoned-athlete .page-title, .program-kinds .page-title {
+  .seasoned-athlete .page-title,
+  .program-kinds .page-title {
     margin-bottom: 50px;
   }
   .desire-results {
@@ -3639,7 +3705,8 @@ body {
     font-size: 40px;
     line-height: 60px;
   }
-  .resources, .program-kinds {
+  .resources,
+  .program-kinds {
     padding: 100px 0;
   }
   .program-gallery .program-gallery-listing {
@@ -3783,6 +3850,60 @@ body {
   .hero.program-hero.hero-bottom .hero-wrapper .hero-content p {
     text-align: start;
   }
+  .champion.obstacle-champion .champion-gallery:nth-of-type(2),
+  .champion.obstacle-champion .champion-gallery:nth-of-type(3) {
+    display: none;
+  }
+  .champion.obstacle-champion .champion-gallery .gallery-item.show-mobile {
+    margin: 0;
+    display: block;
+  }
+  .champion.obstacle-champion .champion-gallery .gallery-item:nth-child(8) {
+    margin-top: -160px;
+  }
+  .membership-benefits .benefits-listing {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .membership-benefits .benefits-listing:nth-child(even) p,
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    max-width: 100%;
+  }
+  .membership-benefits
+    .benefits-listing:nth-child(odd)
+    .benefits-listing-content {
+    margin-top: 40px;
+    padding-left: 60px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    margin-top: 30px;
+  }
+  .membership-benefits .benefits-listing img {
+    width: 400px;
+    height: 458px;
+  }
+  .game-experience.obstacle-game .game-experience-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .game-experience.obstacle-game .game-experience-content .btn {
+    line-height: 70px;
+    margin: 30px 0 50px;
+  }
+  .game-experience.obstacle-game .game-experience-steps {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-steps .steps {
+    max-width: 100%;
+  }
+  .game-experience.obstacle-game .game-experience-steps .steps p {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -3827,8 +3948,12 @@ body {
   .client-swiper .swiper-wrapper {
     padding: 50px 0 80px;
   }
-  .client-says {
+  .client-says,
+  .champion.obstacle-champion {
     padding: 70px 0;
+  }
+  .champion.obstacle-champion .champion-text.champion-last {
+    margin-top: 70px;
   }
   .newsletter .newsletter-form {
     margin: 20px 0;
@@ -4069,6 +4194,29 @@ body {
   .hero.program-hero.hero-bottom .program-img {
     height: 400px;
   }
+  .champion .champion-text.champion-last .page-title,
+  .cta-obstacle .page-title {
+    margin-bottom: 20px;
+  }
+  .champion .champion-text.champion-last .champion-cta {
+    margin-top: 30px;
+  }
+  .cta-obstacle p {
+    margin-bottom: 0;
+  }
+  .membership-benefits {
+    padding: 50px 0 120px;
+  }
+  .game-experience.obstacle-game .game-experience-content .btn {
+    margin: 30px 0;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    padding-bottom: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-infographic, .hero.obstacle-hero .obstacle-img {
+    width: 100%;
+    height: 400px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -4114,7 +4262,9 @@ body {
   .resource-program .btn,
   .retreat-detail .btn,
   .packages .package-detail .btn,
-  .faqs .accordion .accordion-item .accordion-body .btn, .program-kinds .program-kinds-content .btn {
+  .faqs .accordion .accordion-item .accordion-body .btn,
+  .program-kinds .program-kinds-content .btn,
+  .champion .champion-text.champion-last .champion-cta .btn, .game-experience.obstacle-game .game-experience-content .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -4256,7 +4406,8 @@ body {
     .members-swiper
     .swiper-slide
     .client-text
-    h2, .best-program .faqs h4 {
+    h2,
+  .best-program .faqs h4 {
     max-width: 380px;
     font-size: 24px !important;
     line-height: 32px !important;
@@ -4326,5 +4477,15 @@ body {
   }
   .hero.program-hero.hero-bottom .program-img {
     height: 300px;
+  }
+  .membership-benefits .benefits-listing img {
+    width: 230px;
+    height: 240px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 0;
+  }
+  .game-experience.obstacle-game .game-experience-infographic, .hero.obstacle-hero .obstacle-img {
+    height: 260px;
   }
 }
