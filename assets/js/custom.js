@@ -182,7 +182,7 @@ document.querySelectorAll(".list-itens").forEach((item) => {
       "assets/img/program-trainee.png";
   });
 });
-
+//header toggle
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("toggle-menu").addEventListener("click", function () {
     document.querySelector("header").classList.toggle("mobile-menu");
