@@ -25,6 +25,7 @@ body {
   font-size: 25px;
   padding: 0 30px;
   cursor: pointer;
+  text-wrap: nowrap;
   line-height: 50px;
   border-radius: 50px;
   background: #dbb962;
@@ -4675,6 +4676,11 @@ body {
     width: 20px;
     height: 20px;
   }
+  .desire-results .desire-results-inner .btn {
+    min-width: 50px;
+    font-size: 24px;
+    line-height: 70px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -4979,5 +4985,12 @@ body {
   .theme-tabs .theme-navtabs li a,
   .theme-tabs .theme-navtabs .nav-link {
     font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .desire-results .desire-results-inner .btn {
+    font-size: 12px;
+    line-height: 40px;
+    padding-inline: 20px;
   }
 }
