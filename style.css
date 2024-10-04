@@ -188,8 +188,8 @@ body {
   font-size: 18px;
   min-width: 160px;
   line-height: 50px;
-  background: #ca674c;
   transition: all 0.3s ease;
+  background: #ca674c !important;
   font-family: "Neue Plak SemiBold";
 }
 .header.show-mega-menu .navbar .navbar-brand .white-logo {
