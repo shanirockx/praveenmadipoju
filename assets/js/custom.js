@@ -179,7 +179,7 @@ document.querySelectorAll(".list-itens").forEach((item) => {
 
   item.addEventListener("mouseout", function () {
     document.getElementById("megaMenuImage").src =
-      "assets/img/program-trainee.png";
+      "assets/img/obstacle-nav.png";
   });
 });
 
