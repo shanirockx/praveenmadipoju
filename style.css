@@ -1326,6 +1326,9 @@ body {
   line-height: 80px;
 }
 .event-gallery .event-gallery-item {
+  margin-top: -170px;
+}
+/* .event-gallery .event-gallery-item {
   gap: 58px;
   display: flex;
 }
@@ -1349,7 +1352,7 @@ body {
 .event-gallery .event-gallery-item:nth-of-type(2) img:nth-child(2) {
   width: 584px;
   height: 409px;
-}
+} */
 .event-gallery .event-gallery-text {
   font-size: 28px;
   line-height: 38px;
@@ -2138,9 +2141,9 @@ body {
   font-size: 42px;
   max-width: 965px;
   line-height: 55px;
-  padding: 140px 0 0 0;
+  padding: 130px 0 0 0;
 }
-.event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) {
+/* .event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) {
   margin-block: -170px 120px;
   justify-content: flex-end;
 }
@@ -2163,7 +2166,7 @@ body {
   img:nth-child(2) {
   width: 765px;
   height: 475px;
-}
+} */
 .game-experience.obstacle-game .game-experience-steps {
   gap: 30px;
   display: flex;
@@ -3353,6 +3356,12 @@ body {
     .plan-detail {
     max-width: calc(33.333% - 34px);
   }
+  .event-gallery.event-obstacle .page-title {
+    max-width: 670px;
+  }
+  .event-gallery .event-gallery-item {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -4067,6 +4076,14 @@ body {
     padding-left: 0;
     margin: 0 0 10px;
   }
+  .event-gallery.event-obstacle .event-gallery-text {
+    font-size: 30px;
+    max-width: 500px;
+    line-height: 40px;
+  }
+  .event-gallery {
+    margin: 60px 0 120px;
+  }
   .membership-tabs
     .tab-pane
     .member-plan-support
@@ -4154,6 +4171,15 @@ body {
     padding-inline: 0;
     color: #cc914a;
     font-size: 18px;
+  }
+  .event-gallery .event-gallery-item {
+    margin-top: 50px;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    padding-top: 50px;
+  }
+  .event-gallery {
+    margin: 60px 0 90px;
   }
 }
 @media (max-width: 767.98px) {
@@ -4472,6 +4498,15 @@ body {
   .membership-tabs .nav-tabs .nav-link {
     font-size: 14px;
   }
+  .event-gallery.event-obstacle .page-title {
+    max-width: 470px;
+    padding-left: 30px;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    font-size: 24px;
+    max-width: 350px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 575.98px) {
   .page-title,
@@ -4758,5 +4793,8 @@ body {
   .membership-tabs .tab-pane .member-plan .plan-detail img {
     margin-top: 7px;
     flex-shrink: 0;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    max-width: 250px;
   }
 }
