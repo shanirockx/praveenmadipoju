@@ -29,6 +29,7 @@ body {
   border-radius: 50px;
   background: #dbb962;
   transition: all 0.3s ease;
+  font-family: "Neue Plak SemiBold";
 }
 .btn:hover {
   background: #dbb962;
@@ -524,7 +525,6 @@ body {
   margin: auto 0 !important;
 }
 .our-clients .members-swiper .swiper-slide .client-text {
-  max-width: 465px;
   padding-left: 90px;
 }
 .our-clients .members-swiper .swiper-slide .client-text h5 {
@@ -534,8 +534,8 @@ body {
 }
 .our-clients .members-swiper .swiper-slide .client-text p {
   margin: 0;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 36px;
 }
 .our-clients .client-video {
   width: 575px;
@@ -550,7 +550,6 @@ body {
 .our-clients .members-swiper .swiper-pagination {
   left: 0;
   right: auto;
-  margin-top: -40px;
 }
 .our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
   opacity: 1;
@@ -2910,7 +2909,7 @@ body {
 }
 @media (max-width: 1199.98px) {
   .header .navbar {
-    padding: 15px 20px 15px 10px;
+    padding: 13px 16px;
   }
   .header .navbar .navbar-toggler {
     padding: 0;
@@ -2938,10 +2937,10 @@ body {
     display: block;
   }
   .header.mobile-menu .navbar .navbar-nav {
-    margin-block: 40px !important;
+    margin-block: 40px 120px !important;
   }
   .header.mobile-menu .navbar .navbar-nav .nav-link {
-    padding: 0 50px;
+    padding: 0 40px;
     font-size: 32px;
     line-height: 55px;
     color: var(--white);
@@ -2956,8 +2955,8 @@ body {
     fill: var(--white);
   }
   .header.mobile-menu .btn {
-    margin: 0 50px 50px;
-    width: calc(100% - 100px);
+    margin: 0 40px 50px;
+    width: calc(100% - 80px);
     color: #ca674c !important;
     background: var(--white) !important;
   }
@@ -3435,6 +3434,18 @@ body {
     min-width: 160px;
     line-height: 50px;
     font-size: 20px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text {
+    padding-left: 30px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .header.mobile-menu .btn {
+    left: 0;
+    bottom: 0;
+    position: absolute;
   }
 }
 @media (max-width: 991.98px) {
@@ -4277,6 +4288,9 @@ body {
     .our-programs-obstacle {
     margin-top: 40px;
   }
+  .our-clients .members-swiper {
+    max-height: max-content;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -4649,6 +4663,17 @@ body {
   }
   .modal .modal-dialog .modal-header .modal-title {
     font-size: 24px;
+  }
+  .header .navbar .navbar-brand img {
+    max-width: 160px;
+  }
+  .header .navbar .navbar-toggler svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header .navbar .navbar-toggler .menu-close {
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 575.98px) {

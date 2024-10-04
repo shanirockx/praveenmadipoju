@@ -5,8 +5,8 @@ var programSwiper = new Swiper(".program-swiper", {
   slidesPerView: "auto",
   spaceBetween: 100,
   navigation: {
-    nextEl: ".program-swiper .swiper-button-prev",
-    prevEl: ".program-swiper .swiper-button-next",
+    nextEl: ".program-swiper .swiper-button-next",
+    prevEl: ".program-swiper .swiper-button-prev",
   },
   coverflowEffect: {
     rotate: 0,
@@ -66,8 +66,8 @@ var homeProgramSwiper = new Swiper(".home-program-swiper", {
   centeredSlides: true,
   roundLengths: true,
   navigation: {
-    nextEl: ".home-program-swiper .swiper-button-prev",
-    prevEl: ".home-program-swiper .swiper-button-next",
+    nextEl: ".home-program-swiper .swiper-button-next",
+    prevEl: ".home-program-swiper .swiper-button-prev",
   },
   breakpoints: {
     1400: {
