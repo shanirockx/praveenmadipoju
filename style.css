@@ -728,11 +728,21 @@ body {
   background: transparent !important;
 }
 .faqs .accordion .accordion-item .accordion-header .accordion-button::after,
-.packages
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
+.packages .accordion .accordion-item .accordion-header .accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse.show
+  + .accordion-header
+  .hide-btn.accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse
+  + .accordion-header
+  .show-btn.accordion-button::after {
   background-image: url(assets/img/arrow-icon.png);
 }
 .faqs .accordion .accordion-item .accordion-body {
@@ -2180,7 +2190,7 @@ body {
   min-width: 290px;
   line-height: 90px;
   margin: 65px 0 -25px 0;
-  background: #CC914A !important;
+  background: #cc914a !important;
 }
 .obstacle-program {
   background: #dbb962;
@@ -2270,6 +2280,12 @@ body {
 .cta-obstacle .page-title {
   margin-bottom: 50px;
 }
+.coaching.membership-tabs {
+  padding: 0;
+}
+.coaching.membership-tabs .page-title {
+  max-width: 900px;
+}
 .membership-tabs .nav-tabs {
   border: none;
   justify-content: center;
@@ -2279,6 +2295,7 @@ body {
   font-size: 45px;
   color: #eacba6;
   line-height: 135px;
+  background: transparent;
   font-family: "Neue Plak SemiBold";
 }
 .membership-tabs .nav-tabs .nav-link.active {
@@ -2372,7 +2389,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 170px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 .membership-tabs
   .tab-pane
@@ -2414,12 +2431,23 @@ body {
   background: none;
   box-shadow: none;
 }
-.packages
-  .accordion
-  .accordion-item
-  .accordion-header
-  .accordion-button::after {
-  background-position: bottom;
+.packages .accordion .accordion-item .accordion-header .accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse.show
+  + .accordion-header
+  .hide-btn.accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse
+  + .accordion-header
+  .show-btn.accordion-button::after,
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-position: center;
 }
 @media (min-width: 1400px) {
   .container,
@@ -2576,6 +2604,33 @@ body {
   .hero.obstacle-hero .obstacle-img {
     width: 725px;
     height: 550px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 40px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 20px 30px 50px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 40px 100px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: calc(33.333% - 67px);
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail {
+    padding-right: 0;
+  }
+  .membership-tabs .tab-pane .member-plan-support .member-plan {
+    padding: 50px 70px 70px;
   }
 }
 @media (min-width: 1199px) and (max-width: 1699.98px) {
@@ -3253,6 +3308,51 @@ body {
   .hero.obstacle-hero .hero-wrapper {
     padding-bottom: 60px;
   }
+  .coaching.membership-tabs .page-title {
+    max-width: 700px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 30px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 20px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-title {
+    font-size: 36px;
+    line-height: 70px;
+  }
+  .membership-tabs .tab-pane .member-plan-support .page-title {
+    font-size: 36px;
+    padding-left: 70px;
+  }
+  .membership-tabs .tab-pane .obstacle-program-text {
+    margin: 0 0 70px;
+  }
+  .membership-tabs .tab-pane .member-plan .btn-outline-primary {
+    line-height: 50px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .membership-tabs .tab-pane .member-plan-support .member-plan {
+    padding: 30px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 40px 50px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: calc(33.333% - 34px);
+  }
 }
 @media (max-width: 991.98px) {
   .page-title,
@@ -3706,7 +3806,8 @@ body {
     line-height: 60px;
   }
   .resources,
-  .program-kinds {
+  .program-kinds,
+  .membership-guide {
     padding: 100px 0;
   }
   .program-gallery .program-gallery-listing {
@@ -3904,6 +4005,156 @@ body {
   .game-experience.obstacle-game .game-experience-steps .steps p {
     margin-top: 10px;
   }
+  .membership-guide .membership-guide-detail + .membership-guide-detail {
+    margin-top: 50px !important;
+  }
+  .membership-tabs .nav-tabs {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    border-radius: 50px;
+    margin: 50px 0 30px;
+    justify-content: space-between;
+    box-shadow: inset 0 0 0 2px #e3c7a5;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    color: #e3c7a4;
+    text-wrap: nowrap;
+    line-height: 32px;
+    border-radius: 50px;
+    display: inline-flex;
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    font-family: "Neue Plak SemiBold";
+  }
+  .membership-tabs .nav-tabs .nav-link.active {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  .membership-tabs .tab-pane .obstacle-program-text {
+    font-size: 28px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 35px;
+    height: inherit;
+    margin-bottom: 35px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-title,
+  .membership-tabs .tab-pane .member-plan .plan-price {
+    line-height: 50px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail
+    li {
+    gap: 8px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail img {
+    margin-top: 10px;
+    flex-shrink: 0;
+  }
+  .membership-tabs .tab-pane .member-plan-support .page-title {
+    padding-left: 0;
+    margin: 0 0 10px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail {
+    flex-wrap: wrap;
+    gap: 0 !important;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail
+    .plan-price {
+    width: 100%;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail
+    .theme-tabs {
+    width: 100%;
+    margin-top: 35px;
+    align-items: flex-start !important;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 28px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail
+    li
+    + li {
+    margin-top: 20px;
+  }
+
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse.show
+    + .accordion-header
+    .show-btn,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse
+    + .accordion-header
+    .hide-btn {
+    display: none;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse.show
+    + .accordion-header
+    .hide-btn,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse
+    + .accordion-header
+    .show-btn {
+    display: flex;
+    padding-inline: 0;
+    color: #cc914a;
+    font-size: 18px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -3941,9 +4192,6 @@ body {
   .faqs .accordion .accordion-item .accordion-header .accordion-button {
     padding: 12px 0;
     font-size: 30px;
-  }
-  .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
-    background-position: bottom;
   }
   .client-swiper .swiper-wrapper {
     padding: 50px 0 80px;
@@ -4025,7 +4273,8 @@ body {
     .program-about-content
     h3,
   .retreat-includes .retreat-includes-wrapper .page-title,
-  .packages .page-title {
+  .packages .page-title,
+  .page-title {
     max-width: 480px;
     font-size: 30px !important;
     line-height: 38px !important;
@@ -4066,7 +4315,8 @@ body {
     font-size: 40px;
     line-height: 55px;
   }
-  .what-we-offer-content p {
+  .what-we-offer-content p,
+  .membership-tabs .tab-pane .obstacle-program-text {
     font-size: 24px;
     line-height: 32px;
   }
@@ -4101,7 +4351,8 @@ body {
   .desire-results .desire-results-inner .desire-results-img {
     height: 650px;
   }
-  .program-listing {
+  .program-listing,
+  .membership-guide {
     padding: 50px 0;
   }
   .program-listing .program-listing-text {
@@ -4213,9 +4464,13 @@ body {
   .hero.obstacle-hero .hero-wrapper {
     padding-bottom: 40px;
   }
-  .game-experience.obstacle-game .game-experience-infographic, .hero.obstacle-hero .obstacle-img {
+  .game-experience.obstacle-game .game-experience-infographic,
+  .hero.obstacle-hero .obstacle-img {
     width: 100%;
     height: 400px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 14px;
   }
 }
 @media (max-width: 575.98px) {
@@ -4245,6 +4500,12 @@ body {
   .lets-chat .lets-chat-inner p:first-child {
     margin-bottom: 20px !important;
   }
+  .lets-chat .lets-chat-inner {
+    gap: 25px;
+  }
+  .lets-chat .lets-chat-inner .btn {
+    margin-top: 20px;
+  }
   .program-cta p {
     margin-bottom: 30px;
   }
@@ -4264,7 +4525,8 @@ body {
   .packages .package-detail .btn,
   .faqs .accordion .accordion-item .accordion-body .btn,
   .program-kinds .program-kinds-content .btn,
-  .champion .champion-text.champion-last .champion-cta .btn, .game-experience.obstacle-game .game-experience-content .btn {
+  .champion .champion-text.champion-last .champion-cta .btn,
+  .game-experience.obstacle-game .game-experience-content .btn, .membership-tabs .tab-pane .member-plan .btn-outline-primary {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -4300,7 +4562,8 @@ body {
   .team-work .team-work-content,
   .cta-programs .cta-programs-text .cta-desc,
   .book-consultation .theme-tabs .tab-content .tab-title span,
-  .packages .package-detail h5 {
+  .packages .package-detail h5,
+  .membership-tabs .tab-pane .obstacle-program-text {
     font-size: 18px !important;
     line-height: 25px !important;
   }
@@ -4485,7 +4748,15 @@ body {
   .membership-benefits .benefits-listing:nth-child(odd) {
     gap: 0;
   }
-  .game-experience.obstacle-game .game-experience-infographic, .hero.obstacle-hero .obstacle-img {
+  .game-experience.obstacle-game .game-experience-infographic,
+  .hero.obstacle-hero .obstacle-img {
     height: 260px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 10px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail img {
+    margin-top: 7px;
+    flex-shrink: 0;
   }
 }

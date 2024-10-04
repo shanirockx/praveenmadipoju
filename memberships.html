@@ -171,10 +171,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h2 class="page-title text-center">
+            <h2 class="page-title">
               Choose the membership <span>that's right for you</span>
             </h2>
-            <ul class="mb-2 nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
@@ -244,7 +244,7 @@
                   Our signature group training obstacle program
                 </h6>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-lg-4">
                     <div class="member-plan">
                       <h3 class="plan-title">Basic</h3>
                       <div class="plan-price">
@@ -256,12 +256,17 @@
                         Get started
                       </button>
                       <p class="plan-detail">
+                        <img
+                          src="assets/img/tick-icon.svg"
+                          alt=""
+                          class="d-lg-none"
+                        />
                         One Obstacle Program class per week <br />(4 classes per
                         month)
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-lg-4">
                     <div class="member-plan">
                       <h3 class="plan-title">Double Take</h3>
                       <div class="plan-price">
@@ -273,12 +278,17 @@
                         Get started
                       </button>
                       <p class="plan-detail">
+                        <img
+                          src="assets/img/tick-icon.svg"
+                          alt=""
+                          class="d-lg-none"
+                        />
                         Two Obstacle Program classes per week <br />(8 classes
                         per month)
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-lg-4">
                     <div class="member-plan">
                       <h6 class="best-value">Best Value!</h6>
                       <h3 class="plan-title">Unlimited</h3>
@@ -291,6 +301,11 @@
                         Get started
                       </button>
                       <p class="plan-detail">
+                        <img
+                          src="assets/img/tick-icon.svg"
+                          alt=""
+                          class="d-lg-none"
+                        />
                         Unlimited Obstacle Program classes every month
                         <br />Unlimited gym access
                       </p>
@@ -302,15 +317,23 @@
                     <h2 class="page-title">
                       Want more support in your journey?
                     </h2>
+                    <p class="d-lg-none mb-4">
+                      Get the tools you need to thrive in every aspect of your
+                      life
+                    </p>
                     <div class="member-plan">
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="member-plan-detail d-flex gap-4 justify-content-between"
+                      >
                         <div>
                           <h3 class="plan-title">The Ultimate</h3>
-                          <p class="plan-subheading">
+                          <p class="plan-subheading d-none d-lg-block">
                             Get the tools you need to thrive in every aspect of
                             your life
                           </p>
-                          <button class="btn btn-outline-primary">
+                          <button
+                            class="btn btn-outline-primary d-none d-lg-block"
+                          >
                             Get started
                           </button>
                         </div>
@@ -319,8 +342,11 @@
                           <span class="price">1,499</span
                           ><span class="duration">/mo</span>
                         </div>
+                        <button class="btn btn-outline-primary d-lg-none">
+                          Get started
+                        </button>
                       </div>
-                      <div class="plan-detail-wrapper">
+                      <div class="plan-detail-wrapper d-none d-lg-flex">
                         <ul class="plan-detail">
                           <li>
                             Unlimited Obstacle Program classes every month
@@ -344,6 +370,76 @@
                           </li>
                         </ul>
                       </div>
+                      <div
+                        class="accordion plan-accordion d-lg-none"
+                        id="accordionUltimate"
+                      >
+                        <div class="accordion-item border-0">
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionUltimate"
+                          >
+                            <div class="plan-detail-wrapper mt-0">
+                              <ul class="plan-detail">
+                                <li>
+                                  <img src="assets/img/tick-icon.svg" alt="" />
+                                  Unlimited Obstacle Program classes every month
+                                  including Mobility + Stretch classes
+                                </li>
+                                <li>
+                                  <img src="assets/img/tick-icon.svg" alt="" />
+                                  Set SMART Goals + create an action plan with a
+                                  dedicated Bia Warrior mentor
+                                </li>
+                              </ul>
+                              <ul class="plan-detail">
+                                <li>
+                                  <img src="assets/img/tick-icon.svg" alt="" />
+                                  Customized nutrition support and tracking with
+                                  weekly personalized feedback to reach your
+                                  goals
+                                </li>
+                                <li>
+                                  <img
+                                    src="assets/img/tick-icon.svg"
+                                    alt=""
+                                  />Monthly Mental Health Consultation
+                                </li>
+                              </ul>
+                              <ul class="plan-detail">
+                                <li>
+                                  <img src="assets/img/tick-icon.svg" alt="" />
+                                  Personal Bia Warrior mentor with weekly
+                                  check-ins
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button show-btn shadow-none bg-transparent border-top"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              Show membership features
+                            </button>
+                            <button
+                              class="accordion-button hide-btn shadow-none bg-transparent border-top"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              Hide membership features
+                            </button>
+                          </h2>
+                        </div>
+                      </div>
                     </div>
                     <p class="disclaimer">
                       * All memberships are monthly auto recurring and not
@@ -359,18 +455,23 @@
                 aria-labelledby="warrior-tab"
                 tabindex="0"
               >
+                <h6 class="obstacle-program-text d-lg-none">
+                  Semi-private personalized strength training program
+                </h6>
                 <div class="row">
                   <div class="col-12 member-plan-support">
                     <div class="member-plan">
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="member-plan-detail d-flex gap-4 justify-content-between"
+                      >
                         <div>
                           <h3 class="plan-title">Warrior Strong Membership</h3>
-                          <p class="plan-subheading">
+                          <p class="plan-subheading d-none d-lg-block">
                             Semi-private personalized strength training program
                           </p>
                         </div>
                         <div
-                          class="align-items-end col-md-6 d-flex flex-column theme-tabs"
+                          class="align-items-end d-flex flex-column theme-tabs"
                         >
                           <div
                             class="theme-navtabs mb-0"
@@ -435,28 +536,66 @@
                       </div>
                       <div class="plan-detail-wrapper">
                         <ul class="plan-detail">
-                          <li>2 Warrior Strong sessions per week</li>
                           <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
+                            2 Warrior Strong sessions per week
+                          </li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
                             Monthly progressive program with progress tracker
                           </li>
-                          <li>Monthly body measurements and optional photos</li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Monthly body measurements and optional photos
+                          </li>
                         </ul>
                         <ul class="plan-detail">
                           <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
                             Customized nutrition support and tracking with
                             weekly personalized feedback to reach your goals
                           </li>
                           <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
                             Discount to combined Obstacle Program membership and
                             Mobility + Stretch classes
                           </li>
                         </ul>
                         <ul class="plan-detail">
                           <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
                             Invite to community WhatsApp group with exclusive
                             resources
                           </li>
                           <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />
                             Access to community events with exclusive warrior
                             discount
                           </li>
@@ -477,19 +616,24 @@
                 aria-labelledby="bia-mama-tab"
                 tabindex="0"
               >
+                <h6 class="obstacle-program-text d-lg-none">
+                  Semi-private personalized pregnancy + postpartum program
+                </h6>
                 <div class="row">
                   <div class="col-12 member-plan-support">
                     <div class="member-plan">
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="member-plan-detail d-flex gap-4 justify-content-between"
+                      >
                         <div>
                           <h3 class="plan-title">Bia Mama Membership</h3>
-                          <p class="plan-subheading">
+                          <p class="plan-subheading d-none d-lg-block">
                             Semi-private personalized pregnancy + postpartum
                             program
                           </p>
                         </div>
                         <div
-                          class="align-items-end col-md-6 d-flex flex-column theme-tabs"
+                          class="align-items-end d-flex flex-column theme-tabs"
                         >
                           <div
                             class="theme-navtabs mb-0"
@@ -554,28 +698,62 @@
                       </div>
                       <div class="plan-detail-wrapper">
                         <ul class="plan-detail">
-                          <li>3 Bia Mama sessions per week</li>
                           <li>
-                            Personalized program tailored to your unique needs
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />3 Bia Mama sessions per week
                           </li>
                           <li>
-                            Customized nutrition support and guidance on your
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Personalized program tailored to your unique needs
+                          </li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Customized nutrition support and guidance on your
                             journey
                           </li>
                         </ul>
                         <ul class="plan-detail">
-                          <li>Discount to Mobility + Stretch classes</li>
                           <li>
-                            Invite to community WhatsApp group with exclusive
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Discount to Mobility + Stretch classes
+                          </li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Invite to community WhatsApp group with exclusive
                             resources
                           </li>
                         </ul>
                         <ul class="plan-detail">
                           <li>
-                            Access to community events with exclusive warrior
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Access to community events with exclusive warrior
                             discount
                           </li>
-                          <li>Instant access to Facebook community group</li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Instant access to Facebook community group
+                          </li>
                         </ul>
                       </div>
                       <button class="btn btn-outline-primary">
@@ -592,18 +770,23 @@
                 aria-labelledby="bia-girls-tab"
                 tabindex="0"
               >
+                <h6 class="obstacle-program-text d-lg-none">
+                  12 week term-based program for 9-14 year old girls
+                </h6>
                 <div class="row">
                   <div class="col-12 member-plan-support">
                     <div class="member-plan">
-                      <div class="d-flex justify-content-between">
+                      <div
+                        class="member-plan-detail d-flex gap-4 justify-content-between"
+                      >
                         <div>
                           <h3 class="plan-title">Bia Girls Membership</h3>
-                          <p class="plan-subheading">
+                          <p class="plan-subheading d-none d-lg-block">
                             12 week term-based program for 9-14 year old girls
                           </p>
                         </div>
                         <div
-                          class="align-items-end col-md-6 d-flex flex-column theme-tabs"
+                          class="align-items-end d-flex flex-column theme-tabs"
                         >
                           <div
                             class="theme-navtabs mb-0"
@@ -668,18 +851,44 @@
                       </div>
                       <div class="plan-detail-wrapper">
                         <ul class="plan-detail">
-                          <li>2-3 Bia Girls sessions per week</li>
                           <li>
-                            Personalized program tailored to your unique needs
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />2-3 Bia Girls sessions per week
                           </li>
-                          <li>Bia Girls welcome pack and journal</li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Personalized program tailored to your unique needs
+                          </li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Bia Girls welcome pack and journal
+                          </li>
                         </ul>
                         <ul class="plan-detail">
                           <li>
-                            Access to community events with exclusive warrior
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Access to community events with exclusive warrior
                             discount
                           </li>
-                          <li>Instant access to Facebook community group</li>
+                          <li>
+                            <img
+                              src="assets/img/tick-icon.svg"
+                              alt=""
+                              class="d-lg-none"
+                            />Instant access to Facebook community group
+                          </li>
                         </ul>
                       </div>
                       <button class="btn btn-outline-primary">
@@ -748,10 +957,16 @@
           <div class="col-12">
             <div class="lets-chat-inner">
               <h2 class="page-title">Let's Chat</h2>
-              <p>
-                Need to get in touch urgently? <br />Start a real-time
-                conversation via WhatsApp (Monday-Friday 8AM - 8PM)
-              </p>
+              <div>
+                <p class="flex-md-shrink-0 mb-0">
+                  Need to get in touch urgently?
+                </p>
+                <p class="flex-md-shrink-0 mb-0">
+                  Start a real-time conversation via WhatsApp
+                  <br class="d-none d-md-block" />
+                  (Monday-Friday 8AM - 8PM)
+                </p>
+              </div>
               <button class="btn btn-light">Start Chat</button>
             </div>
           </div>
