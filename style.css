@@ -48,7 +48,7 @@ body {
   margin-bottom: 30px;
 }
 .header .navbar {
-  padding: 40px 40px 40px 20px;
+  padding: 32px 54px 32px 39px;
 }
 .header .navbar .navbar-brand img {
   transition: all 0.3s ease;
@@ -1325,34 +1325,9 @@ body {
   max-width: 660px;
   line-height: 80px;
 }
-.event-gallery .event-gallery-item {
+.event-gallery.event-obstacle .event-gallery-item {
   margin-top: -170px;
 }
-/* .event-gallery .event-gallery-item {
-  gap: 58px;
-  display: flex;
-}
-.event-gallery .event-gallery-item img {
-  object-fit: cover;
-  border-radius: 13px;
-}
-.event-gallery .event-gallery-item:nth-of-type(1) {
-  margin-block: -20px 70px;
-  justify-content: flex-end;
-}
-.event-gallery .event-gallery-item:nth-of-type(1) img {
-  width: 672px;
-  height: 511px;
-}
-.event-gallery .event-gallery-item:nth-of-type(2) img:nth-child(1) {
-  width: 372px;
-  height: 623px;
-  margin-top: -350px;
-}
-.event-gallery .event-gallery-item:nth-of-type(2) img:nth-child(2) {
-  width: 584px;
-  height: 409px;
-} */
 .event-gallery .event-gallery-text {
   font-size: 28px;
   line-height: 38px;
@@ -2143,30 +2118,6 @@ body {
   line-height: 55px;
   padding: 130px 0 0 0;
 }
-/* .event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) {
-  margin-block: -170px 120px;
-  justify-content: flex-end;
-}
-.event-gallery.event-obstacle .event-gallery-item img {
-  border-radius: 0;
-}
-.event-gallery.event-obstacle .event-gallery-item:nth-of-type(1) img {
-  width: 640px;
-  height: 548px;
-}
-.event-gallery.event-obstacle
-  .event-gallery-item:nth-of-type(2)
-  img:nth-child(1) {
-  width: 335px;
-  height: 520px;
-  margin: -350px 0 0 100px;
-}
-.event-gallery.event-obstacle
-  .event-gallery-item:nth-of-type(2)
-  img:nth-child(2) {
-  width: 765px;
-  height: 475px;
-} */
 .game-experience.obstacle-game .game-experience-steps {
   gap: 30px;
   display: flex;
@@ -2452,6 +2403,17 @@ body {
 .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
   background-position: center;
 }
+.event-coaching-swiper .swiper-slide img {
+  width: 100%;
+  height: 490px;
+}
+.event-coaching-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
+}
+.event-coaching-swiper .swiper-arrows-wrapper .swiper-arrows {
+  top: auto;
+  bottom: 100px;
+}
 @media (min-width: 1400px) {
   .container,
   .container-fluid {
@@ -2478,6 +2440,17 @@ body {
 @media (min-width: 1630.98px) and (max-width: 1820.98px) {
   .offer-listing .offer-title .tagline {
     font-size: 70px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0 120px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 443px;
+    height: 590px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 425px;
+    height: 565px;
   }
 }
 @media (max-width: 1630px) {
@@ -2563,6 +2536,17 @@ body {
   .game-experience.obstacle-game .game-experience-content p {
     font-size: 35px;
     line-height: 45px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0 100px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 400px;
+    height: 550px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 400px;
+    height: 525px;
   }
 }
 @media (max-width: 1560px) {
@@ -2843,6 +2827,17 @@ body {
   .hero.obstacle-hero .obstacle-img {
     width: 625px;
     height: 500px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0 30px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 343px;
+    height: 490px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 325px;
+    height: 465px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3359,8 +3354,13 @@ body {
   .event-gallery.event-obstacle .page-title {
     max-width: 670px;
   }
-  .event-gallery .event-gallery-item {
+  .event-gallery.event-obstacle .event-gallery-item {
     margin-top: 100px;
+  }
+  .coaching .coaching-grid .btn {
+    min-width: 160px;
+    line-height: 50px;
+    font-size: 20px;
   }
 }
 @media (max-width: 991.98px) {
@@ -4172,6 +4172,7 @@ body {
     color: #cc914a;
     font-size: 18px;
   }
+  .event-gallery.event-obstacle .event-gallery-item,
   .event-gallery .event-gallery-item {
     margin-top: 50px;
   }
@@ -4180,6 +4181,21 @@ body {
   }
   .event-gallery {
     margin: 60px 0 90px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 294px;
+    height: 400px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 294px;
+    height: 450px;
+  }
+  .hero.event-hero .hero-wrapper {
+    padding: 0;
+    max-width: 100%;
   }
 }
 @media (max-width: 767.98px) {
@@ -4299,9 +4315,13 @@ body {
     .program-about-content
     h3,
   .retreat-includes .retreat-includes-wrapper .page-title,
-  .packages .page-title,
-  .page-title {
+  .packages .page-title {
     max-width: 480px;
+    font-size: 30px !important;
+    line-height: 38px !important;
+    margin-inline: auto !important;
+  }
+  .page-title {
     font-size: 30px !important;
     line-height: 38px !important;
   }
@@ -4342,7 +4362,8 @@ body {
     line-height: 55px;
   }
   .what-we-offer-content p,
-  .membership-tabs .tab-pane .obstacle-program-text {
+  .membership-tabs .tab-pane .obstacle-program-text,
+  .hero.event-hero .hero-wrapper .hero-content p {
     font-size: 24px;
     line-height: 32px;
   }
@@ -4502,10 +4523,40 @@ body {
     max-width: 470px;
     padding-left: 30px;
   }
-  .event-gallery.event-obstacle .event-gallery-text {
+  .event-gallery.event-obstacle .event-gallery-text,
+  .event-gallery .event-gallery-text {
     font-size: 24px;
     max-width: 350px;
     line-height: 30px;
+  }
+  .event-gallery .event-gallery-text {
+    max-width: 100%;
+    padding: 40px 40px 0;
+  }
+  .our-programs .program-swiper .swiper-slide img {
+    height: 240px;
+  }
+  .our-programs .programs-text,
+  .our-programs .our-programs-obstacle {
+    padding-inline: 40px;
+  }
+  .coaching .coaching-grid {
+    margin: 40px auto 0;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 230px;
+    height: 350px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 230px;
+    height: 350px;
+    margin-top: 65px;
+  }
+  .hero.event-hero .hero-img {
+    gap: 10px;
+  }
+  .hero.event-hero {
+    margin-top: 0px;
   }
 }
 @media (max-width: 575.98px) {
@@ -4546,6 +4597,7 @@ body {
   }
   .coaching .page-title {
     max-width: 250px;
+    margin-inline: auto !important;
   }
   .lets-chat .lets-chat-inner .btn,
   .theme-form .btn,
@@ -4561,7 +4613,10 @@ body {
   .faqs .accordion .accordion-item .accordion-body .btn,
   .program-kinds .program-kinds-content .btn,
   .champion .champion-text.champion-last .champion-cta .btn,
-  .game-experience.obstacle-game .game-experience-content .btn, .membership-tabs .tab-pane .member-plan .btn-outline-primary {
+  .game-experience.obstacle-game .game-experience-content .btn,
+  .membership-tabs .tab-pane .member-plan .btn-outline-primary,
+  .our-programs.community-event .our-programs-obstacle .btn,
+  .hero.event-hero .hero-wrapper .hero-content .btn {
     font-size: 18px;
     min-width: 150px;
     line-height: 50px;
@@ -4578,10 +4633,6 @@ body {
   .our-programs .our-programs-obstacle .page-title {
     font-size: 22px;
     line-height: 40px !important;
-  }
-  .our-programs .programs-text,
-  .our-programs .our-programs-obstacle {
-    padding-inline: 40px;
   }
   .champion {
     overflow: hidden;
@@ -4796,5 +4847,16 @@ body {
   }
   .event-gallery.event-obstacle .event-gallery-text {
     max-width: 250px;
+  }
+  .event-gallery .event-gallery-text {
+    padding: 50px 30px 0 30px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 194px;
+    height: 259px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 187px;
+    height: 250px;
   }
 }

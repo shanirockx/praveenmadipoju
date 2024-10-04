@@ -102,6 +102,16 @@ var clientSwiper = new Swiper(".client-swiper", {
   },
 });
 
+var coachingSwiper = new Swiper(".event-coaching-swiper", {
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".event-coaching-swiper .swiper-button-next",
+    prevEl: ".event-coaching-swiper .swiper-button-prev",
+  },
+});
+
 $(function () {
   $("#tabcontainer .tabs").hide().eq(0).show();
   $("#tabcontainer-2 .tabs").hide().eq(0).show();
