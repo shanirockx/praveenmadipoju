@@ -158,6 +158,19 @@ body {
   h4 {
   font-family: "Neue Plak SemiBold";
 }
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens
+  h4
+  a {
+  color: var(--white);
+  text-decoration: none;
+}
 .header .navbar .navbar-nav .nav-link {
   padding: 0;
   font-size: 20px;
@@ -1744,7 +1757,7 @@ body {
   line-height: 65px;
 }
 .schedule {
-  color: #fff;
+  color: var(--white);
   background: #c5664c;
   padding: 110px 0 120px;
 }
@@ -2082,7 +2095,7 @@ body {
 }
 .program-cta.classes-cta .btn {
   min-width: 330px;
-  color: #fff !important;
+  color: var(--white) !important;
   background: #cc914a !important;
 }
 .membership-guide {
@@ -2391,10 +2404,10 @@ body {
 }
 .packages .accordion .accordion-item .accordion-header .accordion-button {
   border: none;
-  color: #fff;
   font-size: 36px;
   background: none;
   box-shadow: none;
+  color: var(--white);
 }
 .packages .accordion .accordion-item .accordion-header .accordion-button::after,
 .membership-tabs
@@ -2451,14 +2464,14 @@ body {
 }
 .modal .modal-dialog .modal-header * {
   opacity: 1;
-  color: #fff;
   line-height: 80px;
+  color: var(--white);
   filter: brightness(0) invert(1);
   font-family: "Neue Plak SemiBold";
 }
 .modal .modal-dialog .modal-body {
-  background: #fff;
   padding: 40px 60px 80px;
+  background: var(--white);
 }
 .modal .modal-dialog .modal-body .form-detail {
   font-size: 26px;
@@ -2946,7 +2959,7 @@ body {
     margin: 0 50px 50px;
     width: calc(100% - 100px);
     color: #ca674c !important;
-    background: #fff !important;
+    background: var(--white) !important;
   }
   .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
     padding: 10px 60px 20px;
@@ -4258,7 +4271,10 @@ body {
     padding: 0;
     max-width: 100%;
   }
-  .our-programs .program-swiper.home-swiper .swiper-slide .our-programs-obstacle {
+  .our-programs
+    .program-swiper.home-swiper
+    .swiper-slide
+    .our-programs-obstacle {
     margin-top: 40px;
   }
 }
@@ -4935,7 +4951,8 @@ body {
     width: 187px;
     height: 250px;
   }
-  .theme-tabs .theme-navtabs li a, .theme-tabs .theme-navtabs .nav-link {
+  .theme-tabs .theme-navtabs li a,
+  .theme-tabs .theme-navtabs .nav-link {
     font-size: 12px;
   }
 }
