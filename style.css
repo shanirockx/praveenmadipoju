@@ -378,6 +378,12 @@ body {
 .our-programs .program-swiper {
   margin: 130px -20px 90px;
 }
+.our-programs .program-swiper.home-swiper {
+  margin-bottom: 0;
+}
+.our-programs .program-swiper.home-swiper .swiper-slide .our-programs-obstacle {
+  margin-top: 90px;
+}
 .our-programs .program-swiper .swiper-slide {
   max-width: 1325px;
 }
@@ -398,6 +404,9 @@ body {
   position: absolute;
   margin-left: -620px;
   justify-content: space-between;
+}
+.our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+  top: 340px;
 }
 .our-programs .swiper-arrows-wrapper .swiper-arrows {
   position: inherit;
@@ -2994,6 +3003,12 @@ body {
     p {
     display: none;
   }
+  .our-programs .program-swiper .swiper-slide img {
+    height: 400px;
+  }
+  .our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+    top: 200px;
+  }
   .hero.story-hero .hero-wrapper {
     max-width: 450px;
   }
@@ -4243,6 +4258,9 @@ body {
     padding: 0;
     max-width: 100%;
   }
+  .our-programs .program-swiper.home-swiper .swiper-slide .our-programs-obstacle {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 767.98px) {
   .hero .hero-wrapper {
@@ -4582,9 +4600,15 @@ body {
   .our-programs .program-swiper .swiper-slide img {
     height: 240px;
   }
+  .our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+    top: 120px;
+  }
   .our-programs .programs-text,
   .our-programs .our-programs-obstacle {
     padding-inline: 40px;
+  }
+  .our-programs .program-swiper.home-swiper .our-programs-obstacle {
+    padding-inline: 0;
   }
   .coaching .coaching-grid {
     margin: 40px auto 0;
@@ -4910,5 +4934,8 @@ body {
   .hero.event-hero .hero-img .img-item:nth-child(2) {
     width: 187px;
     height: 250px;
+  }
+  .theme-tabs .theme-navtabs li a, .theme-tabs .theme-navtabs .nav-link {
+    font-size: 12px;
   }
 }
