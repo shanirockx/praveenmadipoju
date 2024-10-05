@@ -2430,6 +2430,7 @@ body {
 .event-coaching-swiper .swiper-slide img {
   width: 100%;
   height: 490px;
+  object-fit: cover;
 }
 .event-coaching-swiper .swiper-arrows-wrapper .swiper-arrows:after {
   display: none;
