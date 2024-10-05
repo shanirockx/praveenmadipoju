@@ -2463,6 +2463,10 @@ body {
   right: 40px;
   position: absolute;
 }
+.modal .modal-dialog .modal-header .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
 .modal .modal-dialog .modal-header * {
   opacity: 1;
   line-height: 80px;
