@@ -262,7 +262,11 @@
                         <span class="price">549</span
                         ><span class="duration">/mo</span>
                       </div>
-                      <button class="btn btn-outline-primary">
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#iframeModal"
+                        class="btn btn-outline-primary"
+                      >
                         Get started
                       </button>
                       <p class="plan-detail">
@@ -284,7 +288,11 @@
                         <span class="price">799</span
                         ><span class="duration">/mo</span>
                       </div>
-                      <button class="btn btn-outline-primary">
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#iframeModal"
+                        class="btn btn-outline-primary"
+                      >
                         Get started
                       </button>
                       <p class="plan-detail">
@@ -307,7 +315,11 @@
                         <span class="price">999</span
                         ><span class="duration">/mo</span>
                       </div>
-                      <button class="btn btn-outline-primary">
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#iframeModal"
+                        class="btn btn-outline-primary"
+                      >
                         Get started
                       </button>
                       <p class="plan-detail">
@@ -342,6 +354,8 @@
                             your life
                           </p>
                           <button
+                            data-bs-toggle="modal"
+                            data-bs-target="#iframeModal"
                             class="btn btn-outline-primary d-none d-lg-block"
                           >
                             Get started
@@ -352,7 +366,11 @@
                           <span class="price">1,499</span
                           ><span class="duration">/mo</span>
                         </div>
-                        <button class="btn btn-outline-primary d-lg-none">
+                        <button
+                          data-bs-toggle="modal"
+                          data-bs-target="#iframeModal"
+                          class="btn btn-outline-primary d-lg-none"
+                        >
                           Get started
                         </button>
                       </div>
@@ -1121,6 +1139,38 @@
                 Book a free consultation
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="iframeModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="iframeBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header py-4">
+            <button
+              type="button"
+              class="btn-close position-relative"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="right: 0"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <iframe
+              src="https://app.glofox.com/portal/#/branch/632c4c4de7442665a049173e/classes-day-view"
+              frameborder="0"
+              width="100%"
+              height="1200"
+            ></iframe
+            ><a href="https://www.glofox.com">powered by <b>Glofox</b></a>
           </div>
         </div>
       </div>
