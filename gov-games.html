@@ -187,7 +187,11 @@
                   same experienced coaches behind some of the podium-winning Gov
                   Games teams.
                 </p>
-                <button class="btn btn-primary">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#consultationModal"
+                  class="btn btn-primary"
+                >
                   Book a free consultation
                 </button>
               </div>
@@ -449,7 +453,13 @@
             dominating the competition -and having a blast! Get a long term
             training package, or a single session to learn specific skills.
           </p>
-          <a href="" class="btn btn-primary">Book a free consultation</a>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#consultationModal"
+            class="btn btn-primary"
+          >
+            Book a free consultation
+          </button>
         </div>
       </div>
     </section>
@@ -501,6 +511,80 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="consultationModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="consultationBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="consultationBackdropLabel">
+              Book a consultation
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="form-detail">
+              Please enter the details of you message below. A member of our
+              team will respond as soon as possible.
+            </p>
+            <form class="theme-form">
+              <div class="form-wrapper">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="+971"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Type your message here…"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Book a free consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

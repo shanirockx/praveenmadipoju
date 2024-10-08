@@ -297,7 +297,9 @@
                     all while enjoying the foods you love and maintaining a
                     balanced lifestyle.
                   </p>
-                  <button class="btn btn-primary">Discover the program</button>
+                  <a href="warrior.html" class="btn btn-primary"
+                    >Discover the program</a
+                  >
                 </div>
               </div>
             </div>
@@ -651,9 +653,12 @@
                   Overcome Fears
                 </li>
               </ul>
-              <button class="btn d-none d-lg-block">
+              <a
+                href="obstacle-program.html"
+                class="btn d-none d-lg-inline-flex justify-content-center"
+              >
                 Discover the program
-              </button>
+              </a>
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 text-end">
@@ -665,7 +670,7 @@
             />
           </div>
           <div class="col-12 text-center d-lg-none program-kinds-content">
-            <button class="btn">Discover the program</button>
+            <a href="obstacle-program.html" class="btn">Discover the program</a>
           </div>
         </div>
       </div>
@@ -694,7 +699,11 @@
                   Lose Weight
                 </li>
               </ul>
-              <button class="btn d-none d-lg-block">Discover the program</button>
+              <a
+                href="warrior.html"
+                class="btn d-none d-lg-inline-flex justify-content-center"
+                >Discover the program</a
+              >
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 text-end">
@@ -706,7 +715,7 @@
             />
           </div>
           <div class="col-12 text-center d-lg-none program-kinds-content">
-            <button class="btn">Discover the program</button>
+            <a href="warrior.html" class="btn">Discover the program</a>
           </div>
         </div>
       </div>
@@ -735,7 +744,11 @@
                   Recover Confidently
                 </li>
               </ul>
-              <button class="btn d-none d-lg-block">Discover the program</button>
+              <a
+                href="bia-mama.html"
+                class="btn d-none d-lg-inline-flex justify-content-center"
+                >Discover the program</a
+              >
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 text-end">
@@ -747,7 +760,7 @@
             />
           </div>
           <div class="col-12 text-center d-lg-none program-kinds-content">
-            <button class="btn">Discover the program</button>
+            <a href="bia-mama.html" class="btn">Discover the program</a>
           </div>
         </div>
       </div>
@@ -776,7 +789,11 @@
                   Improve Teamwork
                 </li>
               </ul>
-              <button class="btn d-none d-lg-block">Discover the program</button>
+              <a
+                href="bia-girls.html"
+                class="btn d-none d-lg-inline-flex justify-content-center"
+                >Discover the program</a
+              >
             </div>
           </div>
           <div class="col-xl-5 col-lg-6 text-end">
@@ -788,7 +805,7 @@
             />
           </div>
           <div class="col-12 text-center d-lg-none program-kinds-content">
-            <button class="btn">Discover the program</button>
+            <a href="bia-girls.html" class="btn">Discover the program</a>
           </div>
         </div>
       </div>
@@ -801,7 +818,13 @@
               <strong>Prefer personal training?</strong> Get even more support
             </h2>
             <p>Personalized 1-1 or 2-1 coaching to help you crush any goal</p>
-            <button class="btn btn-light">Get in touch for PT</button>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#consultationModal"
+              class="btn btn-light"
+            >
+              Get in touch for PT
+            </button>
           </div>
         </div>
       </div>
@@ -824,7 +847,7 @@
                   online coach with a customized program and 24/7
                   accountability.
                 </p>
-                <button class="btn">Learn More</button>
+                <a href="online-coaching.html" class="btn">Learn More</a>
               </div>
             </div>
           </div>
@@ -886,6 +909,80 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="consultationModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="consultationBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="consultationBackdropLabel">
+              Book a consultation
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="form-detail">
+              Please enter the details of you message below. A member of our
+              team will respond as soon as possible.
+            </p>
+            <form class="theme-form">
+              <div class="form-wrapper">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="+971"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Type your message here…"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Book a free consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

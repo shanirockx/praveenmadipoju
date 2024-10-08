@@ -186,7 +186,13 @@
                   Overcome obstacles, crush your mental barriers and perfect
                   your technique.
                 </p>
-                <button class="btn btn-primary">Book a free trial</button>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#consultationModal"
+                  class="btn btn-primary"
+                >
+                  Book a free trial
+                </button>
               </div>
             </div>
           </div>
@@ -210,7 +216,7 @@
               Never done obstacles before? Welcome to your playground.
             </h1>
             <div class="event-gallery-item text-center">
-              <img src="assets/img/obstacle-20.png" alt="" class="img-fluid">
+              <img src="assets/img/obstacle-20.png" alt="" class="img-fluid" />
             </div>
             <p class="event-gallery-text">
               We'll guide you in conquering any obstacle by building a strong
@@ -330,7 +336,12 @@
                 finishers, and the only community all-female team to qualify for
                 Gov Games.
               </p>
-              <button class="btn btn-primary d-none d-lg-block">Learn More</button>
+              <a
+                href="gov-games.html"
+                class="btn btn-primary d-none d-lg-block"
+              >
+                Learn More
+              </a>
             </div>
           </div>
         </div>
@@ -359,7 +370,9 @@
           </div>
         </div>
         <div class="game-experience-content text-center">
-          <button class="btn btn-primary d-lg-none">Learn More</button>
+          <a href="gov-games.html" class="btn btn-primary d-lg-none"
+            >Learn More</a
+          >
         </div>
       </div>
     </section>
@@ -518,8 +531,15 @@
                 All Obstacle Program classes take place at Gravity Gym, Al Quoz
               </p>
               <div class="champion-cta">
-                <button class="btn btn-outline-primary d-none d-lg-block">See Schedule</button>
-                <button class="btn btn-primary">See Class Details</button>
+                <a
+                  href="classes-detail.html"
+                  class="btn btn-outline-primary d-none d-lg-block"
+                >
+                  See Schedule
+                </a>
+                <a href="classes-detail.html" class="btn btn-primary"
+                  >See Class Details</a
+                >
               </div>
             </div>
           </div>
@@ -563,7 +583,7 @@
             Flexible membership packages so that you can choose the one that
             suits you best
           </p>
-          <a href="" class="btn btn-primary">See Memberships</a>
+          <a href="memberships.html" class="btn btn-primary">See Memberships</a>
         </div>
       </div>
     </section>
@@ -615,6 +635,80 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="consultationModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="consultationBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="consultationBackdropLabel">
+              Book a consultation
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="form-detail">
+              Please enter the details of you message below. A member of our
+              team will respond as soon as possible.
+            </p>
+            <form class="theme-form">
+              <div class="form-wrapper">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="+971"
+                  required=""
+                />
+              </div>
+              <div class="form-wrapper">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Type your message here…"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Book a free consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
