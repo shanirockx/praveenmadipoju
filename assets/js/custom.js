@@ -188,3 +188,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("header").classList.toggle("mobile-menu");
   });
 });
+
+document.getElementById('downloadBtn').addEventListener('click', function () {
+  const link = document.createElement('a');
+  link.href = 'assets/pdf/dummy.pdf'; 
+  link.download = 'guide.pdf';  
+  link.style.display = 'none';  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
