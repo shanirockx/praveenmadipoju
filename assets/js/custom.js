@@ -189,12 +189,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.getElementById('downloadBtn').addEventListener('click', function () {
-  const link = document.createElement('a');
-  link.href = 'assets/pdf/dummy.pdf'; 
-  link.download = 'guide.pdf';  
-  link.style.display = 'none';  
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+document.addEventListener('DOMContentLoaded', function () {
+  const downloadBtn = document.getElementById('downloadBtn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', function () {
+      const link = document.createElement('a');
+      link.href = 'assets/pdf/dummy.pdf';
+      link.download = 'guide.pdf';
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
 });

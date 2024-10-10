@@ -175,7 +175,7 @@
         </div>
       </nav>
     </header>
-    <section class="hero index-hero">
+    <section class="hero index-hero" id="hero">
       <div class="container-fluid">
         <div class="row">
           <div class="align-items-center col-lg-6 d-flex">
@@ -210,10 +210,13 @@
     </section>
     <section class="coaching text-center">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="section-anim">
           <div class="col-12">
-            <h2 class="page-title">
-              Holistic support <span>to help you thrive</span>
+            <h2 class="page-title" id="left">
+              Holistic support
+            </h2>
+            <h2 class="page-title text-end" id="right">
+              to help you thrive
             </h2>
           </div>
         </div>
@@ -750,6 +753,36 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo("#left", {
+            x: -30, 
+        }, {
+            x: 0, 
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".coaching",
+                start: "top 65%", 
+                end: "center center",
+                scrub: true
+            }
+        });
+        gsap.fromTo("#right", {
+            x: 30, 
+        }, {
+            x: 0, 
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".coaching",
+                start: "top 65%", 
+                end: "center center",
+                scrub: true
+            }
+        });
+    </script>
     <script src="assets/js/custom.js"></script>
   </body>
 </html>
